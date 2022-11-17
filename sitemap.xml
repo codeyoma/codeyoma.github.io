@@ -5,4 +5,14 @@
          <lastmod>2022-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://yoma.kr/42-cursus/test/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://yoma.kr/42-cursus/test2/</loc>
+         <lastmod>2022-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
