@@ -8,6 +8,7 @@ export const sharedPageComponents: SharedLayout = {
     afterBody: [],
     footer: Component.Footer({
         links: {
+            "Blog source": "https://github.com/codeyoma/codeyoma.github.io",
             GitHub: "https://github.com/codeyoma",
             LinkedIn: "https://www.linkedin.com/in/codeyoma",
             // "Discord Community": "https://discord.gg/cRFFHYye7t",
