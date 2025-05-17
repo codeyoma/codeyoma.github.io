@@ -96,15 +96,12 @@ export default ((userOpts?: Partial<Options>) => {
                 </button>
                 <button
                     type="button"
-                    class="title-button desktop-explorer"
-                    // yoma - hide arrow button
-                    // class="title-button explorer-toggle desktop-explorer"
+                    class="title-button explorer-toggle desktop-explorer"
                     data-mobile={false}
                     aria-expanded={true}
                 >
                     <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2>
-                    {/* yoma - hide arrow button */}
-                    {/* <svg
+                    <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="14"
                         height="14"
@@ -117,7 +114,7 @@ export default ((userOpts?: Partial<Options>) => {
                         class="fold"
                     >
                         <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg> */}
+                    </svg>
                 </button>
                 <div class="explorer-content" aria-expanded={false}>
                     <OverflowList class="explorer-ul" />
