@@ -14,3 +14,10 @@ int main() {
     return 0;
 }
 ```
+```cpp
+int main() {
+    std::cout << "Hello, world!" << std::endl;
+    return 0;
+}
+```
+
