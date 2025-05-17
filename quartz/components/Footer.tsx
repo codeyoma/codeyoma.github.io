@@ -22,8 +22,7 @@ export default ((opts?: Options) => {
                 </ul>
                 <p>
                     {/* {i18n(cfg.locale).components.footer.createdWith}{" "} */}
-                    Created by yoma © {year}
-                    {/* <a href="https://quartz.jzhao.xyz/" target="_blank">Quartz v{version}</a>© {year} */}
+                    Created by Yòmá with <a href="https://quartz.jzhao.xyz/" target="_blank">Quartz v{version}</a> © {year}
                 </p>
             </footer>
         )
