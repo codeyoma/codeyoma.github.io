@@ -64,7 +64,14 @@ export const defaultListPageLayout: PageLayout = {
                 { Component: Component.Darkmode() },
             ],
         }),
-        Component.Explorer(),
+        // Component.Explorer(),
+        Component.Explorer({
+            mapFn: (node) => {
+                if (node.isFolder) {
+                    node.displayName = "📁 " + node.displayName
+                }
+            },
+        })
     ],
     right: [],
 }

@@ -94,7 +94,7 @@ export default ((userOpts?: Partial<Options>) => {
                         <line x1="4" x2="20" y1="18" y2="18" />
                     </svg>
                 </button>
-                <button
+                {/* <button
                     type="button"
                     class="title-button explorer-toggle desktop-explorer"
                     data-mobile={false}
@@ -115,7 +115,11 @@ export default ((userOpts?: Partial<Options>) => {
                     >
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
-                </button>
+                </button> */}
+                <div class="desktop-explorer">
+                    <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2>
+                </div>
+
                 <div class="explorer-content" aria-expanded={false}>
                     <OverflowList class="explorer-ul" />
                 </div>
