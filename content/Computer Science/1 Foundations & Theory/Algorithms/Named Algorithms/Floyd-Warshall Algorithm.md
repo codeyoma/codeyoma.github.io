@@ -1,6 +1,7 @@
 ---
-created: 2025/5/04 11:53:57
-modified: 2025/5/14 20:46:42
+description:
+created: 2025-05-18
+modified: 2025-05-18
 references: 
 aliases:
   - 플로이드 워셜
@@ -23,7 +24,7 @@ aliases:
 
 - shortest path between all pairs of vertices, negative edges allowed
 	- nope - negative cycles
-- $$
+$$
 d_{ij}^{k} = \left\{ \begin{alignat} {}
 &W_{ij} &&\text{if} \enspace k = 0 \quad \\ 
 &min(d_{ij}^{k - 1},\enspace d_{ik}^{k - 1} \,+\, d_{kj}^{k - 1}) 
@@ -31,6 +32,7 @@ d_{ij}^{k} = \left\{ \begin{alignat} {}
 \end{alignat}
 \right\}
 $$
+
 - $V^{3}$
 - dist matrix
 	- 2 차원 거리 배열

@@ -12,6 +12,7 @@ comments: "false"
 # MOC
 - [[- Computer Science]]
 	- [[- Algorithms]]
+	- [[- Frontend]]
 - [[- Note Taking]]
 - [[- Philosophy]]
 

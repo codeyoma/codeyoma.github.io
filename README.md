@@ -3,6 +3,7 @@
 <!--
 npx quartz sync
 npx quartz build --serve
+./obsidian-content-sync.sh
 -->
 
 
