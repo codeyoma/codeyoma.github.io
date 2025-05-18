@@ -4,7 +4,8 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
     head: Component.Head(),
-    header: [],
+    header: [
+    ],
     afterBody: [
         Component.Comments({
             provider: 'giscus',
@@ -47,10 +48,20 @@ export const defaultContentPageLayout: PageLayout = {
                     grow: true,
                 },
                 { Component: Component.Darkmode() },
-                { Component: Component.ReaderMode() },
+                // { Component: Component.ReaderMode() },
             ],
         }),
-        Component.Explorer(),
+        // Component.Explorer(),
+        Component.Explorer({
+            mapFn: (node) => {
+                if (node.isFolder) {
+                    node.displayName = "📁 " + node.displayName
+                }
+            },
+        }),
+        // Component.RecentNotes({
+        //     limit: 5,
+        // }),
     ],
     right: [
         Component.Graph(),
@@ -74,14 +85,15 @@ export const defaultListPageLayout: PageLayout = {
                 { Component: Component.Darkmode() },
             ],
         }),
-        Component.Explorer(),
-        // Component.Explorer({
-        //     mapFn: (node) => {
-        //         if (node.isFolder) {
-        //             node.displayName = "📁 " + node.displayName
-        //         }
-        //     },
-        // })
+        // Component.Explorer(),
+        Component.Explorer({
+            mapFn: (node) => {
+                if (node.isFolder) {
+                    node.displayName = "📁 " + node.displayName
+                }
+            },
+        }),
+        // Component.RecentNotes({ limit: 5 }),
     ],
     right: [],
 }
