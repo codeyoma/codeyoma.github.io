@@ -7,7 +7,6 @@ import Darkmode from "./Darkmode"
 import ReaderMode from "./ReaderMode"
 import Head from "./Head"
 import PageTitle from "./PageTitle"
-import PageTitleWithLogo from "./PageTitleWithLogo"
 import ContentMeta from "./ContentMeta"
 import Spacer from "./Spacer"
 import TableOfContents from "./TableOfContents"
@@ -34,7 +33,6 @@ export {
     ReaderMode,
     Head,
     PageTitle,
-    PageTitleWithLogo,
     ContentMeta,
     Spacer,
     TableOfContents,

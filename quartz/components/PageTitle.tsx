@@ -7,32 +7,47 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
     const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
     const baseDir = pathToRoot(fileData.slug!)
     return (
-        <h2 class={classNames(displayClass, "page-title")}>
-            <a href={baseDir}>
+        <a href={baseDir} class="page-header-link">
+            <h2 class={classNames(displayClass, "page-title")}>
                 {title}
-                <img class="logo" src="https://avatars.githubusercontent.com/u/71107230?v=4" />
-            </a>
-        </h2>
+            </h2>
+            <img class="page-logo" src="https://avatars.githubusercontent.com/u/71107230?v=4" />
+        </a>
     )
 }
 
 PageTitle.css = `
-.page-title {
-  font-size: 1.75rem;
-  margin: 0;
-  font-family: var(--titleFont);
+.page-header-link {
   display: flex;
-  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+  }
 }
-.page-title a {
- margin-left: 0.5rem;
-}
-.logo {
-  width: 2rem;
-  height: 2rem;
-  padding-left: 0.25rem;
+
+.page-title {
+  font-size: 1.1rem;
   margin: 0;
-  vertical-align: text-top;
+  margin-left: 0.5em;
+  font-family: var(--titleFont);
+  white-space: nowrap;
+
+  @media (min-width: 1024px) {
+    font-size: 1.7rem;
+  }
+}
+
+.page-logo {
+  margin: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+
+  @media (min-width: 1024px) {
+    width: auto;
+    height: auto;
+  }
 }
 `
 

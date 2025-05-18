@@ -2,7 +2,6 @@
 
 // put your custom CSS here!
 
-
 .center article,
 p {
     @media (min-width: 1400px) {
@@ -20,19 +19,19 @@ footer {
     }
 }
 
-.explorer-content .folder-container {
-    margin: 0.1em 0;
+// .explorer-content .folder-container {
+//     padding: 0.1em 0;
 
-    @media (min-width: 1400px) {
-        margin: 0.4em 0;
-    }
-}
+//     @media (min-width: 1400px) {
+//         padding: 0.1em 0;
+//     }
+// }
 
 .explorer-content li {
-    margin: 0.2em 0;
+    padding: 0.2em 0;
 
     @media (min-width: 1400px) {
-        margin: 0.4em 0;
+        padding: 0.4em 0;
         line-height: 1.3;
     }
 }
