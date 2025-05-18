@@ -4,7 +4,7 @@ description: Description of the page used for link previews.
 permalink: "note.md"
 aliases: ["nnnn"]
 tags: ["tag1", "tag2"]
-draft: true
+draft: false
 date: 2025-05-01
 ---
 
