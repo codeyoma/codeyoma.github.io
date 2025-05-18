@@ -10,6 +10,7 @@ comments: "false"
 ![[Lqp2z3I.gif]]
 
 # MOC
+- [[about|About]]
 - [[- Computer Science]]
 	- [[- Algorithms]]
 	- [[- Frontend]]

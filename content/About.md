@@ -17,6 +17,7 @@ comments: "false"
 
 ### Log
 - [Blog](https://yoma.kr)
+- [Github](https://github.com/codeyoma)
 - [PS](https://github.com/AI-Got-Rhythm/ps/tree/main/baekjoon)
 - [École 42](https://github.com/ecole42-yoma)
 - [Sweep Keyboard](https://github.com/codeyoma/sweep-nice-nano)
