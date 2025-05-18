@@ -24,6 +24,9 @@ PageTitle.css = `
   display: flex;
   align-items: center;
 }
+.page-title a {
+ margin-left: 0.5rem;
+}
 .logo {
   width: 2rem;
   height: 2rem;

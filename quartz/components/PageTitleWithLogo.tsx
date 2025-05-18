@@ -23,10 +23,22 @@ PageTitle.css = `
   font-family: var(--titleFont);
   display: flex;
 }
+
 .page-logo {
   justify-content: center;
   align-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding-left: 0.25rem;
   margin: 0;
+  vertical-align: text-top;
+
+  @media (min-width: 1400px){
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
 }
 `
 
