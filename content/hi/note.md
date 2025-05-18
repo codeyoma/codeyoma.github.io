@@ -1,5 +1,5 @@
 ---
-title: Title of the page
+title: Title of the page--
 description: Description of the page used for link previews.
 permalink: "note.md"
 aliases: ["nnnn"]
