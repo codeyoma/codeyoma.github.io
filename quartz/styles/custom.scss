@@ -11,6 +11,46 @@ footer {
 
 }
 
+li {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.page>#quartz-body>.sidebar.right>.toc {
+    // @for $i from 0 through 5 {
+    //     .depth-#{$i} {
+    //         font-size: #{1 - ($i * 0.05)}em;
+    //     }
+    // }
+
+    // .depth-0 {
+    //     font-size: 1em;
+    // }
+
+    .depth-1 {
+        font-size: 0.85em;
+    }
+
+    .depth-2 {
+        font-size: 0.77em;
+    }
+
+    .depth-3 {
+        font-size: 0.70em;
+    }
+
+    .depth-4 {
+        font-size: 0.65em;
+    }
+
+    .depth-5 {
+        font-size: 0.6em;
+    }
+
+}
+
+
+
 // body {
 //     --outline-guideline-width: var(--size-2-1);
 //     --outline-guideline-color: var(--color-accent);

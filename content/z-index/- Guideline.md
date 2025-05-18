@@ -299,6 +299,5 @@ You can also use inline footnotes. ^[This is an inline footnote.]
 
 ---
 # MathJax
-[![MathJax basic tutorial](https://svg.bookmark.style/api?url=https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference&mode=light&style=horizontal)](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
-
-[![mathJax support extensions list](https://svg.bookmark.style/api?url=https://docs.mathjax.org/en/latest/input/tex/extensions/index.html&mode=light&style=horizontal)](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html)
+- [MathJax basic tutorial](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
+- [mathJax support extensions list](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html)
