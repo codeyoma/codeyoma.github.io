@@ -39,9 +39,19 @@ footer {
 
 .center li {
     margin: 0.3em;
+    list-style-type: disc;
 
     @media (min-width: 1400px) {
         margin: 0.6em 0;
+    }
+
+}
+
+.center ul {
+    padding-left: 1.2em;
+
+    @media (min-width: 1400px) {
+        padding-left: 1.4em;
     }
 }
 
