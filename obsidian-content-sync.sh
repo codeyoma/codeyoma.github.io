@@ -5,6 +5,7 @@
 basic_path="/Users/yoma/Library/Mobile Documents/com~apple~CloudDocs/Documents/Yoma"
 allow_path=(
     "/∞ Akashic Records/attachments/"
+    "/∞ Akashic Records/- Guideline.md"
     "/& Areas/Computer Science/"
     "/+ Resources/Note Taking/"
     "/+ Resources/Philosophy/"
@@ -14,6 +15,7 @@ allow_path=(
 
 output_path=(
     "Attachments/"
+    "Guideline/- Guideline.md"
     "Computer Science/"
     "Note Taking/"
     "Philosophy/"
