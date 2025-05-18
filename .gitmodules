@@ -1,0 +1,3 @@
+[submodule "submodules/content-repo"]
+	path = submodules/content-repo
+	url = https://github.com/codeyoma/obsidian-public-content.git
