@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
         Component.Comments({
             provider: 'giscus',
             options: {
-                repo: 'jcodeyoma/codeyoma.github.io',
+                repo: 'codeyoma/codeyoma.github.io',
                 repoId: 'R_kgDOOraRoA',
                 category: 'General',
                 categoryId: 'DIC_kwDOOraRoM4CqR8o',
