@@ -1,5 +1,6 @@
 ---
 title: Welcome to Yòmá's Notes
+comments: false
 ---
 
 This is a blank Quartz installation.
