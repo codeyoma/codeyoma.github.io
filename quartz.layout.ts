@@ -39,7 +39,8 @@ export const defaultContentPageLayout: PageLayout = {
         Component.TagList(),
     ],
     left: [
-        Component.PageTitle(),
+        Component.MobileOnly(Component.PageTitle()),
+        Component.DesktopOnly(Component.PageTitleWithLogo()),
         Component.MobileOnly(Component.Spacer()),
         Component.Flex({
             components: [
@@ -48,7 +49,7 @@ export const defaultContentPageLayout: PageLayout = {
                     grow: true,
                 },
                 { Component: Component.Darkmode() },
-                // { Component: Component.ReaderMode() },
+                { Component: Component.DesktopOnly(Component.ReaderMode()) },
             ],
         }),
         // Component.Explorer(),
@@ -59,9 +60,7 @@ export const defaultContentPageLayout: PageLayout = {
                 }
             },
         }),
-        // Component.RecentNotes({
-        //     limit: 5,
-        // }),
+        // Component.RecentNotes({ limit: 5}),
     ],
     right: [
         Component.Graph(),
@@ -74,7 +73,8 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
     beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
     left: [
-        Component.PageTitle(),
+        Component.MobileOnly(Component.PageTitle()),
+        Component.DesktopOnly(Component.PageTitleWithLogo()),
         Component.MobileOnly(Component.Spacer()),
         Component.Flex({
             components: [
@@ -83,6 +83,7 @@ export const defaultListPageLayout: PageLayout = {
                     grow: true,
                 },
                 { Component: Component.Darkmode() },
+                { Component: Component.DesktopOnly(Component.ReaderMode()) },
             ],
         }),
         // Component.Explorer(),

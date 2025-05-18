@@ -17,7 +17,11 @@ const config: QuartzConfig = {
         },
         locale: "en-US",
         baseUrl: "yoma.kr",
-        ignorePatterns: ["private", "templates", ".obsidian"],
+        ignorePatterns: [
+            "private",
+            "templates",
+            ".obsidian"
+        ],
         defaultDateType: "modified",
         theme: {
             fontOrigin: "googleFonts",

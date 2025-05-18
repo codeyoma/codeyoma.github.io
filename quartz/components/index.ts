@@ -7,6 +7,7 @@ import Darkmode from "./Darkmode"
 import ReaderMode from "./ReaderMode"
 import Head from "./Head"
 import PageTitle from "./PageTitle"
+import PageTitleWithLogo from "./PageTitleWithLogo"
 import ContentMeta from "./ContentMeta"
 import Spacer from "./Spacer"
 import TableOfContents from "./TableOfContents"
@@ -25,29 +26,30 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 
 export {
-  ArticleTitle,
-  Content,
-  TagContent,
-  FolderContent,
-  Darkmode,
-  ReaderMode,
-  Head,
-  PageTitle,
-  ContentMeta,
-  Spacer,
-  TableOfContents,
-  Explorer,
-  TagList,
-  Graph,
-  Backlinks,
-  Search,
-  Footer,
-  DesktopOnly,
-  MobileOnly,
-  RecentNotes,
-  NotFound,
-  Breadcrumbs,
-  Comments,
-  Flex,
-  ConditionalRender,
+    ArticleTitle,
+    Content,
+    TagContent,
+    FolderContent,
+    Darkmode,
+    ReaderMode,
+    Head,
+    PageTitle,
+    PageTitleWithLogo,
+    ContentMeta,
+    Spacer,
+    TableOfContents,
+    Explorer,
+    TagList,
+    Graph,
+    Backlinks,
+    Search,
+    Footer,
+    DesktopOnly,
+    MobileOnly,
+    RecentNotes,
+    NotFound,
+    Breadcrumbs,
+    Comments,
+    Flex,
+    ConditionalRender,
 }
