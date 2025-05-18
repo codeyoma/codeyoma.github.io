@@ -9,6 +9,7 @@ date: 2025-05-01
 ---
 
 
+# Quartz Frontmatter
 ``` frontmatter
 title: Title of the page
 description: Description of the page used for link previews.
@@ -21,6 +22,7 @@ tags:
 draft: true
 date: 2025-05-01
 ```
+
 # Callout
 > [!note]
 ---
@@ -116,6 +118,8 @@ date: 2025-05-01
 #### This is a heading 4
 ##### This is a heading 5
 ###### This is a heading 6
+
+# Markdown Syntax
 
 | Style                  | Syntax                 | Example                                  | Output                                 |
 | ---------------------- | ---------------------- | ---------------------------------------- | -------------------------------------- |

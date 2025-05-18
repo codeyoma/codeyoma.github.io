@@ -5,7 +5,17 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
     head: Component.Head(),
     header: [],
-    afterBody: [],
+    afterBody: [
+        Component.Comments({
+            provider: 'giscus',
+            options: {
+                repo: 'jcodeyoma/codeyoma.github.io',
+                repoId: 'R_kgDOOraRoA',
+                category: 'General',
+                categoryId: 'DIC_kwDOOraRoM4CqR8o',
+            }
+        }),
+    ],
     footer: Component.Footer({
         links: {
             "Blog source": "https://github.com/codeyoma/codeyoma.github.io",
@@ -64,14 +74,14 @@ export const defaultListPageLayout: PageLayout = {
                 { Component: Component.Darkmode() },
             ],
         }),
-        // Component.Explorer(),
-        Component.Explorer({
-            mapFn: (node) => {
-                if (node.isFolder) {
-                    node.displayName = "📁 " + node.displayName
-                }
-            },
-        })
+        Component.Explorer(),
+        // Component.Explorer({
+        //     mapFn: (node) => {
+        //         if (node.isFolder) {
+        //             node.displayName = "📁 " + node.displayName
+        //         }
+        //     },
+        // })
     ],
     right: [],
 }
