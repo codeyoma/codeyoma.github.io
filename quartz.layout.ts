@@ -52,14 +52,16 @@ export const defaultContentPageLayout: PageLayout = {
                 { Component: Component.DesktopOnly(Component.ReaderMode()) },
             ],
         }),
-        // Component.Explorer(),
         Component.Explorer({
-            mapFn: (node) => {
-                if (node.isFolder) {
-                    node.displayName = "📁 " + node.displayName
-                }
-            },
+            folderClickBehavior: "collapse"
         }),
+        // Component.Explorer({
+        //     mapFn: (node) => {
+        //         if (node.isFolder) {
+        //             node.displayName = "📁 " + node.displayName
+        //         }
+        //     },
+        // }),
         // Component.RecentNotes({ limit: 5}),
     ],
     right: [
@@ -86,15 +88,10 @@ export const defaultListPageLayout: PageLayout = {
                 { Component: Component.DesktopOnly(Component.ReaderMode()) },
             ],
         }),
-        // Component.Explorer(),
         Component.Explorer({
-            mapFn: (node) => {
-                if (node.isFolder) {
-                    node.displayName = "📁 " + node.displayName
-                }
-            },
-        }),
-        // Component.RecentNotes({ limit: 5 }),
+            folderClickBehavior: "collapse"
+        }
+        ),
     ],
     right: [],
 }
