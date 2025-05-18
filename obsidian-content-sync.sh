@@ -4,19 +4,21 @@
 
 basic_path="/Users/yoma/Library/Mobile Documents/com~apple~CloudDocs/Documents/Yoma"
 allow_path=(
+    "/∞ Akashic Records/attachments/"
     "/& Areas/Computer Science/"
     "/+ Resources/Note Taking/"
     "/+ Resources/Philosophy/"
     "/+ Resources/Publish/index.md"
-    "/∞ Akashic Records/attachments/"
+    "/+ Resources/Publish/about.md"
 )
 
 output_path=(
+    "Attachments/"
     "Computer Science/"
     "Note Taking/"
     "Philosophy/"
     "index.md"
-    "Attachments/"
+    "About.md"
 )
 
 pre_fix="./content/"

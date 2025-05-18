@@ -53,7 +53,27 @@ export const defaultContentPageLayout: PageLayout = {
             ],
         }),
         Component.Explorer({
-            folderClickBehavior: "collapse"
+            folderClickBehavior: "collapse",
+            sortFn: (a, b) => {
+                if (!a.isFolder && a.slug === 'About')
+                    return -99
+                if (!b.isFolder && b.slug === 'About')
+                    return 99
+
+
+                if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+                    return a.displayName.localeCompare(b.displayName, undefined, {
+                        numeric: true,
+                        sensitivity: "base",
+                    })
+                }
+
+                if (!a.isFolder && b.isFolder) {
+                    return 1
+                } else {
+                    return -1
+                }
+            },
         }),
         // Component.Explorer({
         //     mapFn: (node) => {
@@ -89,7 +109,27 @@ export const defaultListPageLayout: PageLayout = {
             ],
         }),
         Component.Explorer({
-            folderClickBehavior: "collapse"
+            folderClickBehavior: "collapse",
+            sortFn: (a, b) => {
+                if (!a.isFolder && a.slug === 'About')
+                    return -99
+                if (!b.isFolder && b.slug === 'About')
+                    return 99
+
+
+                if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+                    return a.displayName.localeCompare(b.displayName, undefined, {
+                        numeric: true,
+                        sensitivity: "base",
+                    })
+                }
+
+                if (!a.isFolder && b.isFolder) {
+                    return 1
+                } else {
+                    return -1
+                }
+            },
         }
         ),
     ],

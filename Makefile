@@ -2,9 +2,14 @@
 run: update
 	npx quartz sync
 
+sync:
+	./obsidian-content-sync.sh
 
 update:
-	./obsidian-content-sync.sh
+	npx quartz update
 
 test:
 	npx quartz build --serve
+
+build:
+	npx quartz build
