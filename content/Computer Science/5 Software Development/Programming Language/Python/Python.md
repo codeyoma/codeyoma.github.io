@@ -1,0 +1,4 @@
+- [강좌: 파이썬 코딩 도장](https://dojang.io/course/view.php?id=7)
+- [서문 · interpy-kr](https://ddanggle.gitbooks.io/interpy-kr/content/)
+- [파이썬 자습서 — Python 3.13.3 문서](https://docs.python.org/ko/3/tutorial/index.html)
+- [Python-programming-exercises/100+ Python challenging programming exercises for Python 3.md at master · zhiwehu/Python-programming-exercises · GitHub](https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises%20for%20Python%203.md)

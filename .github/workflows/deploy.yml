@@ -24,8 +24,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for git info
-          submodules: recursive
-          token: ${{ secrets.GH_PAT }}
+        #   submodules: recursive
+        #   token: ${{ secrets.GH_PAT }}
 
       - uses: actions/setup-node@v4
         with:
@@ -36,10 +36,10 @@ jobs:
     #   - name: Fetch Quartz Theme
     #     run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 
-      - name: Copy content from submodule
-        run: |
-          mkdir -p ./content
-          cp -r ./submodules/content-repo/content/* ./content/
+    #   - name: Copy content from submodule
+    #     run: |
+    #       mkdir -p ./content
+    #       cp -r ./submodules/content-repo/content/* ./content/
 
       - name: Build Quartz
         run: npx quartz build

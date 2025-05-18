@@ -1,0 +1,3 @@
+- [Replit – Build apps and sites with AI](https://replit.com/)
+- [CodePen: Online Code Editor and Front End Web Developer Community](https://codepen.io/)
+- [Project IDX](https://idx.dev/)

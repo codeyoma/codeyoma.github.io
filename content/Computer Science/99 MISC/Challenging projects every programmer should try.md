@@ -1,0 +1,1 @@
+- [Challenging projects every programmer should try - Austin Z. Henley](https://austinhenley.com/blog/challengingprojects.html)

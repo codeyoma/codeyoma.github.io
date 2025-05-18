@@ -1,0 +1,38 @@
+---
+created: 2025/4/10 10:06:33
+modified: 2025/4/14 17:56:10
+---
+
+- React Rendering Pipeline
+	- JS Entry Point
+		- index.js
+		- main.tsx
+	- JSX -> React.createElement
+	- React Element Tree created
+	- Fiber Tree 생성 (Work-In-Progress)
+	- React Render Phase
+		- 컴포넌트 함수 실행
+		- VDOM(Fiber Nodes) 생성
+	- Reconciliation
+		- Diffing
+			- Current Fiber Tree with WIP Fiber Tree
+	- Commit Phase
+		- DOM Mutation
+			- 실제 돔 변경
+		- side effect
+		- ref 설정
+		- useLayoutEffect 실행
+		- 컴포넌트 마운트 / 언마운트 처리
+		- 브라우저에게 DOM 업데이트 위임
+- Browser Rendering Pipeline
+	- Parsing
+		- HTML -> DOM
+		- CSS -> CSSOM
+		- DOM + CSSOM -> Render Tree 구성
+	- Layout (Reflow)
+	- Painting (Repainting)
+		-  Layer 1 → Paint into bitmap
+		-  Layer 2 → Paint into bitmap
+		-  Layer 3 → Paint into bitmap
+	- Compositing
+	- Screen Draw

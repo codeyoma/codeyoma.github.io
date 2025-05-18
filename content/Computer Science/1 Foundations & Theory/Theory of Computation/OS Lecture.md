@@ -1,0 +1,5 @@
+- [GitHub - mit-pdos/xv6-public: xv6 OS](https://github.com/mit-pdos/xv6-public)
+- [GitHub - mit-pdos/xv6-riscv: Xv6 for RISC-V](https://github.com/mit-pdos/xv6-riscv)
+- [Operating Systems Courseware (OSTEP) - KAIST OS Lab](https://oslab.kaist.ac.kr/ostepslides/)
+- [ossu/computer-science: 🎓 Path to a free self-taught education in Computer Science!](https://github.com/ossu/computer-science)
+- [컴퓨터과학이 여는 세계\_이광근 - YouTube](https://www.youtube.com/playlist?list=PL0Nf1KJu6Ui7yoc9RQ2TiiYL9Z0MKoggH)

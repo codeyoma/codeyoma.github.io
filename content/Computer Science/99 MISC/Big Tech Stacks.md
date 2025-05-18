@@ -1,0 +1,1 @@
+- [What is a Tech Stack? What tools do popular tech companies use in 2025?](https://stackshare.io/stacks)

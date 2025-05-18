@@ -1,0 +1,11 @@
+- [The Open-Source Data Science Masters \| scrapbook](https://stephanosterburg.gitbook.io/scrapbook/coding/the-open-source-data-science-masters)
+- [GitHub - ossu/data-science: 📊 Path to a free self-taught education in Data Science!](https://github.com/ossu/data-science)
+- [GitHub - ossu/math: 🧮 Path to a free self-taught education in Mathematics!](https://github.com/ossu/math)
+- [단국대 2020년 가을학기 캐글 뽀개기 강좌 — 단국대 2020 캐글 뽀개기](https://kaggler-tv.github.io/dku-kaggle-class/main.html)
+# AI
+- [텐서 플로우 블로그 (Tensor ≈ Blog) \| 머신러닝(Machine Learning), 딥러닝(Deep Learning) 그리고 텐서(Tensor) 또 파이썬(Python)](https://tensorflow.blog/)
+- [aistudy.com](http://www.aistudy.com/)
+- [모두를 위한 딥러닝 시즌 2 \| Deep Learning Zero To All - Season 2](https://deeplearningzerotoall.github.io/season2/)
+- [Deep Learning](https://www.deeplearningbook.org/)
+- [fast.ai—Making neural nets uncool again – fast.ai](https://www.fast.ai/)
+	- [Practical Deep Learning for Coders - Practical Deep Learning](https://course.fast.ai/)

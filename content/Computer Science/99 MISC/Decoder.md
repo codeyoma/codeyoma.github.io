@@ -1,0 +1,2 @@
+- [CacheSleuth - Multi Decoder](https://www.cachesleuth.com/multidecoder/)
+- [Modular conversion, encoding and encryption online - cryptii](https://cryptii.com/)

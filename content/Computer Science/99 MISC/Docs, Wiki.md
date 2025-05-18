@@ -1,0 +1,6 @@
+- [MDN Web Docs](https://developer.mozilla.org/ko/)
+- [DevDocs](https://devdocs.io/love/)
+- [IT 위키](https://itwiki.kr/w/%EB%8C%80%EB%AC%B8)
+- [Refactoring and Design Patterns](https://refactoring.guru/)
+- [DeepWiki \| AI documentation you can talk to, for every repo](https://deepwiki.org/)
+- [An A-Z Index of the Linux command line - SS64.com](https://ss64.com/bash/)

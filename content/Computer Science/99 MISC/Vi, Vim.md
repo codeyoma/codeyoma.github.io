@@ -1,0 +1,3 @@
+- [cs.cmu.edu/\~15131/f17/topics/vim/vim-cheatsheet.pdf](https://www.cs.cmu.edu/~15131/f17/topics/vim/vim-cheatsheet.pdf)
+- [Vim Cheat Sheet & Quick Reference](https://quickref.me/vim)
+- [Vim Cheat Sheet](https://vim.rtorr.com/)

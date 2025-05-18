@@ -1,0 +1,3 @@
+- [Prompt Engineering Guide: The Ultimate Guide to Generative AI](https://learnprompting.org/docs/introduction)
+- [Prompt Engineering Guide \| Prompt Engineering Guide\<!-- --\>](https://www.promptingguide.ai/)
+- [GitHub - dair-ai/Prompt-Engineering-Guide: 🐙 Guides, papers, lecture, notebooks and resources for prompt engineering](https://github.com/dair-ai/Prompt-Engineering-Guide)
