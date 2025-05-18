@@ -15,7 +15,7 @@ allow_path=(
 
 output_path=(
     "Attachments/"
-    "Guideline/- Guideline.md"
+    "z-index/"
     "Computer Science/"
     "Note Taking/"
     "Philosophy/"
