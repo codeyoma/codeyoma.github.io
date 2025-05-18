@@ -1,5 +1,5 @@
 
-run: update
+run: sync
 	npx quartz sync
 
 sync:

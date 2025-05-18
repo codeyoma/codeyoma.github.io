@@ -3,6 +3,7 @@ description:
 created: 2025-05-18
 modified: 2025-05-18
 title: About
+comments: "false"
 ---
 - YongMan "Yòmá" Kim
 - Specialized in Philosophy(Mind, Analytical)
