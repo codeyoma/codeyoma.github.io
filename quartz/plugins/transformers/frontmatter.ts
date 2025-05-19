@@ -80,6 +80,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
 
                         if (data.title.startsWith("-")) {
                             data.title = "🗺️ " + data.title
+                            data.comments = false
                         }
 
                         const tags = coerceToArray(coalesceAliases(data, ["tags", "tag"]))
