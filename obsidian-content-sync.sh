@@ -35,5 +35,14 @@ fi
 
 for ((i = 0; i < len; i++)); do
     echo "$basic_path${allow_path[$i]}" "$pre_fix${output_path[$i]}"
-    rsync -av --delete "$basic_path${allow_path[$i]}" "$pre_fix${output_path[$i]}"
+    rsync -av \
+        --delete \
+        --filter='- /.git/' \
+        --filter='- /.vscode/' \
+        --filter='- .*/' \
+        --filter='+ */' \
+        --filter='+ *.md' \
+        --filter='- *' \
+        "$basic_path${allow_path[$i]}" \
+        "$pre_fix${output_path[$i]}"
 done
