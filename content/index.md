@@ -15,6 +15,7 @@ comments: "false"
 - [[About|About]]
 - [[- Computer Science]]
 	- [[- Algorithms]]
+		- [[- PS]]
 	- [[- Frontend]]
 - [[- Note Taking]]
 - [[- Philosophy]]

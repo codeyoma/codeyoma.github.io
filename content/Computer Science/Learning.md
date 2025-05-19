@@ -22,13 +22,11 @@ draft: "true"
 
 # Systems
 - [ ] ​ [[지금 무료]운영체제 공룡책 강의 강의 | 주니온 - 인프런] 
-- [ ] ai for beginner [link](https://microsoft.github.io/AI-For-Beginners/) 
-- [ ] 특이한 알고리즘 배우기 [링크](https://austinhenley.com/blog/challengingalgorithms.html) 
-- [ ] [3D 수학 공부](https://lee-seokhyun.gitbook.io/game-programming/client/easy-mathematics/3d/3d-5.) 
-- [ ] [리눅스 시스템 프로그래밍 8장 IPC](https://www.joinc.co.kr/w/Site/system_programing/Book_LSP/ch08_IPC) 
+- [ ] ai for beginner [link](https://microsoft.github.io/AI-For-Beginners/)  #someday-maybe 
+- [ ] 특이한 알고리즘 배우기 [링크](https://austinhenley.com/blog/challengingalgorithms.html)  #someday-maybe 
+- [ ] [3D 수학 공부](https://lee-seokhyun.gitbook.io/game-programming/client/easy-mathematics/3d/3d-5.)  #someday-maybe 
+- [ ] [리눅스 시스템 프로그래밍 8장 IPC](https://www.joinc.co.kr/w/Site/system_programing/Book_LSP/ch08_IPC)  #next-action 
 - [ ] [GitHub - hoseungme/development-references: 내가 보고 읽었던 개발 관련 자료 모음](https://github.com/hoseungme/development-references) - 공부
-- [ ] cursor, bolt, windsurf 경험해보기 
-	- [ ] mpc?
 
 # Roadmap
 - [Developer Roadmaps - roadmap.sh](https://roadmap.sh/)
