@@ -11,13 +11,14 @@ comments: "false"
 -->
 ![[Lqp2z3I.gif]]
 
-# MOC
+# MOC 
 - [[About|About]]
 - [[- Computer Science]]
 	- [[- Algorithms]]
 	- [[- Frontend]]
 - [[- Note Taking]]
 - [[- Philosophy]]
+- #moc 
 
 # Basic Guide
 - prefix of `🗺️` 

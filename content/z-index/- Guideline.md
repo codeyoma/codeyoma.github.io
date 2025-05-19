@@ -1,12 +1,11 @@
 ---
 description: 
 created: 2023-12-01
-modified: 2025-05-18
+modified: 2025-05-19
 status:
   - 🗺️
 tags:
   - guideline
-  - moc
 title: "- Guideline"
 comments: "false"
 draft: "false"
@@ -76,7 +75,7 @@ draft: "false"
 	- Arguments / Conclusion notes #stage/arguments
 		- 의견을 조합하여, 주장이나 논리를 전개한 노트
 		- 5W1H 로 작성
-	- MOC notes #moc 
+	- MOC notes `#moc`
 		- 종합된 노트
 		- 인덱스 정리
 	

@@ -143,3 +143,7 @@ footer {
 .center a[data-slug*="/--"]::before {
     content: "🗺️ ";
 }
+
+.search-container .preview-inner a[data-slug*="/--"]::before {
+    content: "🗺️ ";
+}

@@ -6,6 +6,7 @@ tags:
   - cs
   - algorithm
   - sql
+  - moc
 priority:
   - ★★★
 status:
