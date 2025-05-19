@@ -14,10 +14,11 @@ title: "- Algorithms"
 ---
 
 # Index
-- [[- Site]]
-- [[- Tips]]
-- [[- Terms]]
+- [[PS Site]]
+- [[Tips]]
+- [[Terms]]
 - [[Time Complexity]]
+- ---
 - [[Combination]]
 - [[Permutation]]
 - [[Subset]]

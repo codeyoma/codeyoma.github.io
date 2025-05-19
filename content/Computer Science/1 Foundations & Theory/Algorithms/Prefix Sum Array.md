@@ -6,5 +6,5 @@ aliases:
   - psum
 ---
 - p_sum
-	- using ![[- Terms#^f67ff6]]
+	- using ![[Terms#^f67ff6]]
 	- [[Imos Algorithm|imos]]

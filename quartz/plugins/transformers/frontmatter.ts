@@ -73,13 +73,13 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
 
                         if (data.title != null && data.title.toString() !== "") {
                             data.title = data.title.toString()
-                            if (data.title.startsWith("- ")) {
-                                data.title = "🗺️ " + data.title
-                            }
+
                         } else {
                             data.title = file.stem ?? i18n(cfg.configuration.locale).propertyDefaults.title
                         }
-
+                        if (data.title.startsWith("-")) {
+                            data.title = "🗺️ " + data.title
+                        }
                         const tags = coerceToArray(coalesceAliases(data, ["tags", "tag"]))
                         if (tags) data.tags = [...new Set(tags.map((tag: string) => slugTag(tag)))]
 

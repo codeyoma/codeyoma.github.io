@@ -2,7 +2,7 @@
 description: 
 title: Hello Again!
 created: 2025-05-18
-modified: 2025-05-18
+modified: 2025-05-19
 comments: "false"
 ---
 
@@ -19,14 +19,18 @@ comments: "false"
 - [[- Note Taking]]
 - [[- Philosophy]]
 
-# Basic Shortcut
-- Full-text search
-	- `cmd / ctrl` + `k`
-	- tag search
-		- start with `#` 
-		- `cmd / ctrl` + `shift` + `k`
-- Graph view
-	- `cmd / ctrl` + `g`
+# Basic Guide
+- prefix of `🗺️` 
+	- MOC file
+	- Index file
+- Hotkeys
+	- Full-text search
+		- `cmd / ctrl` + `k`
+		- tag search
+			- start with `#` 
+			- `cmd / ctrl` + `shift` + `k`
+	- Graph view
+		- `cmd / ctrl` + `g`
 
 # Markdown Guide
 - [[- Guideline]]
