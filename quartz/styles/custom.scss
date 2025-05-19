@@ -1,35 +1,28 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 // put your custom CSS here!
 
 .center article,
 p {
-    @media (min-width: 1400px) {
+    @media (#{$desktop}) {
         font-size: 1.2rem;
         line-height: 1.6;
     }
 }
 
 footer {
-    margin-top: 10rem;
+    margin-top: 6em;
 
     & p {
         font-size: small;
     }
 }
 
-// .explorer-content .folder-container {
-//     padding: 0.1em 0;
-
-//     @media (min-width: 1400px) {
-//         padding: 0.1em 0;
-//     }
-// }
-
 .explorer-content li {
     padding: 0.2em 0;
 
-    @media (min-width: 1400px) {
+    @media (#{$desktop}) {
         padding: 0.4em 0;
         line-height: 1.3;
     }
@@ -39,7 +32,7 @@ footer {
     margin: 0.3em;
     list-style-type: disc;
 
-    @media (min-width: 1400px) {
+    @media (#{$desktop}) {
         margin: 0.6em 0;
     }
 
@@ -48,8 +41,16 @@ footer {
 .center ul {
     padding-left: 1.2em;
 
-    @media (min-width: 1400px) {
+    @media (#{$desktop}) {
         padding-left: 1.4em;
+    }
+}
+
+.center .section-li {
+    margin: 0.8em 0;
+
+    @media (#{$desktop}) {
+        margin: 1em 0;
     }
 }
 
@@ -62,7 +63,8 @@ footer {
 }
 
 .page>#quartz-body>.sidebar.right>.toc {
-    @media (min-width: 1400px) {
+
+    @media (#{$desktop}) {
         li {
             margin: 0.4em 0;
         }
@@ -101,13 +103,39 @@ footer {
 
 .page>#quartz-body .sidebar {
 
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
-    @media (min-width: 1024px) {
-        padding: 6rem 2rem 2rem;
+    @media (min-width: #{$pageWidth}) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        // padding: 6rem 2rem 2rem;
     }
 }
 
+.page>#quartz-body .left {
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: #{$pageWidth}) {
+        padding-left: 0.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.page>#quartz-body .right {
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: #{$pageWidth}) {
+        padding-left: 1.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+
 .page-footer {
-    padding: 10rem 0;
+    padding: 6rem 0;
 }

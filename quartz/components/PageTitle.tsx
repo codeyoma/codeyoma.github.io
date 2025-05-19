@@ -22,7 +22,7 @@ PageTitle.css = `
   gap: 0.5rem;
   text-decoration: none;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     flex-direction: column;
   }
 }
@@ -34,7 +34,7 @@ PageTitle.css = `
   font-family: var(--titleFont);
   white-space: nowrap;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     font-size: 1.7rem;
   }
 }
@@ -44,7 +44,7 @@ PageTitle.css = `
   width: 1.6rem;
   height: 1.6rem;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     width: auto;
     height: auto;
   }
