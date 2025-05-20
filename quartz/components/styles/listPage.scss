@@ -11,22 +11,7 @@ li.section-li {
 
     &>.section {
         display: grid;
-        grid-template-columns: 1fr fit-content(8rem);
-
-        &>.desc {
-            background-color: transparent;
-
-            h3>a {
-                background-color: transparent;
-                word-break: keep-all;
-            }
-
-        }
-
-        &>.meta {
-            margin: 0 1em 0 0;
-            opacity: 0.6;
-        }
+        grid-template-columns: fit-content(8em) 1fr;
 
         &>.tags {
             display: flex;
@@ -36,14 +21,25 @@ li.section-li {
             justify-content: start;
         }
 
+
+        &>.desc>h3>a {
+            background-color: transparent;
+        }
+
+        & .meta {
+            margin: 0 1em 0 0;
+            opacity: 0.6;
+        }
+
+
     }
 }
 
 // modifications in popover context
 .popover .section {
-    // grid-template-columns: fit-content(8em) 1fr !important;
+    grid-template-columns: fit-content(8em) 1fr !important;
 
-    // &>.tags {
-    //     display: none;
-    // }
+    &>.tags {
+        display: none;
+    }
 }
