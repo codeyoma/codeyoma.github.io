@@ -75,14 +75,12 @@ export const defaultContentPageLayout: PageLayout = {
                     return -1
                 }
             },
+            // mapFn: (node) => {
+            //     if (node.isFolder) {
+            //         node.displayName = "📁 " + node.displayName
+            //     }
+            // },
         }),
-        // Component.Explorer({
-        //     mapFn: (node) => {
-        //         if (node.isFolder) {
-        //             node.displayName = "📁 " + node.displayName
-        //         }
-        //     },
-        // }),
         // Component.RecentNotes({ limit: 5}),
     ],
     right: [

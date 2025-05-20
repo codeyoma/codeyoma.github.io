@@ -1,40 +1,52 @@
 @use "../../styles/variables.scss" as *;
 
 ul.section-ul {
-  list-style: none;
-  margin-top: 2em;
-  padding-left: 0;
+    list-style: none;
+    margin-top: 2em;
+    padding-left: 0;
 }
 
 li.section-li {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 
-  & > .section {
-    display: grid;
-    grid-template-columns: fit-content(8em) 3fr 1fr;
+    &>.section {
+        display: grid;
+        grid-template-columns: fit-content(8em) 1fr;
+        grid-template-areas:
+            "meta desc"
+            ".    tags";
 
-    @media all and ($mobile) {
-      & > .tags {
-        display: none;
-      }
+        &>.tags {
+            grid-area: tags;
+            display: flex;
+            padding: 0;
+            margin-top: 0.2em;
+            margin-bottom: 0.6em;
+            justify-content: start;
+        }
+
+        @media (max-width: #{$pageWidth}) {
+            // grid-template-columns: fit-content(8em) 1fr;
+        }
+
+        &>.desc>h3>a {
+            background-color: transparent;
+        }
+
+        & .meta {
+            margin: 0 1em 0 0;
+            opacity: 0.6;
+        }
+
+
     }
-
-    & > .desc > h3 > a {
-      background-color: transparent;
-    }
-
-    & .meta {
-      margin: 0 1em 0 0;
-      opacity: 0.6;
-    }
-  }
 }
 
 // modifications in popover context
 .popover .section {
-  grid-template-columns: fit-content(8em) 1fr !important;
+    grid-template-columns: fit-content(8em) 1fr !important;
 
-  & > .tags {
-    display: none;
-  }
+    &>.tags {
+        display: none;
+    }
 }
