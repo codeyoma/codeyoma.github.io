@@ -23,6 +23,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import ScrollProgress from "./ScrollProgress"
 
 export {
     ArticleTitle,
@@ -50,4 +51,5 @@ export {
     Comments,
     Flex,
     ConditionalRender,
+    ScrollProgress,
 }

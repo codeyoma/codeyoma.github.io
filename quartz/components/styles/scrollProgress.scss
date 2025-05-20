@@ -1,0 +1,9 @@
+#nprogress .bar {
+    background: var(--tertiary) !important;
+    height: 4px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}

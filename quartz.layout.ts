@@ -20,6 +20,7 @@ export const sharedPageComponents: SharedLayout = {
                 // loading: 'lazy',
             }
         }),
+        Component.ScrollProgress()
     ],
     footer: Component.Footer({
         links: {
