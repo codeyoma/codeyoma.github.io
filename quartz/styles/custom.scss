@@ -146,23 +146,6 @@ footer {
     }
 }
 
-
-// .center a[href^="./--"]::before {
-//     content: "🗺️ ";
-// }
-
-// .search-container .preview-inner a[href^="/--"]::before {
-//     content: "🗺️ ";
-// }
-
-// .center a[data-slug^="--"]::before {
-//     content: "🗺️ ";
-// }
-
-// .popover .popover-inner a[data-slug^="--"]::before {
-//     content: "🗺️ ";
-// }
-
 .popover .section {
     grid-template-columns: minmax(0, 1fr) fit-content(8em);
 }

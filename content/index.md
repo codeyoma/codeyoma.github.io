@@ -13,12 +13,12 @@ comments: "false"
 
 # MOC 
 - [[About|About]]
-- [[- Computer Science]]
-	- [[- Algorithms]]
-		- [[- PS]]
-	- [[- Frontend]]
-- [[- Note Taking]]
-- [[- Philosophy]]
+- [[- Computer Science | 🗺️ - Computer Science]]
+	- [[- Algorithms | 🗺️ - Algorithms]]
+		- [[- PS |🗺️ - PS]]
+	- [[- Frontend| 🗺️ - Frontend]]
+- [[- Note Taking|🗺️ - Note Taking]]
+- [[- Philosophy | 🗺️ - Philosophy]]
 - #moc 
 
 # Basic Guide
