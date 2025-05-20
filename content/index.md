@@ -35,4 +35,4 @@ comments: "false"
 		- `cmd / ctrl` + `g`
 
 # Markdown Guide
-- [[- Guideline]]
+- [[- Guideline|🗺️ - Guideline]]

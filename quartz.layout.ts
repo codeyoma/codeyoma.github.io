@@ -7,7 +7,7 @@ export const sharedPageComponents: SharedLayout = {
     header: [
     ],
     afterBody: [
-        Component.Backlinks(),
+        Component.Backlinks({ hideWhenEmpty: false }),
     ],
     beforeFooter: [
         Component.Comments({
