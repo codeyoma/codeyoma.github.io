@@ -11,13 +11,24 @@ li.section-li {
 
     &>.section {
         display: grid;
-        grid-template-columns: fit-content(8em) 1fr;
-        grid-template-areas:
-            "meta desc"
-            ".    tags";
+        grid-template-columns: 1fr fit-content(8rem);
+
+        &>.desc {
+            background-color: transparent;
+
+            h3>a {
+                background-color: transparent;
+                word-break: keep-all;
+            }
+
+        }
+
+        &>.meta {
+            margin: 0 1em 0 0;
+            opacity: 0.6;
+        }
 
         &>.tags {
-            grid-area: tags;
             display: flex;
             padding: 0;
             margin-top: 0.2em;
@@ -25,28 +36,14 @@ li.section-li {
             justify-content: start;
         }
 
-        @media (max-width: #{$pageWidth}) {
-            // grid-template-columns: fit-content(8em) 1fr;
-        }
-
-        &>.desc>h3>a {
-            background-color: transparent;
-        }
-
-        & .meta {
-            margin: 0 1em 0 0;
-            opacity: 0.6;
-        }
-
-
     }
 }
 
 // modifications in popover context
 .popover .section {
-    grid-template-columns: fit-content(8em) 1fr !important;
+    // grid-template-columns: fit-content(8em) 1fr !important;
 
-    &>.tags {
-        display: none;
-    }
+    // &>.tags {
+    //     display: none;
+    // }
 }

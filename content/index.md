@@ -2,7 +2,7 @@
 description: This blog is an excerpt from my Obsidian notes.
 title: Hello Again!
 created: 2025-05-18
-modified: 2025-05-19
+modified: 2025-05-20
 comments: "false"
 ---
 
@@ -20,7 +20,6 @@ comments: "false"
 - [[- Note Taking]]
 - [[- Philosophy]]
 - #moc 
-
 # Basic Guide
 - prefix of `🗺️` 
 	- MOC file

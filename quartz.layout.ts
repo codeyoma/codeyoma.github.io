@@ -54,7 +54,8 @@ export const defaultContentPageLayout: PageLayout = {
             ],
         }),
         Component.Explorer({
-            folderClickBehavior: "collapse",
+            folderClickBehavior: "link",
+            useSavedState: false,
             sortFn: (a, b) => {
                 if (!a.isFolder && a.slug === 'About')
                     return -99
@@ -107,7 +108,8 @@ export const defaultListPageLayout: PageLayout = {
             ],
         }),
         Component.Explorer({
-            folderClickBehavior: "collapse",
+            folderClickBehavior: "link",
+            useSavedState: false,
             sortFn: (a, b) => {
                 if (!a.isFolder && a.slug === 'About')
                     return -99
