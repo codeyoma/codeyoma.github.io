@@ -176,7 +176,7 @@ footer {
 }
 
 .popover .section {
-    grid-template-columns: fit-content(8em) 1fr;
+    grid-template-columns: minmax(0, 1fr) fit-content(8em);
 }
 
 .page-listing {
@@ -185,7 +185,7 @@ footer {
 
         &>.section {
             display: grid;
-            grid-template-columns: 1fr fit-content(8rem);
+            grid-template-columns: minmax(0, 1fr) fit-content(8rem) !important;
 
             &>.desc {
                 background-color: transparent;
