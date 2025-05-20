@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-12-01
-modified: 2025-05-19
+modified: 2025-05-20
 status:
   - 🗺️
 tags:
@@ -11,28 +11,7 @@ comments: "false"
 draft: "false"
 ---
 
-# Supported Markdown extensions
 
-| Syntax          | Description                                                                                                               |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `[[Link]]`      | [Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links)                                         |
-| `[[Link]]`      | [Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links)                                         |
-| `![[Link]]`     | [Embedding files](https://help.obsidian.md/Linking+notes+and+files/Embedding+files)                                       |
-| `![[Link#^id]]` | [Block references](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link%20to%20a%20block%20in%20a%20note) |
-| `^id`           | [Defining a block](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link%20to%20a%20block%20in%20a%20note) |
-| `%%`            | [Comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments)                              |
-| `<!-- \n -->`   | [Comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments)                              |
-| `~~`            | [Strikethroughs](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Styling%20text)                  |
-| ==              | [Highlights](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Styling%20text)                      |
-| `**`            | Bold                                                                                                                      |
-| `*`             | Italic                                                                                                                    |
-| ` ``` `         | [Code blocks](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code%20blocks)                      |
-| `- [ ]`         | [Incomplete task](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task%20lists)                   |
-| `- [x]`         | [Completed task](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task%20lists)                    |
-| `> [!note]`     | [Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts)                                                      |
-| (see link)      | [Tables](https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax#Tables)                               |
-
----
 
 # Workflow
 - [[Workflow of My Note Taking]]
@@ -115,11 +94,130 @@ draft: true
 ```
 
 
-# Inline search query
+# This is a heading 1 
+## This is a heading 2 
+### This is a heading 3 
+#### This is a heading 4 
+##### This is a heading 5 
+###### This is a heading 6
+
+# Supported Markdown extensions
+| Syntax          | Description                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `[[Link]]`      | [Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links)                                         |
+| `[[Link]]`      | [Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links)                                         |
+| `![[Link]]`     | [Embedding files](https://help.obsidian.md/Linking+notes+and+files/Embedding+files)                                       |
+| `![[Link#^id]]` | [Block references](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link%20to%20a%20block%20in%20a%20note) |
+| `^id`           | [Defining a block](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link%20to%20a%20block%20in%20a%20note) |
+| `%%`            | [Comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments)                              |
+| `<!-- \n -->`   | [Comments](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments)                              |
+| `~~`            | [Strikethroughs](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Styling%20text)                  |
+| ==              | [Highlights](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Styling%20text)                      |
+| `**`            | Bold                                                                                                                      |
+| `*`             | Italic                                                                                                                    |
+| ` ``` `         | [Code blocks](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code%20blocks)                      |
+| `- [ ]`         | [Incomplete task](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task%20lists)                   |
+| `- [x]`         | [Completed task](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task%20lists)                    |
+| `> [!note]`     | [Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts)                                                      |
+| (see link)      | [Tables](https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax#Tables)                               |
+
+## Inline search query
 ```query
 task-todo: ee4
 path: "@ Projects"
 ```
+
+## Bold, italics, highlights
+
+| Style                  | Syntax                 | Example                                  | Output                                 |
+| ---------------------- | ---------------------- | ---------------------------------------- | -------------------------------------- |
+| Bold                   | `** **` or `__ __`     | `**Bold text**`                          | **Bold text**                          |
+| Italic                 | `* *` or `_ _`         | `*Italic text*`                          | _Italic text_                          |
+| Strikethrough          | `~~ ~~`                | `~~Striked out text~~`                   | ~~Striked out text~~                   |
+| Highlight              | *== ==*                | *== Highlighted text ==*                 | ==Highlighted text==                   |
+| Bold and nested italic | `** **` and `_ _`      | `**Bold text and _nested italic_ text**` | **Bold text and _nested italic_ text** |
+| Bold and italic        | `*** ***` or `___ ___` | `***Bold and italic text***`             | **_Bold and italic text_**             |
+
+
+## Links
+- Wikilink: `[[file]]` [[- Guideline]]
+- Markdown: `[name](file)` 
+
+## Quotes
+> Quotes
+
+
+## Lists
+1. First list item 
+	1. Ordered nested list item 
+2. Second list item 
+	- Unordered nested list item
+
+## Task lists
+- [ ] Task item 1
+	- [ ] Subtask 1
+- [ ] Task item 2
+	- [ ] Subtask 1
+
+## Horizontal rule
+```
+***
+****
+* * *
+--- 
+---- 
+- - - 
+___ 
+____ 
+_ _ _
+```
+
+## Code
+### Inline code
+`inline code`
+
+### block code
+```cpp
+/* codeblock */
+
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+```
+
+## Footnotes
+This is a simple footnote[^1].[^1][^1]
+[^2]
+[^note]
+
+```
+This is a simple footnote[^1].[^1][^1]
+[^2]
+[^note]
+
+[^1]: This is the referenced text. 
+[^2]: Add 2 spaces at the start of each new line. 
+  This lets you write footnotes that span multiple lines.
+[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
+```
+
+You can also use inline footnotes. ^[This is an inline footnote.]
+```
+You can also use inline footnotes. ^[This is an inline footnote.]
+```
+
+
+
+[^1]: This is the referenced text. 
+
+[^2]:   Add 2 spaces at the start of each new line.
+  This lets you write footnotes that span multiple lines. 
+
+[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
+
 
 # Callout
 > [!note]
@@ -176,127 +274,8 @@ path: "@ Projects"
 
 > [!cite]
 
-# AnuPpuccin task
-- [ ] `Unchecked`  `- [ ]`
-- [x] `Checked`  `- [x]`
-- [-] `Cancelled` `- [-]`
-- [>] `Rescheduled` `- [>]`
-- [<] `Scheduled` `- [<]`
-- [!] `Important` `- [!]`
-- [/] `In Progress` `- [/]`
-- [?] `Question` `- [?]`
-- [*] `Star` `- [*]`
-- [n] `Note` `- [n]`
-- [l] `Location` `- [l]`
-- [i] `Information` `- [i]`
-- [I] `Idea` `- [I]`
-- [S] `Amount` `- [S]`
-- [p] `Pro` `- [p]`
-- [c] `Con` `- [c]`
-- [b] `Bookmark` `- [b]`
-- ["] `Quote` `- ["]`
-- [0] `Speech bubble 0`
-- [1] `Speech bubble 1`
-- [2] `Speech bubble 2`
-- [3] `Speech bubble 3`
-- [4] `Speech bubble 4`
-- [5] `Speech bubble 5`
-- [6] `Speech bubble 6`
-- [7] `Speech bubble 7`
-- [8] `Speech bubble 8`
-- [9] `Speech bubble 9`
-
----
 
 
-
-# This is a heading 1 
-## This is a heading 2 
-### This is a heading 3 
-#### This is a heading 4 
-##### This is a heading 5 
-###### This is a heading 6
-
-| Style                  | Syntax                 | Example                                  | Output                                 |
-| ---------------------- | ---------------------- | ---------------------------------------- | -------------------------------------- |
-| Bold                   | `** **` or `__ __`     | `**Bold text**`                          | **Bold text**                          |
-| Italic                 | `* *` or `_ _`         | `*Italic text*`                          | _Italic text_                          |
-| Strikethrough          | `~~ ~~`                | `~~Striked out text~~`                   | ~~Striked out text~~                   |
-| Highlight              | *== ==*                | *== Highlighted text ==*                 | ==Highlighted text==                   |
-| Bold and nested italic | `** **` and `_ _`      | `**Bold text and _nested italic_ text**` | **Bold text and _nested italic_ text** |
-| Bold and italic        | `*** ***` or `___ ___` | `***Bold and italic text***`             | **_Bold and italic text_**             |
-
-> Quotes
-
-
-- Wikilink: `[[file]]` [[- Guideline]]
-- Markdown: `[name](file)` 
-1. First list item 
-	1. Ordered nested list item 
-2. Second list item 
-	- Unordered nested list item
----
-- [ ] Task item 1
-	- [ ] Subtask 1
-- [ ] Task item 2
-	- [ ] Subtask 1
-
-```
-***
-****
-* * *
---- 
----- 
-- - - 
-___ 
-____ 
-_ _ _
-```
----
-`inline code`
-
-```cpp
-/* codeblock */
-
-#include <iostream>
-
-int main() {
-    std::cout << "Hello World!";
-    return 0;
-}
-```
----
-This is a simple footnote[^1].[^1][^1]
-[^2]
-[^note]
-
-```
-This is a simple footnote[^1].[^1][^1]
-[^2]
-[^note]
-
-[^1]: This is the referenced text. 
-[^2]: Add 2 spaces at the start of each new line. 
-  This lets you write footnotes that span multiple lines.
-[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
-```
-
-You can also use inline footnotes. ^[This is an inline footnote.]
-```
-You can also use inline footnotes. ^[This is an inline footnote.]
-```
-
-
-
-[^1]: This is the referenced text. 
-
-[^2]:   Add 2 spaces at the start of each new line.
-  This lets you write footnotes that span multiple lines. 
-
-[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
-
-
----
 # MathJax
 - [MathJax basic tutorial](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 - [mathJax support extensions list](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html)
