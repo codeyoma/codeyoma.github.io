@@ -12,7 +12,7 @@ p {
 }
 
 footer {
-    margin-top: 6em;
+    margin-top: 3em;
 
     & p {
         font-size: small;
@@ -155,10 +155,6 @@ footer {
 }
 
 
-.page-footer {
-    padding-bottom: 4rem;
-}
-
 .center a[data-slug*="/--"]::before {
     content: "🗺️ ";
 }
@@ -213,4 +209,21 @@ footer {
         }
     }
 
+}
+
+.before-footer {
+    grid-area: grid-before-footer;
+    padding-top: 1rem;
+
+    @media (#{$desktop}) {
+        padding-top: 0;
+    }
+}
+
+.page-footer {
+    padding-bottom: 1.5rem;
+
+    @media (#{$desktop}) {
+        padding-bottom: 1rem;
+    }
 }

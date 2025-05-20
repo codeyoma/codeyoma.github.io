@@ -20,6 +20,7 @@ comments: "false"
 - [[- Note Taking]]
 - [[- Philosophy]]
 - #moc 
+
 # Basic Guide
 - prefix of `🗺️` 
 	- MOC file
