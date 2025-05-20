@@ -1,11 +1,14 @@
 ---
-description:
+description: 
 tags:
   - moc
 status:
   - 🗺️
 created: 2025-05-18
 modified: 2025-05-18
+title: "- Philosophy"
+aliases:
+  - "- Philosophy"
 ---
 # site
 - [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/)

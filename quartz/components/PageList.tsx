@@ -69,67 +69,68 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
     const new_list = [
         {
             list: list.filter((page) => page.slug?.endsWith("/index")),
-            title: "Folders",
+            title: "📁 Folders",
         },
-        {
-            list: list.filter((page) => page.frontmatter?.title?.startsWith("🗺️")),
-            title: "MOC",
-        },
+        // {
+        //     list: list.filter((page) => page.frontmatter?.title?.startsWith("🗺️")),
+        //     title: "MOC",
+        // },
         {
             list: list.filter((page) => !page.slug?.endsWith("/index") && !page.frontmatter?.title?.startsWith("🗺️")),
-            title: "Files",
+            title: "📎 All Notes",
         },
     ]
 
     return (
-        <ul class="section-ul">
+        <>
             {
                 new_list.map(({ list: sectionList, title }) => {
                     if (sectionList?.length === 0) return null
-
                     return (
                         <Fragment key={title}>
-                            {<hr />}
-                            {<h5 class="page-list-title">{title}</h5>}
-                            {
-                                sectionList.map((page) => {
-                                    const title = page.frontmatter?.title
-                                    const tags = page.frontmatter?.tags ?? []
-                                    return (
-                                        <li class="section-li">
-                                            <div class="section">
-                                                <div class="desc">
-                                                    <h3>
-                                                        <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                                                            {title}
-                                                        </a>
-                                                    </h3>
-                                                </div>
-                                                <p class="meta">
-                                                    {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
-                                                </p>
-                                                <ul class="tags">
-                                                    {tags.map((tag) => (
-                                                        <li>
-                                                            <a
-                                                                class="internal tag-link"
-                                                                href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                                                            >
-                                                                {tag}
+                            <hr />
+                            {<h2 class="page-list-title">{title}</h2>}
+                            {<ul class="section-ul">
+                                {
+                                    sectionList.map((page) => {
+                                        const title = page.frontmatter?.title
+                                        const tags = page.frontmatter?.tags ?? []
+                                        return (
+                                            <li class="section-li">
+                                                <div class="section">
+                                                    <div class="desc">
+                                                        <h4>
+                                                            <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                                                                {title}
                                                             </a>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    )
-                                })
-                            }
-                        </Fragment>
+                                                        </h4>
+                                                    </div>
+                                                    <p class="meta">
+                                                        {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
+                                                    </p>
+                                                    <ul class="tags">
+                                                        {tags.map((tag) => (
+                                                            <li>
+                                                                <a
+                                                                    class="internal tag-link"
+                                                                    href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                                                                >
+                                                                    {tag}
+                                                                </a>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        )
+                                    })
+                                }
+                            </ul >}
+                        </Fragment >
                     )
                 })
             }
-        </ul >
+        </>
     )
 }
 
@@ -143,6 +144,6 @@ PageList.css = `
 }
 
 .page-list-title {
-    opacity: 0.5;
+  color: var(--tertiary)
 }
 `

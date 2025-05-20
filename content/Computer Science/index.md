@@ -1,14 +1,16 @@
 ---
-description:
+description: 
 created: 2025-05-18
-modified: 2025-05-18
+modified: 2025-05-20
 tags:
   - moc
 status:
   - 🗺️
+title: "- Computer Science"
+aliases:
+  - "- Computer Science"
 ---
 
-# MOC
 - Foundations & Theory
 	- Data Structures
 	- [[- Algorithms]]

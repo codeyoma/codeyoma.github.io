@@ -5,8 +5,10 @@ status:
   - 🗺️
 tags:
   - moc
+title: "- Frontend"
+aliases:
+  - "- Frontend"
 ---
-# Index
 - [[Closure]]
 - [[Composition]]
 - [[css selectors]]

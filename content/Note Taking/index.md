@@ -1,13 +1,15 @@
 ---
-description:
+description: 
 tags:
   - moc
 status:
   - 🗺️
 created: 2025-05-18
 modified: 2025-05-18
+title: "- Note Taking"
+aliases:
+  - "- Note Taking"
 ---
-# Index
 - [[내 노트 정리 방법|my workflow]]
 - [[ANTINET]]
 - [[markdown을 이용한 노트와 태스크 그리고 일정 관리]]

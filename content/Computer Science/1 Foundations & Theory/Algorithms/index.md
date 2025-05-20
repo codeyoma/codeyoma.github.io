@@ -12,9 +12,10 @@ priority:
 status:
   - 🗺️
 title: "- Algorithms"
+aliases:
+  - "- Algorithms"
 ---
 
-# Index
 - [[PS Site]]
 - [[Tips]]
 - [[Terms]]

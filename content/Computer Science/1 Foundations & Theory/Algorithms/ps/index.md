@@ -6,10 +6,12 @@ tags:
   - moc
 status:
   - 🗺️
+title: "- PS"
+aliases:
+  - "- PS"
 ---
 
-# Index
-## BOJ
+# BOJ
 - #ps/boj/bronze
 - #ps/boj/silver
 - #ps/boj/gold

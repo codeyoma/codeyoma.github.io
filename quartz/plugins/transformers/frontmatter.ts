@@ -78,7 +78,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
                             data.title = file.stem ?? i18n(cfg.configuration.locale).propertyDefaults.title
                         }
 
-                        if (data.title.startsWith("-")) {
+                        if (data.status == "🗺️") {
                             data.title = "🗺️ " + data.title
                             data.comments = false
                         }

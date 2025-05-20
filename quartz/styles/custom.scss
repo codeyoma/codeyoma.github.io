@@ -65,14 +65,6 @@ footer {
     }
 }
 
-.center .section-li {
-    margin: 0.8em 0;
-
-    @media (#{$desktop}) {
-        margin: 1em 0;
-    }
-}
-
 .center h1 {
     margin-top: 2.5em;
 }
@@ -155,20 +147,20 @@ footer {
 }
 
 
-.center a[data-slug*="/--"]::before {
+.center a[href^="./--"]::before {
     content: "🗺️ ";
 }
 
-.search-container .preview-inner a[data-slug*="/--"]::before {
+.search-container .preview-inner a[href^="/--"]::before {
     content: "🗺️ ";
 }
 
-.center .page-listing .desc a[href$="/"]::before {
-    content: "📁 - ";
+.center a[data-slug^="--"]::before {
+    content: "🗺️ ";
 }
 
-.popover .page-listing .desc a[href$="/"]::before {
-    content: "📁 - ";
+.popover .popover-inner a[data-slug^="--"]::before {
+    content: "🗺️ ";
 }
 
 .popover .section {
@@ -177,7 +169,6 @@ footer {
 
 .page-listing {
     li.section-li {
-        margin-bottom: 1em;
 
         &>.section {
             display: grid;
@@ -187,8 +178,13 @@ footer {
                 background-color: transparent;
                 min-width: 0;
 
-                h3>a {
-                    background-color: transparent;
+                h4,
+                h5,
+                h6 {
+                    margin: 0;
+                }
+
+                &>a {
                     word-break: keep-all;
                 }
             }

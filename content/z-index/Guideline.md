@@ -9,6 +9,8 @@ tags:
 title: "- Guideline"
 comments: "false"
 draft: "false"
+aliases:
+  - "- Guideline"
 ---
 
 

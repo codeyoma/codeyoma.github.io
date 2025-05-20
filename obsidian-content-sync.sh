@@ -15,7 +15,7 @@ allow_path=(
 
 output_path=(
     "Attachments/"
-    "z-index/"
+    "z-index/Guideline.md"
     "Computer Science/"
     "Note Taking/"
     "Philosophy/"
@@ -45,4 +45,9 @@ for ((i = 0; i < len; i++)); do
         --filter='- *' \
         "$basic_path${allow_path[$i]}" \
         "$pre_fix${output_path[$i]}"
+
+    find "$pre_fix${output_path[$i]}" -type f -name "- *.md" | while read file; do
+        dir=$(dirname "$file")
+        mv "$file" "$dir/index.md"
+    done
 done
