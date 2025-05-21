@@ -35,7 +35,7 @@ function replacement(match) {
     const { link, displayText } = match.groups!
     const safeLink = link.trim().replace(/\s+/g, "-")
     // return `<a href=\"/${safeLink}\">${displayText || link}</a>`
-    return `"${displayText || link}"`
+    return `${displayText || link}`
 }
 
 export const parseInternalLinks = recurseChildren(node => {
