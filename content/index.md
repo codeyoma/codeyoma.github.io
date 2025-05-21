@@ -1,5 +1,5 @@
 ---
-description: This blog is an excerpt from my Obsidian notes.
+description: This blog is an excerpt from my Obsidian notes
 title: Hello Again!
 created: 2025-05-18
 modified: 2025-05-21
@@ -23,7 +23,6 @@ comments: "false"
 
 # Basic Guide
 - prefix of `🗺️` 
-	- MOC file
 	- Index file
 - Explorer
 	- Clicking the `>`
