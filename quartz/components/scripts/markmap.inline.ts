@@ -5,7 +5,7 @@ import { registerEscapeHandler } from "./util"
 
 function renderGlobalMarkmap() {
     const jsonOptions = {
-        colorFreezeLevel: 50,
+        colorFreezeLevel: 2,
     }
     const markmapOptions = deriveOptions(jsonOptions);
     markmapOptions.scrollForPan = false
