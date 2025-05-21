@@ -71,12 +71,8 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
             list: list.filter((page) => page.slug?.endsWith("/index")),
             title: "📁 Folders",
         },
-        // {
-        //     list: list.filter((page) => page.frontmatter?.title?.startsWith("🗺️")),
-        //     title: "MOC",
-        // },
         {
-            list: list.filter((page) => !page.slug?.endsWith("/index") && !page.frontmatter?.title?.startsWith("🗺️")),
+            list: list.filter((page) => !page.slug?.endsWith("/index")),
             title: "📎 All Notes",
         },
     ]
