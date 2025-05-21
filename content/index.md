@@ -34,6 +34,8 @@ comments: "false"
 	- tag search
 		- start with `#` 
 		- `cmd / ctrl` + `shift` + `k`
+- Mindmap view
+	- `cmd / ctrl` + `m`
 - Graph view
 	- `cmd / ctrl` + `g`
 -  Markdown Guide
