@@ -1,8 +1,15 @@
-import { Markmap } from "markmap-view"
+import { Markmap, deriveOptions } from "markmap-view"
 import { Toolbar } from "markmap-toolbar"
 import { registerEscapeHandler } from "./util"
 
+
 function renderGlobalMarkmap() {
+    const jsonOptions = {
+        colorFreezeLevel: 50,
+    }
+    const markmapOptions = deriveOptions(jsonOptions);
+    markmapOptions.scrollForPan = false
+
     const container = document.querySelector(".global-markmap-outer") as HTMLElement
     const svg = container.querySelector("#global-markmap") as SVGSVGElement
     const dataEl = container.querySelector("#global-markmap-data") as HTMLScriptElement
@@ -18,7 +25,7 @@ function renderGlobalMarkmap() {
     toolbarEl.innerHTML = ""
 
     const data = JSON.parse(dataEl.textContent ?? "{}")
-    const mm = Markmap.create(svg, { scrollForPan: false }, data)
+    const mm = Markmap.create(svg, markmapOptions, data)
     const toolbar = Toolbar.create(mm)
     toolbarEl.append(toolbar.render())
 
