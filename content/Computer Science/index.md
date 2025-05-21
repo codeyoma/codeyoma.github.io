@@ -13,7 +13,7 @@ aliases:
 
 - Foundations & Theory
 	- Data Structures
-	- [[- Algorithms | 🗺️ - Algorithms]]
+	- [[- Algorithms| 🗺️ - Algorithms]]
 	- Theory of Computation
 	- Discrete Mathematics
 	- Probability & Statistics

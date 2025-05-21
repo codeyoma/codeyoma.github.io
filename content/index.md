@@ -14,7 +14,7 @@ comments: "false"
 # MOC 
 - [[About|About]]
 - [[- Computer Science | 🗺️ - Computer Science]]
-	- [[- Algorithms | 🗺️ - Algorithms]]
+	- [[- Algorithms| 🗺️ - Algorithms]]
 		- [[- PS |🗺️ - PS]]
 	- [[- Frontend| 🗺️ - Frontend]]
 - [[- Note Taking|🗺️ - Note Taking]]
