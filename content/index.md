@@ -2,7 +2,7 @@
 description: This blog is an excerpt from my Obsidian notes.
 title: Hello Again!
 created: 2025-05-18
-modified: 2025-05-20
+modified: 2025-05-21
 comments: "false"
 ---
 
@@ -25,14 +25,17 @@ comments: "false"
 - prefix of `🗺️` 
 	- MOC file
 	- Index file
-- Hotkeys
-	- Full-text search
-		- `cmd / ctrl` + `k`
-		- tag search
-			- start with `#` 
-			- `cmd / ctrl` + `shift` + `k`
-	- Graph view
-		- `cmd / ctrl` + `g`
-
-# Markdown Guide
-- [[- Guideline|🗺️ - Guideline]]
+- Explorer
+	- Clicking the `>`
+		- *toggles the folder open or closed*
+    - Clicking the `name`
+	    - *opens the index file*
+- Full-text search
+	- `cmd / ctrl` + `k`
+	- tag search
+		- start with `#` 
+		- `cmd / ctrl` + `shift` + `k`
+- Graph view
+	- `cmd / ctrl` + `g`
+-  Markdown Guide
+	- [[- Guideline|🗺️ - Guideline]]

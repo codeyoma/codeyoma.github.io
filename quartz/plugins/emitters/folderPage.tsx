@@ -13,6 +13,7 @@ import {
     joinSegments,
     pathToRoot,
     simplifySlug,
+    unSluggify
 } from "../../util/path"
 import { defaultListPageLayout, sharedPageComponents } from "../../../quartz.layout"
 import { FolderContent } from "../../components"
@@ -66,18 +67,21 @@ function computeFolderInfo(
 ): Record<SimpleSlug, ProcessedContent> {
     // Create default folder descriptions
     const folderInfo: Record<SimpleSlug, ProcessedContent> = Object.fromEntries(
-        [...folders].map((folder) => [
-            folder,
-            defaultProcessedContent({
-                slug: joinSegments(folder, "index") as FullSlug,
-                frontmatter: {
-                    // title: `${i18n(locale).pages.folderContent.folder}: ${folder}`,
-                    title: "",
-                    tags: [],
-                    comments: false,
-                },
-            }),
-        ]),
+        [...folders].map((folder) => {
+            const lastSlash = folder.lastIndexOf("/")
+            return [
+                folder,
+                defaultProcessedContent({
+                    slug: joinSegments(folder, "index") as FullSlug,
+                    frontmatter: {
+                        // title: `${i18n(locale).pages.folderContent.folder}: ${unSluggify(folder.slice(folder.lastIndexOf("/")))}`,
+                        title: `${i18n(locale).pages.folderContent.folder}: ${lastSlash === -1 ? folder : unSluggify(folder.slice(folder.lastIndexOf("/")))}`,
+                        tags: [],
+                        comments: false,
+                    },
+                }),
+            ]
+        }),
     )
 
     // Update with actual content if available
