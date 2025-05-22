@@ -3,6 +3,11 @@ import { Transformer } from "markmap-lib"
 import { Toolbar } from "markmap-toolbar"
 import { registerEscapeHandler } from "./util"
 
+const externalIcon = `
+    <svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em; margin-left:0.2em;" viewBox="0 0 512 512">
+    <path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"/>
+    </svg>`.trim()
+
 function renderGlobalMarkmap() {
     const transformer = new Transformer()
     const { styles } = transformer.getAssets();
@@ -18,6 +23,7 @@ function renderGlobalMarkmap() {
     markmapOptions.scrollForPan = false
 
     const container = document.querySelector(".global-markmap-outer") as HTMLElement
+    const containerInner = container.querySelector('.global-markmap-container') as HTMLElement
     const svg = container.querySelector("#global-markmap") as SVGSVGElement
     const toolbarEl = container.querySelector("#global-markmap-toolbar") as HTMLElement
 
@@ -37,10 +43,35 @@ function renderGlobalMarkmap() {
     const data = JSON.parse(decodeURIComponent(raw))
     const mm = Markmap.create(svg, markmapOptions, data)
     const toolbar = Toolbar.create(mm)
-    toolbarEl.append(toolbar.render())
-
+    const mmToolbar = toolbar.render()
+    toolbarEl.append(mmToolbar)
     mm.fit()
+
+    const customToolbar = document.createElement("div");
+    customToolbar.className = "mm-toolbar-item";
+    customToolbar.title = "Toggle fullscreen";
+
+    customToolbar.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" aria-hidden="true">
+        <path stroke="none" fill="currentColor" fill-rule="evenodd"
+            d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/>
+    </svg>
+    `;
+    mmToolbar.append(customToolbar);
+
+    svg.querySelectorAll<HTMLAnchorElement>('a[href^="http"]').forEach(a => {
+        a.classList.add('external')
+    })
+
+    svg.querySelectorAll<HTMLAnchorElement>('a.external').forEach(a => {
+        a.insertAdjacentHTML('beforeend', externalIcon)
+    })
+
     container.classList.add("active")
+
+    customToolbar.addEventListener('click', () => {
+        containerInner.classList.toggle('fullscreen')
+    })
 
     registerEscapeHandler(container, hideGlobalMarkmap)
 }

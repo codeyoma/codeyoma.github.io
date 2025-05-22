@@ -38,9 +38,8 @@ function replacement(currentPath: FullSlug) {
         if (isImage) {
             return `<img src="../../../${currentPath}/../attachments/${link}" alt="${displayText || link}" />`
         }
-
         const safeLink = `quartz-${link.trim().replace(/\s+/g, "-")}`
-        return `<a href="/${safeLink}">${displayText || link}</a>`
+        return `<a href="/${safeLink}" class="inner">${displayText || link}</a>`
     }
 }
 
