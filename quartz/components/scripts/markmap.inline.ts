@@ -74,10 +74,11 @@ function renderGlobalMarkmap() {
         a.insertAdjacentHTML('beforeend', externalIcon)
     })
 
+    let isToggled = containerInner.classList.contains('fullscreen') ? true : false;
     const customToolbar = document.createElement("div");
     customToolbar.className = "mm-toolbar-item";
     customToolbar.title = "Toggle fullscreen";
-    customToolbar.innerHTML = fullIcon
+    customToolbar.innerHTML = isToggled ? closeIcon : fullIcon
 
     const customExit = document.createElement("div");
     customExit.className = "mm-toolbar-item";
@@ -89,7 +90,6 @@ function renderGlobalMarkmap() {
 
     container.classList.add("active")
 
-    let isToggled = false;
     customToolbar.addEventListener('click', () => {
         containerInner.classList.toggle('fullscreen')
         isToggled = !isToggled;
