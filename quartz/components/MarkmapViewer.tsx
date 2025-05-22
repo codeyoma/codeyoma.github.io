@@ -3,6 +3,7 @@ import markmapScript from "./scripts/markmap.inline"
 import style from "./styles/markmap.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
+import { FullSlug } from "../util/path"
 
 import { IPureNode } from 'markmap-common'
 
@@ -28,18 +29,26 @@ function replaceMatches(str: string, regex: RegExp, replacer: (match: RegExpExec
     return accumulator
 }
 
-const wikilinkRegex = /\[\[(?<link>[^|\]]+)\|?((?<displayText>[^\]]+))?\]\]/g
+const wikilinkRegex = /(!)?\[\[(?<link>[^|\]]+)\|?(?<displayText>[^\]]*)\]\]/g
+function replacement(currentPath: FullSlug) {
+    return (match: RegExpExecArray) => {
+        const { link, displayText } = match.groups!
+        const isImage = /\.(png|jpg|jpeg|gif|svg)$/.test(link)
 
-function replacement(match) {
-    const { link, displayText } = match.groups!
-    const safeLink = `quartz-${link.trim().replace(/\s+/g, "-")}`
-    return `<a href=\"/${safeLink}\">${displayText || link}</a>`
+        if (isImage) {
+            return `<img src="../../../${currentPath}/../attachments/${link}" alt="${displayText || link}" />`
+        }
+
+        const safeLink = `quartz-${link.trim().replace(/\s+/g, "-")}`
+        return `<a href="/${safeLink}">${displayText || link}</a>`
+    }
 }
 
-export const parseInternalLinks = recurseChildren(node => {
-    node.content =
-        replaceMatches(node.content, wikilinkRegex, replacement)
-})
+export const parseInternalLinks = (slug: FullSlug) =>
+    recurseChildren((node) => {
+        node.content =
+            replaceMatches(node.content, wikilinkRegex, replacement(slug))
+    })
 
 
 const MarkmapViewer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
@@ -70,7 +79,7 @@ const MarkmapViewer: QuartzComponent = ({ displayClass, fileData }: QuartzCompon
         )
     }
 
-    parseInternalLinks(root)
+    parseInternalLinks(fileData.slug!)(root)
 
     return (
         <div class={classNames(displayClass, "markmap")}>
@@ -98,7 +107,12 @@ const MarkmapViewer: QuartzComponent = ({ displayClass, fileData }: QuartzCompon
                 data-markmap={encodeURIComponent(JSON.stringify(fileData.markmap))}
             >
                 <div class="global-markmap-container" >
-                    <svg id="global-markmap" ></svg>
+                    <svg
+                        id="global-markmap"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1240px"
+                        height="1240px"
+                    ></svg>
                     <div id="global-markmap-toolbar"></div>
                 </div>
             </div>

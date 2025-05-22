@@ -1,11 +1,18 @@
-import { Markmap, deriveOptions } from "markmap-view"
+import { Markmap, deriveOptions, loadCSS } from "markmap-view"
+import { Transformer } from "markmap-lib"
 import { Toolbar } from "markmap-toolbar"
 import { registerEscapeHandler } from "./util"
 
-
 function renderGlobalMarkmap() {
+    const transformer = new Transformer()
+    const { styles } = transformer.getAssets();
+    if (styles)
+        loadCSS(styles)
+
     const jsonOptions = {
         colorFreezeLevel: 2,
+        spacingHorizontal: 100,
+        spacingVertical: 10,
     }
     const markmapOptions = deriveOptions(jsonOptions);
     markmapOptions.scrollForPan = false
@@ -33,7 +40,6 @@ function renderGlobalMarkmap() {
     toolbarEl.append(toolbar.render())
 
     mm.fit()
-
     container.classList.add("active")
 
     registerEscapeHandler(container, hideGlobalMarkmap)
