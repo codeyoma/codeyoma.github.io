@@ -8,6 +8,25 @@ const externalIcon = `
     <path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"/>
     </svg>`.trim()
 
+const fullIcon = `
+    <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" aria-hidden="true">
+        <path stroke="none" fill="currentColor" fill-rule="evenodd"
+            d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/>
+    </svg>`
+
+const closeIcon = `
+<svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" aria-hidden="true">
+        <path stroke="none" fill="currentColor" fill-rule="evenodd"
+    d="m136-80-56-56 264-264H160v-80h320v320h-80v-184L136-80Zm344-400v-320h80v184l264-264 56 56-264 264h184v80H480Z"/>
+</svg>`
+
+const exitIcon = `
+<svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="18" >
+        <path stroke="none" fill="currentColor" fill-rule="evenodd"
+d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+</svg>
+`
+
 function renderGlobalMarkmap() {
     const transformer = new Transformer()
     const { styles } = transformer.getAssets();
@@ -47,18 +66,6 @@ function renderGlobalMarkmap() {
     toolbarEl.append(mmToolbar)
     mm.fit()
 
-    const customToolbar = document.createElement("div");
-    customToolbar.className = "mm-toolbar-item";
-    customToolbar.title = "Toggle fullscreen";
-
-    customToolbar.innerHTML = `
-    <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" aria-hidden="true">
-        <path stroke="none" fill="currentColor" fill-rule="evenodd"
-            d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/>
-    </svg>
-    `;
-    mmToolbar.append(customToolbar);
-
     svg.querySelectorAll<HTMLAnchorElement>('a[href^="http"]').forEach(a => {
         a.classList.add('external')
     })
@@ -67,11 +74,38 @@ function renderGlobalMarkmap() {
         a.insertAdjacentHTML('beforeend', externalIcon)
     })
 
+    const customToolbar = document.createElement("div");
+    customToolbar.className = "mm-toolbar-item";
+    customToolbar.title = "Toggle fullscreen";
+    customToolbar.innerHTML = fullIcon
+
+    const customExit = document.createElement("div");
+    customExit.className = "mm-toolbar-item";
+    customExit.title = "Exit";
+    customExit.innerHTML = exitIcon
+
+    mmToolbar.append(customToolbar);
+    mmToolbar.append(customExit);
+
     container.classList.add("active")
 
+    let isToggled = false;
     customToolbar.addEventListener('click', () => {
         containerInner.classList.toggle('fullscreen')
+        isToggled = !isToggled;
+        customToolbar.innerHTML = isToggled ? closeIcon : fullIcon;
     })
+
+    customExit.addEventListener("click", () => {
+        const escEvent = new KeyboardEvent("keydown", {
+            key: "Escape",
+            code: "Escape",
+            keyCode: 27,
+            which: 27,
+            bubbles: true,
+        });
+        document.dispatchEvent(escEvent);
+    });
 
     registerEscapeHandler(container, hideGlobalMarkmap)
 }
