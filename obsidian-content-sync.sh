@@ -48,6 +48,38 @@ for ((i = 0; i < len; i++)); do
 
     find "$pre_fix${output_path[$i]}" -type f -name "- *.md" | while read file; do
         dir=$(dirname "$file")
-        mv "$file" "$dir/index.md"
+        newfile="$dir/index.md"
+        mv "$file" "$newfile"
+
+        filename=$(basename "$file" .md)
+        if grep -q "^---" "$newfile"; then
+            # YAML 끝나는 줄 찾기
+            yaml_end=$(awk '/^---$/ { if (NR != 1) { print NR; exit } }' "$newfile")
+
+            # aliases: 있는지 확인
+            if awk "NR<=${yaml_end}" "$newfile" | grep -q "^aliases:"; then
+                # aliases: [] 형태면 [] 지우고 값 추가
+                if awk "NR<=${yaml_end}" "$newfile" | grep -q "^aliases: *\[\]"; then
+                    sed -i '' "s/^aliases: *\[\]/aliases:\n  - \"$filename\"/" "$newfile"
+                else
+                    # 이미 aliases가 있으면 그 밑에 추가
+                    sed -i '' "/^aliases:/a\\
+  - \"$filename\"
+" "$newfile"
+                fi
+            else
+                # YAML 내부엔 있지만 aliases가 없을 때
+                sed -i '' "${yaml_end}i\\
+aliases:\n  - \"$filename\"
+" "$newfile"
+            fi
+        else
+            # YAML 자체가 없을 경우 새로 추가
+            tmp=$(mktemp)
+            echo -e "---\naliases:\n  - \"$filename\"\n---" >"$tmp"
+            cat "$newfile" >>"$tmp"
+            mv "$tmp" "$newfile"
+        fi
+
     done
 done

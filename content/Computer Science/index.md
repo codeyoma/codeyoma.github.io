@@ -13,7 +13,7 @@ aliases:
 
 - Foundations & Theory
 	- Data Structures
-	- [[- Algorithms| 🗺️ - Algorithms]]
+	- [[- Algorithms|🗺️ - Algorithms]]
 	- Theory of Computation
 	- Discrete Mathematics
 	- Probability & Statistics
@@ -53,7 +53,7 @@ aliases:
 	- Computer Vision
 - Application Development
 	- Frontend Web Development (HTML, CSS, JavaScript, Frameworks)
-		- [[- Frontend | 🗺️ - Frontend]]
+		- [[- Frontend|🗺️ - Frontend]]
 	- Backend Development (APIs, REST, GraphQL)
 	- Mobile App Development (Android, iOS)
 	- Desktop Application Development

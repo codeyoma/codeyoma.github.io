@@ -78,22 +78,29 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
                             data.title = file.stem ?? i18n(cfg.configuration.locale).propertyDefaults.title
                         }
 
-                        if (data.status == "🗺️") {
-                            data.title = "🗺️ " + data.title
-                            data.comments = false
-                        }
-
                         const tags = coerceToArray(coalesceAliases(data, ["tags", "tag"]))
                         if (tags) {
                             data.tags = [...new Set(tags.map((tag: string) => slugTag(tag)))]
                             data.tags = data.tags.filter((tag: string) => tag !== "review")
                         }
 
-                        const aliases = coerceToArray(coalesceAliases(data, ["aliases", "alias"]))
+                        let aliases = coerceToArray(coalesceAliases(data, ["aliases", "alias"]))
+                        const quartz_alias = `quartz-${data.title.replace(/\s+/g, "-")}`
+                        if (!aliases) {
+                            aliases = [quartz_alias]
+                        } else {
+                            aliases.push(quartz_alias)
+                        }
+
                         if (aliases) {
                             data.aliases = aliases // frontmatter
                             file.data.aliases = getAliasSlugs(aliases)
                             allSlugs.push(...file.data.aliases)
+                        }
+
+                        if (data.status == "🗺️") {
+                            data.title = "🗺️ " + data.title
+                            data.comments = false
                         }
 
                         if (data.permalink != null && data.permalink.toString() !== "") {

@@ -12,19 +12,22 @@ function renderGlobalMarkmap() {
 
     const container = document.querySelector(".global-markmap-outer") as HTMLElement
     const svg = container.querySelector("#global-markmap") as SVGSVGElement
-    const dataEl = container.querySelector("#global-markmap-data") as HTMLScriptElement
     const toolbarEl = container.querySelector("#global-markmap-toolbar") as HTMLElement
 
-    if (!container || !svg || !dataEl || !toolbarEl) {
+    if (!container || !svg || !toolbarEl) {
         console.warn("❌ Markmap container or elements not found.")
         return
     }
 
-    // Reset previous content
     svg.innerHTML = ""
     toolbarEl.innerHTML = ""
 
-    const data = JSON.parse(dataEl.textContent ?? "{}")
+    const raw = container.dataset.markmap
+    if (!raw) {
+        return
+    }
+
+    const data = JSON.parse(decodeURIComponent(raw))
     const mm = Markmap.create(svg, markmapOptions, data)
     const toolbar = Toolbar.create(mm)
     toolbarEl.append(toolbar.render())

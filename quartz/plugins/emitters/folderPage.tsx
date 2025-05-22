@@ -74,7 +74,6 @@ function computeFolderInfo(
                 defaultProcessedContent({
                     slug: joinSegments(folder, "index") as FullSlug,
                     frontmatter: {
-                        // title: `${i18n(locale).pages.folderContent.folder}: ${unSluggify(folder.slice(folder.lastIndexOf("/")))}`,
                         title: `${i18n(locale).pages.folderContent.folder}: ${lastSlash === -1 ? folder : unSluggify(folder.slice(folder.lastIndexOf("/")))}`,
                         tags: [],
                         comments: false,
