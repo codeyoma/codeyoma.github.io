@@ -38,6 +38,9 @@
                 height: 100%;
                 z-index: 0;
                 color: var(--darkgray);
+                cursor: grab;
+                pointer-events: all;
+
 
                 code {
                     border-radius: 5px;
@@ -48,6 +51,23 @@
                     margin-top: 1em;
                     margin-bottom: 0;
                 }
+            }
+
+            #global-markmap g.markmap-node {
+                pointer-events: all;
+            }
+
+            #global-markmap g.markmap-node text,
+            #global-markmap g.markmap-node foreignObject,
+            #global-markmap g.markmap-node foreignObject * {
+                user-select: none !important;
+                -webkit-user-select: none !important;
+                pointer-events: none !important;
+            }
+
+            #global-markmap g.markmap-node foreignObject a {
+                pointer-events: auto !important;
+                user-select: text !important;
             }
 
             #global-markmap-toolbar {
