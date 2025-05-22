@@ -34,7 +34,7 @@ function computeTagInfo(
             const title =
                 tag === "index"
                     ? i18n(locale).pages.tagContent.tagIndex
-                    : `${i18n(locale).pages.tagContent.tag}: ${tag}`
+                    : `🔖 ${i18n(locale).pages.tagContent.tag}: ${tag}`
             return [
                 tag,
                 defaultProcessedContent({

@@ -29,24 +29,34 @@ function replaceMatches(str: string, regex: RegExp, replacer: (match: RegExpExec
     return accumulator
 }
 
-const wikilinkRegex = /(!)?\[\[(?<link>[^|\]]+)\|?(?<displayText>[^\]]*)\]\]/g
+const wikilinkRegex = /(!)?\[\[(?<link>[^|\]]+)\|?(?<displayText>[^\]]*)\]\]|#(?<tag>[A-Za-z0-9_-]+)(?=\s|$)/g
+
 function replacement(currentPath: FullSlug) {
     return (match: RegExpExecArray) => {
-        const { link, displayText } = match.groups!
-        const isImage = /\.(png|jpg|jpeg|gif|svg)$/.test(link)
+        const { link, displayText, tag } = match.groups!
 
-        if (isImage) {
-            return `<img src="../../../${currentPath}/../attachments/${link}" alt="${displayText || link}" />`
+        if (link) {
+
+            const isImage = /\.(png|jpg|jpeg|gif|svg)$/.test(link)
+
+            if (isImage) {
+                return `<img src="../../../${currentPath}/../attachments/${link}" alt="${displayText || link}" />`
+            }
+            const safeLink = `quartz-${link.trim().replace(/\s+/g, "-")}`
+            return `<a href="/${safeLink}" class="inner">${displayText || link}</a>`
+        } else if (tag) {
+            return `<a href="/tags/${tag}" class="hash-link">#${tag}</a>`
         }
-        const safeLink = `quartz-${link.trim().replace(/\s+/g, "-")}`
-        return `<a href="/${safeLink}" class="inner">${displayText || link}</a>`
     }
 }
 
 export const parseInternalLinks = (slug: FullSlug) =>
     recurseChildren((node) => {
-        node.content =
-            replaceMatches(node.content, wikilinkRegex, replacement(slug))
+        node.content = replaceMatches(
+            node.content,
+            wikilinkRegex,
+            replacement(slug),
+        )
     })
 
 
