@@ -109,9 +109,9 @@ export const defaultListPageLayout: PageLayout = {
                     Component: Component.Search(),
                     grow: true,
                 },
+                { Component: Component.DesktopOnly(Component.ReaderMode()) },
                 { Component: Component.Darkmode() },
                 { Component: Component.MarkmapViewer() },
-                { Component: Component.DesktopOnly(Component.ReaderMode()) },
             ],
         }),
         Component.Explorer({

@@ -43,9 +43,9 @@ function replacement(currentPath: FullSlug) {
                 return `<img src="../../../${currentPath}/../attachments/${link}" alt="${displayText || link}" />`
             }
             const safeLink = `quartz-${link.trim().replace(/\s+/g, "-")}`
-            return `<a href="/${safeLink}" class="inner">${displayText || link}</a>`
+            return `<a href="/${safeLink}" class="internal">${displayText || link}</a>`
         } else if (tag) {
-            return `<a href="/tags/${tag}" class="hash-link">#${tag}</a>`
+            return `<a href="/tags/${tag}" class="internal">#${tag}</a>`
         }
     }
 }

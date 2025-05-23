@@ -2,6 +2,7 @@ import { Markmap, deriveOptions, loadCSS } from "markmap-view"
 import { Transformer } from "markmap-lib"
 import { Toolbar } from "markmap-toolbar"
 import { registerEscapeHandler } from "./util"
+import { mouseEnterHandler, clearActivePopover } from './popover.inline'
 
 const externalIcon = `
     <svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em; margin-left:0.2em;" viewBox="0 0 512 512">
@@ -108,6 +109,7 @@ function renderGlobalMarkmap() {
     });
 
     registerEscapeHandler(container, hideGlobalMarkmap)
+    setupMarkmapPopoverSupport()
 }
 
 function hideGlobalMarkmap() {
@@ -121,6 +123,21 @@ function toggleGlobalMarkmap() {
         hideGlobalMarkmap()
     } else {
         renderGlobalMarkmap()
+    }
+}
+
+function setupMarkmapPopoverSupport() {
+    const markmapLinks = document.querySelectorAll(".markmap .markmap-foreign a.internal") as NodeListOf<HTMLAnchorElement>
+    console.log("markmap links", markmapLinks)
+    for (const link of markmapLinks) {
+        if (link.dataset.noPopover === "true") continue
+
+        link.addEventListener("mouseenter", mouseEnterHandler)
+        link.addEventListener("mouseleave", clearActivePopover)
+        window.addCleanup?.(() => {
+            link.removeEventListener("mouseenter", mouseEnterHandler)
+            link.removeEventListener("mouseleave", clearActivePopover)
+        })
     }
 }
 
