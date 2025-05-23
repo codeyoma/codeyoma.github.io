@@ -1,11 +1,14 @@
 ---
-created: 2025/3/19 17:19:15
-modified: 2025/5/06 14:19:10
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-05-23
 tags:
   - review
 references:
-  - https://github.com/crapas/dp
+  - https: //github.com/crapas/dp
 ---
+
 - DP 문제 풀이 조건
 	- **최적 부분 구조, 최적 하위 구조 (Optimal Substructure)**
 		- *크기가 n인 문제*에서, 문제 해결 형태는 같지만 *n 미만의* 원소를 가지는, 더 작은 크기의 문제의 풀이법을 사용하는 것이 최적의 풀이법에 해당하면 이를 optimal substructure 
@@ -114,8 +117,8 @@ references:
 	- 다르면
 		- $dp[i][j] = \min(dp[i - 1][j - 1],\; dp[i - 1][j],\; dp[i][j - 1]) + 1$
 		- 위쪽 셀, 왼쪽 셀, 왼쪽 위 셀의 값의 최솟 값 + 1
-$target = dp[m][n]$
-![[image-DP-4.png]]
+	- $target = dp[m][n]$
+	- ![[image-DP-4.png]]
 - [[다이내믹 프로그래밍 완전 정복]] p.130
 
 ## 직사각형에서 총 경로 수 구하기
@@ -267,12 +270,13 @@ $target = dp[m][n]$
 	- $i$번째 물건을 선택했을 때 최대가격
 		- `value[i - 1] + maxValue[i - 1][j - weight[i - 1]]` 
 		- $j$ 선택한 물건의 무게를 뺀 위치 즉, 남은 용량
-	```cpp
-	dp[i][w] = max(
-		dp[i-1][w],                         // i번째 물건을 선택하지 않음
-		dp[i-1][w - weight[i]] + value[i]   // i번째 물건을 선택함
-	)
-	```
+		- 
+			```cpp
+			dp[i][w] = max(
+				dp[i-1][w],                         // i번째 물건을 선택하지 않음
+				dp[i-1][w - weight[i]] + value[i]   // i번째 물건을 선택함
+			)
+			```
 	- ![[image-DP-15.png]]
 - [[다이내믹 프로그래밍 완전 정복]] p.182
 
@@ -285,22 +289,23 @@ $target = dp[m][n]$
 - $B_{n} = S[n] + S[n - 1] + MAX(A_{n - 3},\;B_{n - 3})$
 
 ## LIS (최장 증가 부분 수열 길이 구하기)
-```cpp
-int n;
-cin >> n;
-vector<int> a(n), dp(n, 1);
-for (int i = 0; i < n; i++) cin >> a[i];
-
-for (int i = 1; i < n; i++) {
-    for (int j = 0; j < i; j++) {
-        if (a[j] < a[i]) {
-            dp[i] = max(dp[i], dp[j] + 1);
-        }
-    }
-}
-
-cout << *max_element(dp.begin(), dp.end());
-```
+ - 
+	```cpp
+	int n;
+	cin >> n;
+	vector<int> a(n), dp(n, 1);
+	for (int i = 0; i < n; i++) cin >> a[i];
+	
+	for (int i = 1; i < n; i++) {
+	    for (int j = 0; j < i; j++) {
+	        if (a[j] < a[i]) {
+	            dp[i] = max(dp[i], dp[j] + 1);
+	        }
+	    }
+	}
+	
+	cout << *max_element(dp.begin(), dp.end());
+	```
 - `dp[i]`는 `a[i]`를 마지막 원소로 갖는 LIS의 길이
 - 현재 글자의, 이전 글자들 대소 비교로, dp 업데이트
 	- 이미 왼쪽부터 dp가 정복하니 최적해 보장
