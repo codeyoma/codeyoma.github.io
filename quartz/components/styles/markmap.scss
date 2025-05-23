@@ -51,6 +51,19 @@
                 pointer-events: all;
 
 
+                pre {
+                    padding: 0;
+                    position: static;
+                }
+
+                & span {
+                    position: static;
+
+                    .katex-html {
+                        display: none;
+                    }
+                }
+
                 code {
                     border-radius: 5px;
                     padding: 0.12em;
