@@ -27,8 +27,6 @@ export const sharedPageComponents: SharedLayout = {
             Home: "/",
             About: "/About",
             "Blog source": "https://github.com/codeyoma/codeyoma.github.io",
-            // GitHub: "https://github.com/codeyoma",
-            // LinkedIn: "https://www.linkedin.com/in/codeyoma",
         },
     }),
 }
@@ -53,11 +51,15 @@ export const defaultContentPageLayout: PageLayout = {
                     Component: Component.Search(),
                     grow: true,
                 },
+                {
+                    Component: Component.DesktopOnly(Component.ReaderMode()),
+                    desktopOnly: true,
+                },
                 { Component: Component.Darkmode() },
                 { Component: Component.MarkmapViewer() },
-                { Component: Component.DesktopOnly(Component.ReaderMode()) },
             ],
-        }),
+        },
+        ),
         Component.Explorer({
             folderClickBehavior: "link",
             useSavedState: false,
@@ -81,11 +83,6 @@ export const defaultContentPageLayout: PageLayout = {
                     return -1
                 }
             },
-            // mapFn: (node) => {
-            //     if (node.isFolder) {
-            //         node.displayName = "📁 " + node.displayName
-            //     }
-            // },
         }),
         // Component.RecentNotes({ limit: 5}),
     ],
