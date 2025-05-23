@@ -67,6 +67,9 @@ function renderGlobalMarkmap() {
     toolbarEl.append(mmToolbar)
     mm.fit()
 
+    registerEscapeHandler(container, hideGlobalMarkmap)
+    setupMarkmapPopoverSupport()
+
     svg.querySelectorAll<HTMLAnchorElement>('a[href^="http"]').forEach(a => {
         a.classList.add('external')
     })
@@ -108,8 +111,6 @@ function renderGlobalMarkmap() {
         document.dispatchEvent(escEvent);
     });
 
-    registerEscapeHandler(container, hideGlobalMarkmap)
-    setupMarkmapPopoverSupport()
 }
 
 function hideGlobalMarkmap() {
