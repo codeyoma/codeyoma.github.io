@@ -111,6 +111,7 @@ function renderGlobalMarkmap() {
         document.dispatchEvent(escEvent);
     });
 
+    renderMermaidInMarkmap(svg)
 }
 
 function hideGlobalMarkmap() {
@@ -129,7 +130,6 @@ function toggleGlobalMarkmap() {
 
 function setupMarkmapPopoverSupport() {
     const markmapLinks = document.querySelectorAll(".markmap .markmap-foreign a.internal") as NodeListOf<HTMLAnchorElement>
-    console.log("markmap links", markmapLinks)
     for (const link of markmapLinks) {
         if (link.dataset.noPopover === "true") continue
 
@@ -140,6 +140,59 @@ function setupMarkmapPopoverSupport() {
             link.removeEventListener("mouseleave", clearActivePopover)
         })
     }
+}
+
+function renderMermaidInMarkmap(svg: SVGSVGElement) {
+    requestAnimationFrame(async () => {
+        const codeBlocks = svg.querySelectorAll("foreignObject code.language-mermaid")
+
+        if (codeBlocks.length === 0) return
+
+        const { default: mermaid } = await import(
+            "https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs"
+        )
+
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: document.documentElement.getAttribute("saved-theme") === "dark" ? "dark" : "base",
+            securityLevel: "loose",
+        })
+
+        for (const code of codeBlocks) {
+            const graph = code.textContent?.trim()
+            if (!graph) continue
+
+            const pre = code.closest("pre")
+            const div = code.closest("div")
+            if (!div || !pre) continue
+
+            pre.remove()
+
+            const tempDiv = document.createElement("div")
+            tempDiv.style.visibility = "hidden"
+            tempDiv.style.position = "absolute"
+            tempDiv.style.top = "-9999px"
+            document.body.appendChild(tempDiv)
+
+            const mermaidDiv = document.createElement("div")
+            mermaidDiv.className = "mermaid"
+            mermaidDiv.textContent = graph
+            tempDiv.appendChild(mermaidDiv)
+
+            try {
+                await mermaid.run({ nodes: [mermaidDiv] })
+                const renderedSvg = mermaidDiv.querySelector("svg")
+                if (!renderedSvg) continue
+
+                const importedSvg = renderedSvg.cloneNode(true) as SVGSVGElement
+                div.appendChild(importedSvg)
+
+                tempDiv.remove()
+            } catch (err) {
+                console.error("❌ Mermaid render failed:", err)
+            }
+        }
+    })
 }
 
 window.addEventListener("DOMContentLoaded", () => {

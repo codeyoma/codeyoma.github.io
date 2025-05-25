@@ -1,9 +1,63 @@
 import { computePosition, flip, inline, shift } from "@floating-ui/dom"
 import { normalizeRelativeURLs } from "../../util/path"
 import { fetchCanonical } from "./util"
+import mermaidStyle from "../../components/styles/mermaid.inline.scss"
 
 const p = new DOMParser()
 let activeAnchor: HTMLAnchorElement | null = null
+
+async function renderMermaidInPopovers() {
+    requestAnimationFrame(async () => {
+        const codeBlocks = document.querySelectorAll(".popover .popover-inner code.mermaid")
+
+        if (codeBlocks.length === 0) return
+
+        const { default: mermaid } = await import(
+            "https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs"
+        )
+
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: document.documentElement.getAttribute("saved-theme") === "dark" ? "dark" : "base",
+            securityLevel: "loose",
+        })
+
+        for (const code of codeBlocks) {
+            const graph = code.textContent?.trim()
+            if (!graph) continue
+
+            const container = document.createElement("div")
+            container.className = "mermaid"
+            container.textContent = graph
+
+            container.style.visibility = "hidden"
+            container.style.position = "absolute"
+            container.style.top = "-9999px"
+            document.body.appendChild(container)
+
+            try {
+                await mermaid.run({ nodes: [container] })
+            } catch (err) {
+                console.error("Mermaid render failed:", err)
+                container.remove()
+                continue
+            }
+
+            const svgEl = container.querySelector("svg")
+            if (!svgEl) {
+                container.remove()
+                continue
+            }
+
+            const rendered = svgEl.cloneNode(true) as SVGSVGElement
+            const parent = code.parentElement
+            code.remove()
+            parent?.appendChild(rendered)
+
+            container.remove()
+        }
+    })
+}
 
 async function mouseEnterHandler(
     this: HTMLAnchorElement,
@@ -37,6 +91,8 @@ async function mouseEnterHandler(
                 popoverInner.scroll({ top: heading.offsetTop - 12, behavior: "instant" })
             }
         }
+
+        renderMermaidInPopovers();
     }
 
     const targetUrl = new URL(link.href)

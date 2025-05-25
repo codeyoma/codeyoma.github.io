@@ -28,7 +28,7 @@ function replaceMatches(str: string, regex: RegExp, replacer: (match: RegExpExec
     return accumulator
 }
 
-const wikilinkRegex = /(!)?\[\[(?<link>[^|\]]+)\|?(?<displayText>[^\]]*)\]\]|#(?<tag>[A-Za-z0-9_-]+)(?=\s|$)/g
+const wikilinkRegex = /(!)?\[\[(?<link>[^|\]]+)\|?(?<displayText>[^\]]*)\]\]|(?<!:)#(?<tag>[A-Za-z0-9_-]+)(?=\s|$)/g
 
 function replacement(currentPath: FullSlug) {
     return (match: RegExpExecArray) => {
