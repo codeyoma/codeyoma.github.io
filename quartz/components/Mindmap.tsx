@@ -119,14 +119,14 @@ export default ((opts?: Partial<MindmapOptions>) => {
 
     if (mode === "global") {
       return (
-        <div class={classNames(displayClass, "global-mindmap")}>
+        <div class={classNames(displayClass, "global-mindmap mindmap")}>
           {portal}
         </div>
       )
     }
 
     return (
-      <div class={classNames(displayClass, "local-mindmap")}>
+      <div class={classNames(displayClass, "local-mindmap mindmap")}>
         <h3>{i18n(cfg.locale).components.mindmap.title}</h3>
         <div class="mindmap-outer">
           <div

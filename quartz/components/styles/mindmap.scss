@@ -55,10 +55,14 @@
   .mindmap-toolbar {
     position: absolute;
     top: 10;
-    left: 0;
-    right: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
     color: var(--tertiary);
+    padding: 0 0.5rem;
+    border-radius: 10px;
+    background-color: var(--light);
+    box-shadow: 0 0 4px var(--darkgray);
 
     .mm-toolbar-brand {
       display: none;
@@ -73,6 +77,12 @@
 
       .mm-toolbar-item {
         cursor: pointer;
+        display: flex;
+
+        & svg {
+          justify-content: center;
+          align-items: center;
+        }
       }
 
       .active {
