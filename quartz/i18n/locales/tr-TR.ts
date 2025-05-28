@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Grafik Görünümü",
     },
+    mindmap: {
+      title: "Zihin Haritası",
+    },
     recentNotes: {
       title: "Son Notlar",
       seeRemainingMore: ({ remaining }) => `${remaining} tane daha gör →`,

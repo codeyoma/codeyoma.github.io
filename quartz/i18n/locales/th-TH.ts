@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "มุมมองกราฟ",
     },
+    mindmap: {
+      title: "แผนผังความคิด",
+    },
     recentNotes: {
       title: "บันทึกล่าสุด",
       seeRemainingMore: ({ remaining }) => `ดูเพิ่มอีก ${remaining} รายการ →`,

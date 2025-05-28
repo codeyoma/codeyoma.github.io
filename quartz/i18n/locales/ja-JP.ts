@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "グラフビュー",
     },
+    mindmap: {
+      title: "マインドマップ",
+    },
     recentNotes: {
       title: "最近の記事",
       seeRemainingMore: ({ remaining }) => `さらに${remaining}件 →`,

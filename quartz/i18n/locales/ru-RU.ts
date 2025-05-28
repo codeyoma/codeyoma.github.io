@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Вид графа",
     },
+    mindmap: {
+      title: "Ментальная карта",
+    },
     recentNotes: {
       title: "Недавние заметки",
       seeRemainingMore: ({ remaining }) =>

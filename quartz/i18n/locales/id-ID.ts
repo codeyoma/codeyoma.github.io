@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Tampilan Grafik",
     },
+    mindmap: {
+      title: "Peta Pikiran",
+    },
     recentNotes: {
       title: "Catatan Terbaru",
       seeRemainingMore: ({ remaining }) => `Lihat ${remaining} lagi →`,

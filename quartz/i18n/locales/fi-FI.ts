@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Verkkonäkymä",
     },
+    mindmap: {
+      title: "Miellekartta",
+    },
     recentNotes: {
       title: "Viimeisimmät muistiinpanot",
       seeRemainingMore: ({ remaining }) => `Näytä ${remaining} lisää →`,

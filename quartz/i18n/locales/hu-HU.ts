@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Grafikonnézet",
     },
+    mindmap: {
+      title: "Elmetérkép",
+    },
     recentNotes: {
       title: "Legutóbbi jegyzetek",
       seeRemainingMore: ({ remaining }) => `${remaining} további megtekintése →`,

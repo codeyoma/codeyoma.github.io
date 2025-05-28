@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "نمای گراف",
     },
+    mindmap: {
+      title: "نقشه ذهنی",
+    },
     recentNotes: {
       title: "یادداشت‌های اخیر",
       seeRemainingMore: ({ remaining }) => `${remaining} یادداشت دیگر →`,

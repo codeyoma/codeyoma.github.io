@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "關係圖譜",
     },
+    mindmap: {
+      title: "思維導圖",
+    },
     recentNotes: {
       title: "最近的筆記",
       seeRemainingMore: ({ remaining }) => `查看更多 ${remaining} 篇筆記 →`,

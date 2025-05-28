@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "التمثيل التفاعلي",
     },
+    mindmap: {
+      title: "خريطة ذهنية",
+    },
     recentNotes: {
       title: "آخر الملاحظات",
       seeRemainingMore: ({ remaining }) => `تصفح ${remaining} أكثر →`,

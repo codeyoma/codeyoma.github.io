@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Visão de gráfico",
     },
+    mindmap: {
+      title: "Mapa mental",
+    },
     recentNotes: {
       title: "Notas recentes",
       seeRemainingMore: ({ remaining }) => `Veja mais ${remaining} →`,

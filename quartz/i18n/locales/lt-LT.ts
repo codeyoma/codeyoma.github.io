@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Grafiko Vaizdas",
     },
+    mindmap: {
+      title: "Mąstymo Žemėlapis",
+    },
     recentNotes: {
       title: "Naujausi Užrašai",
       seeRemainingMore: ({ remaining }) => `Peržiūrėti dar ${remaining} →`,

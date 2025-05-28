@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "그래프 뷰",
     },
+    mindmap: {
+      title: "마인드맵",
+    },
     recentNotes: {
       title: "최근 게시글",
       seeRemainingMore: ({ remaining }) => `${remaining}건 더보기 →`,

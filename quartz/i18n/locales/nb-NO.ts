@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Graf-visning",
     },
+    mindmap: {
+      title: "Tankekart",
+    },
     recentNotes: {
       title: "Nylige notater",
       seeRemainingMore: ({ remaining }) => `Se ${remaining} til →`,

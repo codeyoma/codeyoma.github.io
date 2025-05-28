@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-10-09
-modified: 2025-05-21
+modified: 2025-05-28
 tags:
   - cs
   - algorithm
@@ -35,7 +35,7 @@ aliases:
 	- [[BFS]]
 	- [[DFS]]
 	- [[Dijkstra's Algorithm]]
-	- [[Bellman–Ford Algorithm]]
+	- [[Bellman-Ford Algorithm]]
 	- [[Floyd-Warshall Algorithm]]
 	- [[Topological Sorting]]
 - [[Union-Find]]

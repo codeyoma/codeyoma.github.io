@@ -41,6 +41,9 @@ export default {
     graph: {
       title: "Graf",
     },
+    mindmap: {
+      title: "Hartă mentală",
+    },
     recentNotes: {
       title: "Notițe recente",
       seeRemainingMore: ({ remaining }) => `Vezi încă ${remaining} →`,
