@@ -121,6 +121,7 @@ export const defaultListPageLayout: PageLayout = {
           desktopOnly: true,
         },
         { Component: Component.Darkmode() },
+        { Component: Component.Mindmap({ mode: "button" }) },
       ],
     }),
     Component.Explorer({
