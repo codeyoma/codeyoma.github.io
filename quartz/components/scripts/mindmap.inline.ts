@@ -185,8 +185,8 @@ async function renderMindmap(mindmap: HTMLElement) {
 
   renderToolbar(mindmap, mm, option)
   renderMermaidInMindmap(svg)
-  renderPopoverInMindmap()
   addExternalIcon(svg)
+  renderPopoverInMindmap()
 
   return () => {
     mindmap.innerHTML = ""

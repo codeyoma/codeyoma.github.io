@@ -101,7 +101,7 @@ const arrowMapping: Record<string, string> = {
   "<==": "&lArr;",
 }
 
-function canonicalizeCallout(calloutName: string): keyof typeof calloutMapping {
+export function canonicalizeCallout(calloutName: string): keyof typeof calloutMapping {
   const normalizedCallout = calloutName.toLowerCase() as keyof typeof calloutMapping
   // if callout is not recognized, make it a custom one
   return calloutMapping[normalizedCallout] ?? calloutName
@@ -268,9 +268,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                     return {
                       type: "html",
                       data: { hProperties: { transclude: true } },
-                      value: `<blockquote class="transclude" data-url="${url}" data-block="${block}" data-embed-alias="${alias}"><a href="${
-                        url + anchor
-                      }" class="transclude-inner">Transclude of ${url}${block}</a></blockquote>`,
+                      value: `<blockquote class="transclude" data-url="${url}" data-block="${block}" data-embed-alias="${alias}"><a href="${url + anchor
+                        }" class="transclude-inner">Transclude of ${url}${block}</a></blockquote>`,
                     }
                   }
 

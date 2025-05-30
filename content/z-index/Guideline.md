@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-12-01
-modified: 2025-05-20
+modified: 2025-05-30
 status:
   - 🗺️
 tags:
@@ -105,9 +105,10 @@ draft: true
 ###### This is a heading 6
 
 # Supported Markdown extensions
+
+## Syntax
 | Syntax          | Description                                                                                                               |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `[[Link]]`      | [Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links)                                         |
 | `[[Link]]`      | [Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links)                                         |
 | `![[Link]]`     | [Embedding files](https://help.obsidian.md/Linking+notes+and+files/Embedding+files)                                       |
 | `![[Link#^id]]` | [Block references](https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link%20to%20a%20block%20in%20a%20note) |
@@ -143,12 +144,14 @@ path: "@ Projects"
 
 
 ## Links
-- Wikilink: `[[file]]` [[- Guideline]]
+- Wikilink: `[[file]]`
+	- [[- Guideline]]
+	- [[- Guideline#iframe]]
 - Markdown: `[name](file)` 
 
 ## Quotes
-> Quotes
-
+- > Quotes arsoietn arstein arsotien arsotien arsoietn arsotienarst arsn arosietnars toaiersnt arsotien arsotienrast arsoitne arsotien arsotienarsotien arsotienarstoien arst arsoientaroiensratoien arsotienarstoien asrotienarsotien arstoienarstoien
+> test
 
 ## Lists
 1. First list item 
@@ -177,7 +180,7 @@ _ _ _
 
 ## Code
 ### Inline code
-`inline code`
+- `inline code`
 
 ### block code
 ```cpp
@@ -192,27 +195,26 @@ int main() {
 ```
 
 ## Footnotes
-This is a simple footnote[^1].[^1][^1]
+- This is a simple footnote[^1].[^1][^1]
 [^2]
 [^note]
+- 
+	```
+	This is a simple footnote[^1].[^1][^1]
+	[^2]
+	[^note]
+	
+	[^1]: This is the referenced text. 
+	[^2]: Add 2 spaces at the start of each new line. 
+	  This lets you write footnotes that span multiple lines.
+	[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
+	```
 
-```
-This is a simple footnote[^1].[^1][^1]
-[^2]
-[^note]
-
-[^1]: This is the referenced text. 
-[^2]: Add 2 spaces at the start of each new line. 
-  This lets you write footnotes that span multiple lines.
-[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
-```
-
-You can also use inline footnotes. ^[This is an inline footnote.]
-```
-You can also use inline footnotes. ^[This is an inline footnote.]
-```
-
-
+- You can also use inline footnotes. ^[This is an inline footnote.]
+- 
+	```
+	You can also use inline footnotes. ^[This is an inline footnote.]
+	```
 
 [^1]: This is the referenced text. 
 
@@ -221,64 +223,111 @@ You can also use inline footnotes. ^[This is an inline footnote.]
 
 [^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.
 
-
 # Callout
-> [!note]
----
-> [!info]
-
-> [!todo]
----
-> [!abstract]
-
-> [!summary]
-
-> [!tldr]
----
-> [!tip]
-
-> [!hint]
-
-> [!important]
----
-> [!success]
-
-> [!check]
-
-> [!done]
----
-> [!question]
-
-> [!help]
-
-> [!faq]
----
-> [!warning]
-
-> [!caution]
-
-> [!attention]
----
-> [!failure]
-
-> [!fail]
-
-> [!missing]
----
-> [!danger]
-
-> [!error]
----
-> [!bug]
----
-> [!example]
----
-> [!quote]
-
-> [!cite]
-
-
+- > [!note]
+	> note
+- > [!info]
+	> info line 1
+	> info line 2
+- > [!todo]
+- > [!abstract] 
+- > [!summary]
+- > [!tldr]
+- > [!tip]
+- > [!hint]
+- > [!important]
+- > [!success]
+- > [!check]
+- > [!done]
+- > [!question]
+- > [!help]
+- > [!faq]
+- > [!warning]
+- > [!caution]
+- > [!attention]
+- > [!failure]
+- > [!fail]
+- > [!missing]
+- > [!danger]
+- > [!error]
+- > [!bug]
+- > [!example]
+- > [!quote]
+- > [!cite]
 
 # MathJax
 - [MathJax basic tutorial](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
 - [mathJax support extensions list](https://docs.mathjax.org/en/latest/input/tex/extensions/index.html)
+
+# Files
+## image
+- png
+	- ![[image-sample-png.png|100]]
+	- [[image-sample-png.png|100]]
+- jpg   
+	- ![[image-sample-jpg.jpg|100x100]]   
+	- [[image-sample-jpg.jpg|100x100]]   
+- jpeg  
+	- ![[image-sample-jpeg.jpeg#test]] 
+	- [[image-sample-jpeg.jpeg#test]] 
+- gif   
+	- ![[image-sample-gif.gif|test]]   
+	- [[image-sample-gif.gif|test]]   
+- bmp   
+	- ![[image-sample-bmp.bmp#test|100]]   
+	- [[image-sample-bmp.bmp#test|100]]   
+- svg   
+	- ![[image-sample-svg.svg]]   
+	- [[image-sample-svg.svg]]   
+- webp  
+	- ![[image-sample-webp.webp]] 
+	- [[image-sample-webp.webp]] 
+
+## video
+- mp4 
+	- ![[video-sample-mp4.mp4]]   
+	- [[video-sample-mp4.mp4]]   
+- webm
+	- ![[video-sample-webm.webm]] 
+	- [[video-sample-webm.webm]] 
+- ogv 
+	- ![[video-sample-ogv.ogv]]   
+	- [[video-sample-ogv.ogv]]   
+- mov 
+	- ![[video-sample-mov.mov]]   
+	- [[video-sample-mov.mov]]   
+- mkv 
+	- ![[video-sample-mkv.mkv]]   
+	- [[video-sample-mkv.mkv]]   
+
+## audio
+- mp3  
+	- ![[audio-sample-mp3.mp3]]   
+	- [[audio-sample-mp3.mp3]]   
+- wav  
+	- ![[audio-sample-wav.wav]]   
+	- [[audio-sample-wav.wav]]   
+- m4a  
+	- ![[audio-sample-m4a.m4a]]   
+	- [[audio-sample-m4a.m4a]]   
+- ogg  
+	- ![[audio-sample-ogg.ogg]]   
+	- [[audio-sample-ogg.ogg]]   
+- 3gp  
+	- ![[audio-sample-3gp.3gp]]   
+	- [[audio-sample-3gp.3gp]]   
+- flac 
+	- ![[audio-sample-flac.flac]] 
+	- [[audio-sample-flac.flac]] 
+
+## iframe
+- pdf
+	- ![[iframe-sample-pdf.pdf]]
+	- [[iframe-sample-pdf.pdf]]
+- youtube
+	- video
+		- ![おぱんちゅうさぎソング - YouTube](https://www.youtube.com/watch?v=MsRmLnJjsy8)
+		- [おぱんちゅうさぎソング - YouTube](https://www.youtube.com/watch?v=MsRmLnJjsy8)
+	- playlists
+		- ![Muzik - YouTube](https://youtube.com/playlist?list=PLXxoTrp1nCgOPKeso4cWGsKjLtUMgC1I6&si=cJcCTxty0r0enzJE)
+		- [Muzik - YouTube](https://youtube.com/playlist?list=PLXxoTrp1nCgOPKeso4cWGsKjLtUMgC1I6&si=cJcCTxty0r0enzJE)
