@@ -176,19 +176,20 @@ export const Mindmap: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => 
             wikilinkRegex,
             wikilinkReplacement(slug, transformOptions)
           )
-          // node.content = replaceMatches(
-          //   node.content,
-          //   youtubeImageRegex,
-          //   ytLinkReplacement()
-          // )
-          // node.content = replaceMatches(
-          //   node.content,
-          //   calloutRegex,
-          //   calloutReplacement()
-          // )
+          node.content = replaceMatches(
+            node.content,
+            youtubeImageRegex,
+            ytLinkReplacement()
+          )
+          node.content = replaceMatches(
+            node.content,
+            calloutRegex,
+            calloutReplacement()
+          )
         })(root)
 
         file.data.mindmap = root
+        // file.data.mindmapOptions = transformOptions
       }
 
       return [() => {

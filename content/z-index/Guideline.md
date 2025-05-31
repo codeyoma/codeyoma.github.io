@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-12-01
-modified: 2025-05-30
+modified: 2025-05-31
 status:
   - 🗺️
 tags:
@@ -304,9 +304,6 @@ int main() {
 - mp3  
 	- ![[audio-sample-mp3.mp3]]   
 	- [[audio-sample-mp3.mp3]]   
-- wav  
-	- ![[audio-sample-wav.wav]]   
-	- [[audio-sample-wav.wav]]   
 - m4a  
 	- ![[audio-sample-m4a.m4a]]   
 	- [[audio-sample-m4a.m4a]]   
@@ -316,10 +313,15 @@ int main() {
 - 3gp  
 	- ![[audio-sample-3gp.3gp]]   
 	- [[audio-sample-3gp.3gp]]   
+<!--
+- wav  
+	- ![[audio-sample-wav.wav]]   
+	- [[audio-sample-wav.wav]]   
 - flac 
 	- ![[audio-sample-flac.flac]] 
 	- [[audio-sample-flac.flac]] 
-
+ -->
+ 
 ## iframe
 - pdf
 	- ![[iframe-sample-pdf.pdf]]
