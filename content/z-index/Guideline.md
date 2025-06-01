@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-12-01
-modified: 2025-05-31
+modified: 2025-06-02
 status:
   - 🗺️
 tags:
@@ -231,29 +231,29 @@ int main() {
 	> info line 2
 - > [!todo]
 - > [!abstract] 
-- > [!summary]
-- > [!tldr]
+	- > [!summary]
+		- > [!tldr]
 - > [!tip]
-- > [!hint]
-- > [!important]
+	- > [!hint]
+		- > [!important]
 - > [!success]
-- > [!check]
-- > [!done]
+	- > [!check]
+		- > [!done]
 - > [!question]
-- > [!help]
-- > [!faq]
+	- > [!help]
+		- > [!faq]
 - > [!warning]
-- > [!caution]
-- > [!attention]
+	- > [!caution]
+		- > [!attention]
 - > [!failure]
-- > [!fail]
-- > [!missing]
+	- > [!fail]
+		- > [!missing]
 - > [!danger]
-- > [!error]
-- > [!bug]
+	- > [!error]
+		- > [!bug]
 - > [!example]
 - > [!quote]
-- > [!cite]
+	- > [!cite]
 
 # MathJax
 - [MathJax basic tutorial](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
