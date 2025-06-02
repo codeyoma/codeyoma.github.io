@@ -48,9 +48,10 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
 
-      - name: Build all Slidev .md files
-        run: |
-          npx slidev build content/z-index/slidev.md --out ../../public/slidev/
+      # - name: Build all Slidev .md files
+      #   run: |
+      #     npx slidev build content/z-index/slidev.md --out ../../public/slidev/
+
         #  mkdir -p public/slidev
         #   find content -type f -name "*.md" | while read file; do
         #     relpath="${file#content/}"                       # e.g. topic1/sub/slide.md

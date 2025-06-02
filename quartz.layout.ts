@@ -15,6 +15,7 @@ export const sharedPageComponents: SharedLayout = {
       mode: "global",
       globalOptions: {},
     }),
+    Component.Slide({ mode: "global" }),
   ],
   beforeFooter: [
     Component.Comments({
@@ -64,6 +65,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.Mindmap({ mode: "button" }) },
+        { Component: Component.Slide({ mode: "button" }) }
       ],
     },
     ),
@@ -122,6 +124,7 @@ export const defaultListPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.Mindmap({ mode: "button" }) },
+        { Component: Component.Slide({ mode: "button" }) }
       ],
     }),
     Component.Explorer({
