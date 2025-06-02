@@ -10,6 +10,16 @@ draft: "true"
 - [홍정모의 따라하며 배우는 C++ \| minkj1992](https://minkj1992.github.io/hong_modern_cpp/#0-terminology)
 
 # Frontend
+- [ ] 패스트 캠퍼스
+	- [ ] 더 쉽고 편하게 만드는 3D 인터랙티브 웹 개발 : 구현부터 최적화까지 (feat. R3F & Three.js)
+	- [ ] 내 생에 마지막 JavaScript : 기초 문법부터 실무 웹 개발까지 한 번에 끝내기 초격차 패키지 Online.
+	- [ ] 고성능 대규모 프론트엔드 10개 프로젝트 : 최적화부터 유지보수까지 한 번에 끝내는 초격차 패키지 Online.
+	- [ ] 시그니처 프론트엔드 : 웹 개발부터 웹앱까지 프론트엔드의 모든 것
+	- [ ] 올인원 패키지 : 프론트엔드 최적화 완전 정복 (React & Next.js)
+	- [ ] 프론트엔드 개발 올인원 패키지 with React Online.
+	- [ ] 컴퓨터 공학 전공 필수 올인원 패키지 Online.
+	- [ ] 알고리즘 / 기술면접 완전 정복 올인원 패키지 Online.
+	- [ ] 네카라쿠배 취업 끝장내는 파이썬 코딩테스트 마스터
 - [ ] 상태 관리 라이브러리 종류 / 왜, 어떻게, 깊게 이해
 	- [ ] redux, recoil, react-query learn 
 - [ ] retry fetch with suspense or with axios or with tanstack query

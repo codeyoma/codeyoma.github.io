@@ -18,11 +18,13 @@ modified: 2025/4/14 07:33:40
 - [Blueprint – A React-based UI toolkit for the web](https://blueprintjs.com/) 
 - [Chakra UI](https://chakra-ui.com/) 
 - [Overview](https://www.kibo-ui.com/overview)
+- [Stitch - Design with AI](https://stitch.withgoogle.com/)
 ## UI Elements
 - [Stack Sorted.](https://stacksorted.com/buttons)
 
 ## Design
 - [Dead Simple Sites — Minimal Website Inspiration](https://deadsimplesites.com/)
+- [UI Design Daily](https://www.uidesigndaily.com/)
 # Fetch
 - [TanStack Start Overview \| TanStack Start React Docs](https://tanstack.com/start/latest/docs/framework/react/overview)
 
