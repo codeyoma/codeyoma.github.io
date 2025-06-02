@@ -50,19 +50,20 @@ jobs:
 
       - name: Build all Slidev .md files
         run: |
-         mkdir -p public/slidev
-          find content -type f -name "*.md" | while read file; do
-            relpath="${file#content/}"                       # e.g. topic1/sub/slide.md
-            name="${relpath%.md}"                           # e.g. topic1/sub/slide
-            outdir="dist/$name"                             # e.g. dist/topic1/sub/slide
-            targetdir="public/slidev/$name"                 # e.g. public/slidev/topic1/sub/slide
+          npx slidev build content/z-index/slidev.md --out ../../public/slidev/
+        #  mkdir -p public/slidev
+        #   find content -type f -name "*.md" | while read file; do
+        #     relpath="${file#content/}"                       # e.g. topic1/sub/slide.md
+        #     name="${relpath%.md}"                           # e.g. topic1/sub/slide
+        #     outdir="dist/$name"                             # e.g. dist/topic1/sub/slide
+        #     targetdir="public/slidev/$name"                 # e.g. public/slidev/topic1/sub/slide
 
-            echo "📦 Building $file → $targetdir"
-            npx slidev build "$file" --out "$outdir"
+        #     echo "📦 Building $file → $targetdir"
+        #     npx slidev build "$file" --out "$outdir"
 
-            mkdir -p "$targetdir"
-            cp -r "$outdir/"* "$targetdir/"
-          done
+        #     mkdir -p "$targetdir"
+        #     cp -r "$outdir/"* "$targetdir/"
+        #   done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

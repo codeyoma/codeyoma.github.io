@@ -82,7 +82,7 @@ markmap: "colorFreezeLevel: 4"
 	* ...
 
 # Quartz Frontmatter
-``` frontmatter
+```
 title: Title of the page
 description: Description of the page used for link previews.
 date: 2025-05-01
@@ -124,12 +124,6 @@ draft: true
 | `- [x]`         | [Completed task](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task%20lists)                    |
 | `> [!note]`     | [Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts)                                                      |
 | (see link)      | [Tables](https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax#Tables)                               |
-
-## Inline search query
-```query
-task-todo: ee4
-path: "@ Projects"
-```
 
 ## Bold, italics, highlights
 
