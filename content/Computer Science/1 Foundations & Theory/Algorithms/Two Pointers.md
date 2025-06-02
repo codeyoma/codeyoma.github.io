@@ -1,8 +1,11 @@
 ---
-created: 2025/3/19 16:44:57
-modified: 2025/5/01 12:17:44
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-06-02
 ---
-- 슬라딩 윈도우
+
+- 슬라이딩 윈도우
 	- 왼쪽에서 오른쪽으로 이동하는 기법
 	- 특정 조건에 right와 left가 각각 움직여 슬라이딩
 - left, right pointer

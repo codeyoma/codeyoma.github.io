@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-10-09
-modified: 2025-05-28
+modified: 2025-06-02
 tags:
   - cs
   - algorithm
@@ -27,13 +27,13 @@ aliases:
 - [[Two Pointers]]
 - [[Prefix Sum Array]]
 - [[Hash]]
-- [[Back Tracking]]
 - [[Graph]]
 	- [[Eulerian Path]]
 	- [[Tree]]
 		- [[Minimum Spanning Tree (MST) - 최소 신장 트리]]
 	- [[BFS]]
 	- [[DFS]]
+		- [[Back Tracking]]
 	- [[Dijkstra's Algorithm]]
 	- [[Bellman-Ford Algorithm]]
 	- [[Floyd-Warshall Algorithm]]

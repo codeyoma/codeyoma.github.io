@@ -13,50 +13,51 @@
 	- 인접 노드가 없다면 종료 (진출이 없거나, 마지막 노드)
 - 4 - 2로 이동
 	- 진입 차수 배열이 비었다면(다 순회 했다면) 종료
-```cpp
-void solution(){
-    size_t n, m;
-
-    cin >> n >> m;
-
-    vector<vector<int> >    graph(n, vector<int>(0));
-    vector<int>             in(n, 0);
-    vector<int>             answer;
-
-    for (size_t i = 0; i < m; i++){
-        size_t a, b;
-
-        cin >> a >> b;
-
-        graph[a - 1].push_back(b - 1);
-        in[b - 1] += 1; 
-    }
-
-    priority_queue<int, vector<int>, greater<int> > pq;
-
-    for (size_t i = 0; i < n; i++){
-        if (in[i] == 0){
-            pq.push(i);
-        }
-    }
-
-    {
-
-        while (!pq.empty()){
-            int node = pq.top();
-            pq.pop();
-            answer.push_back(node);
-
-            for(const auto& it: graph[node]){
-                in[it] -= 1;
-                if (in[it] == 0)
-                    pq.push(it);
-            }
-        }
-    }
-
-    for (const auto& it: answer){
-        cout << it + 1 << " ";
-    }
-}
-```
+- 
+	```cpp
+	void solution(){
+	    size_t n, m;
+	
+	    cin >> n >> m;
+	
+	    vector<vector<int> >    graph(n, vector<int>(0));
+	    vector<int>             in(n, 0);
+	    vector<int>             answer;
+	
+	    for (size_t i = 0; i < m; i++){
+	        size_t a, b;
+	
+	        cin >> a >> b;
+	
+	        graph[a - 1].push_back(b - 1);
+	        in[b - 1] += 1; 
+	    }
+	
+	    priority_queue<int, vector<int>, greater<int> > pq;
+	
+	    for (size_t i = 0; i < n; i++){
+	        if (in[i] == 0){
+	            pq.push(i);
+	        }
+	    }
+	
+	    {
+	
+	        while (!pq.empty()){
+	            int node = pq.top();
+	            pq.pop();
+	            answer.push_back(node);
+	
+	            for(const auto& it: graph[node]){
+	                in[it] -= 1;
+	                if (in[it] == 0)
+	                    pq.push(it);
+	            }
+	        }
+	    }
+	
+	    for (const auto& it: answer){
+	        cout << it + 1 << " ";
+	    }
+	}
+	```

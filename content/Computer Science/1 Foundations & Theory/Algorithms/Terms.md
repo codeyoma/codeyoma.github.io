@@ -1,6 +1,8 @@
 ---
-created: 2025/3/19 16:29:05
-modified: 2025/3/21 13:28:50
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-06-02
 ---
 
 # Algorithm Library
@@ -41,15 +43,17 @@ modified: 2025/3/21 13:28:50
 	- modulus
 	- partial_sum(first, last, d_first, (op)) ^f67ff6
 	- adjacent_difference
-```cpp
-std::array<int, 10> a {1};
-
-std::adjacent_difference(std::begin(a), std::prev(std::end(a)),
-						 std::next(std::begin(a)), std::plus<>{});
-
-println("Fibonacci, a = ", a);
-// Fibonacci, a = 1 1 2 3 5 8 13 21 34 55
-```
+		- code
+		- 
+			```cpp
+			std::array<int, 10> a {1};
+			
+			std::adjacent_difference(std::begin(a), std::prev(std::end(a)),
+									 std::next(std::begin(a)), std::plus<>{});
+			
+			println("Fibonacci, a = ", a);
+			// Fibonacci, a = 1 1 2 3 5 8 13 21 34 55
+			```
 - data control, manipulation
 	- reverse
 	- rotate

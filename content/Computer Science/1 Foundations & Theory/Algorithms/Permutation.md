@@ -1,6 +1,8 @@
 ---
-created: 2025/3/19 16:43:10
-modified: 2025/3/19 16:43:46
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-06-02
 ---
 
 - 순열 $\frac{n!}{(n-r)!}$
@@ -12,55 +14,59 @@ modified: 2025/3/19 16:43:46
 		- 재귀 함수 `depth`
 			- 재귀 호출시 `depth + 1`
 - next_permutation with **sort**
-```cpp
-    vector<char> set = {'A', 'B', 'C', 'D'};
-    
-    do {
-        for (char c : set) {
-                cout << c << " ";
-        }
-        cout << endl;
-    } while (next_permutation(set.begin(), set.end())); 
-```
+	- code
+	- 
+		```cpp
+		    vector<char> set = {'A', 'B', 'C', 'D'};
+		    
+		    do {
+		        for (char c : set) {
+		                cout << c << " ";
+		        }
+		        cout << endl;
+		    } while (next_permutation(set.begin(), set.end())); 
+		```
 - recursive
-	- 소스 배열
-	- 체크 배열
-	- 현재 배열
-	- 타겟 순열 크기
-	- 종료 조건
-		- 현재 배열 타겟 길이 체크
-```cpp
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-void permute(vector<int>& arr, vector<bool>& used, vector<int>& current, int depth) {
-
-    if (depth == arr.size()) {
-        for (int num : current) cout << num << " ";
-        cout << "\n";
-        return;
-    }
-
-    for (int i = 0; i < arr.size(); i++) {
-        if (!used[i]) {
-            used[i] = true;
-            current.push_back(arr[i]);
-            permute(arr, used, current, depth + 1);
-            current.pop_back();
-            used[i] = false;
-        }
-    }
-}
-
-int main() {
-    vector<int> arr = {1, 2, 3};
-    vector<bool> used(arr.size(), false);
-    vector<int> current;
-
-    permute(arr, used, current, 0);
-
-    return 0;
-}
-```
+	- logic
+		- 소스 배열
+		- 체크 배열
+		- 현재 배열
+		- 타겟 순열 크기
+		- 종료 조건
+			- 현재 배열 타겟 길이 체크
+	- 
+		```cpp
+		#include <iostream>
+		#include <vector>
+		
+		using namespace std;
+		
+		void permute(vector<int>& arr, vector<bool>& used, vector<int>& current, int depth) {
+		
+		    if (depth == arr.size()) {
+		        for (int num : current) cout << num << " ";
+		        cout << "\n";
+		        return;
+		    }
+		
+		    for (int i = 0; i < arr.size(); i++) {
+		        if (!used[i]) {
+		            used[i] = true;
+		            current.push_back(arr[i]);
+		            permute(arr, used, current, depth + 1);
+		            current.pop_back();
+		            used[i] = false;
+		        }
+		    }
+		}
+		
+		int main() {
+		    vector<int> arr = {1, 2, 3};
+		    vector<bool> used(arr.size(), false);
+		    vector<int> current;
+		
+		    permute(arr, used, current, 0);
+		
+		    return 0;
+		}
+		```

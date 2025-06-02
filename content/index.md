@@ -1,8 +1,9 @@
 ---
+aliases:
 description: This blog is an excerpt from my Obsidian notes
 title: Hello Again!
 created: 2025-05-18
-modified: 2025-05-21
+modified: 2025-06-02
 comments: "false"
 ---
 
@@ -34,7 +35,7 @@ comments: "false"
 	- tag search
 		- start with `#` 
 		- `cmd / ctrl` + `shift` + `k`
-- Mindmap view
+- [Mindmap view](https://github.com/codeyoma/quartz-mindmap)
 	- `cmd / ctrl` + `m`
 - Graph view
 	- `cmd / ctrl` + `g`

@@ -1,9 +1,12 @@
 ---
-created: 2025/5/09 20:15:30
-modified: 2025/5/09 20:21:32
+description:
+created: 2025-05-18
+modified: 2025-06-02
 aliases:
   - imos
 ---
+
+- [Imos Law  - いもす法](https://imoz.jp/algorithms/imos_method.html)
 - 구간합 압축 버전
 - 누적합 기반 구간 처리법
 	- `[a, b]`
@@ -14,15 +17,16 @@ aliases:
 		- 들어온 좌표만 기록해서, 해당 좌표를 인덱스로 치환
 		- 좌표의 최소, 최대 값 격차가 커도, 인덱스로 관리 가능
 	- 정해진 구간 내에 시작과 끝이 포함된 부분 집합에 대한 명령이 여러개(누적하여) 들어올 때 효율적
-```cpp
-int imos[SIZE + 2];
-
-// [l, r]
-imos[l] += 1;
-imos[r] -= 1; or imos[r + 1] -= 1;
-
-// psum
-for (int i = 1; i <= n; i++) {
-    imos[i] += imos[i - 1];
-}
-```
+- 
+	```cpp
+	int imos[SIZE + 2];
+	
+	// [l, r]
+	imos[l] += 1;
+	imos[r] -= 1; or imos[r + 1] -= 1;
+	
+	// psum
+	for (int i = 1; i <= n; i++) {
+	    imos[i] += imos[i - 1];
+	}
+	```
