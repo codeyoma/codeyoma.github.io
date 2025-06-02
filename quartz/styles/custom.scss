@@ -66,12 +66,13 @@ footer {
 }
 
 .center h1 {
-  background-color: var(--tertiary);
-  background-image: linear-gradient(30deg, var(--tertiary) 10%, var(--primary) 20%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  // background-color: var(--tertiary);
+  // background-image: linear-gradient(30deg, var(--tertiary) 10%, var(--primary) 20%);
+  // -webkit-background-clip: text;
+  // -moz-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // -moz-text-fill-color: transparent;
+  color: var(--primary);
   margin-top: 2.5em;
 }
 
