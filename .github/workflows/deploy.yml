@@ -35,9 +35,7 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install Dependencies
-        run:  |
-          npm ci
-          npm install -D slidev/cli
+        run: npm ci
 
     #   - name: Fetch Quartz Theme
     #     run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
@@ -53,14 +51,13 @@ jobs:
       - name: Build all Slidev .md files
         run: |
          mkdir -p public/slidev
-          find slides -type f -name "*.md" | while read file; do
-            relpath="${file#slides/}"                       # e.g. topic1/sub/slide.md
+          find content -type f -name "*.md" | while read file; do
+            relpath="${file#content/}"                       # e.g. topic1/sub/slide.md
             name="${relpath%.md}"                           # e.g. topic1/sub/slide
             outdir="dist/$name"                             # e.g. dist/topic1/sub/slide
             targetdir="public/slidev/$name"                 # e.g. public/slidev/topic1/sub/slide
 
             echo "📦 Building $file → $targetdir"
-
             npx slidev build "$file" --out "$outdir"
 
             mkdir -p "$targetdir"
