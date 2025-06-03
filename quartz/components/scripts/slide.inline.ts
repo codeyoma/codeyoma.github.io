@@ -153,14 +153,13 @@ function appendRemark(option: SlideOptions) {
     }
   }
 
-
   `
 
   document.head.appendChild(style)
 
   const script = document.createElement("script")
-  // script.src = `https://remarkjs.com/downloads/remark-latest.min.js`
-  script.src = `${window.location.origin}/static/scripts/remark.js`
+  // script.src = `${window.location.origin}/static/scripts/remark.js`
+  script.src = `https://codeyoma.github.io/static/scripts/remark.js`
 
   script.onload = () => {
     remark.create({
@@ -170,7 +169,6 @@ function appendRemark(option: SlideOptions) {
       renderMermaidInSlide()
     )
   }
-
   document.body.appendChild(script)
 }
 
