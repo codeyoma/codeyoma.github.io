@@ -205,7 +205,6 @@ export const Mindmap: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => 
         return (_: any, file: any) => {
           const slug = file.data.slug!
           processMindmapFile(file, transformer, slug)
-          file.data.origin = String(file.value)
         }
       }]
     },

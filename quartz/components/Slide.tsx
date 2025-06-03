@@ -5,17 +5,40 @@ import style from "./styles/slide.scss"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 
-interface MindmapOptions {
-  mode: "button" | "global"
+export interface SlideOptions {
+  ratio: "16:9" | "4:3",
+  navigation: {
+    scroll: boolean,
+    touch: boolean,
+    click: boolean,
+  },
+  timer: {
+    startOnChange: boolean,
+    resetable: boolean,
+    enabled: boolean,
+  },
+  includePresenterNotes: true,
 }
 
-const defaultOptions: MindmapOptions = {
-  mode: "button",
+const defaultOptions: SlideOptions = {
+  ratio: "16:9",
+  navigation: {
+    scroll: false,
+    touch: true,
+    click: false,
+  },
+  timer: {
+    startOnChange: true,
+    resetable: true,
+    enabled: true,
+  },
+  includePresenterNotes: true,
 }
 
-export default ((opts?: Partial<MindmapOptions>) => {
+export default ((opts?: Partial<SlideOptions>) => {
   const Slide: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
-    const mode = opts?.mode ?? defaultOptions.mode
+
+    const option: SlideOptions = { ...defaultOptions, ...opts }
 
     const button = (
       <svg
@@ -32,26 +55,13 @@ export default ((opts?: Partial<MindmapOptions>) => {
       </svg>
     )
 
-    if (mode === "button") {
-      return (
-        <div class={classNames(displayClass, "slide-button")}>
-          <button class="slide-icon" aria-label="Slide Toggle">
-            {button}
-          </button>
-        </div>
-      )
-    }
-
-    if (!fileData.origin) {
-      return null
-    }
-
     return (
-      <div class={classNames(displayClass, "global-slide slide")}>
-        <div class="global-slide-outer">
-          <div class="global-slide-container" data-origin={fileData.origin}>
-          </div>
-        </div>
+      <div class={classNames(displayClass, "slide-button")}
+        data-cfg={JSON.stringify(option)}
+      >
+        <button class="slide-icon" aria-label="Slide Toggle">
+          {button}
+        </button>
       </div>
     )
   }
