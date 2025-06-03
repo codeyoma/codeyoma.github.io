@@ -126,7 +126,6 @@ function appendRemark(option: SlideOptions) {
       z-index: 1;
       background-color: rgba(255, 255, 255, 0.8);
       backdrop-filter: blur(8px);
-      width: 102%;
     }
 
     h1 {
