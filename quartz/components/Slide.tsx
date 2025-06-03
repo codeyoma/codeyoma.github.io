@@ -17,7 +17,7 @@ export interface SlideOptions {
     resetable: boolean,
     enabled: boolean,
   },
-  includePresenterNotes: true,
+  includePresenterNotes: boolean,
 }
 
 const defaultOptions: SlideOptions = {
