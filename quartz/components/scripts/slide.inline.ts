@@ -101,6 +101,7 @@ function appendRemark(option: SlideOptions) {
   const tags = document.querySelector(".page-header .tags")?.outerHTML ?? ""
 
   if (!header) {
+    console.warn("No header found in the document. Cannot render slide.")
     return;
   }
 
@@ -159,8 +160,8 @@ function appendRemark(option: SlideOptions) {
   document.head.appendChild(style)
 
   const script = document.createElement("script")
-  script.src = `https://remarkjs.com/downloads/remark-latest.min.js`
-  // script.src = `${window.location.origin}/static/scripts/remark.js`
+  // script.src = `https://remarkjs.com/downloads/remark-latest.min.js`
+  script.src = `${window.location.origin}/static/scripts/remark.js`
 
   script.onload = () => {
     remark.create({
@@ -208,8 +209,10 @@ document.addEventListener("nav", async () => {
     const option = (slideContainers[0] as HTMLElement).dataset["cfg"]
 
     if (!option) {
+      console.warn("No slide configuration found in the clicked element.")
       return
     }
+
     const mergedOption = paramOption(JSON.parse(option))
     appendRemark(mergedOption)
   }
