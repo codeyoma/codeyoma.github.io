@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-12-01
-modified: 2025-06-02
+modified: 2025-06-04
 status:
   - 🗺️
 tags:
@@ -180,6 +180,15 @@ _ _ _
 ### block code
 ```cpp
 /* codeblock */
+[[file]]
+![[file]]
+---
+***
+<a href="./" />
+
+- ![[image-sample-webp.webp]]
+- > [!note]
+	> note
 
 #include <iostream>
 
