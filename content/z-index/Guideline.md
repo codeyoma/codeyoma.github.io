@@ -7,11 +7,12 @@ status:
 tags:
   - guideline
 title: "- Guideline"
-comments: "false"
+comments: "true"
 draft: "false"
 aliases:
   - "- Guideline"
-markmap: "colorFreezeLevel: 4"
+markmap:
+  - "colorFreezeLevel: 4"
 ---
 
 

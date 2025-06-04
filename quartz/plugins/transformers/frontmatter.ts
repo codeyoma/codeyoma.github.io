@@ -92,7 +92,7 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
 
             if (data.status == "🗺️") {
               data.title = "🗺️ " + data.title
-              data.comments = false
+              // data.comments = false
             }
 
             if (data.permalink != null && data.permalink.toString() !== "") {

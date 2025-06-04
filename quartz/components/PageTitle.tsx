@@ -4,16 +4,16 @@ import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 
 const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
-    const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
-    const baseDir = pathToRoot(fileData.slug!)
-    return (
-        <a href={baseDir} class="page-header-link">
-            <h2 class={classNames(displayClass, "page-title")}>
-                {title}
-            </h2>
-            <img class="page-logo" src="https://avatars.githubusercontent.com/u/71107230?v=4" />
-        </a>
-    )
+  const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
+  const baseDir = pathToRoot(fileData.slug!)
+  return (
+    <a href={baseDir} class="page-header-link">
+      <h2 class={classNames(displayClass, "page-title")}>
+        {title}
+      </h2>
+      <img class="page-logo" src="https://avatars.githubusercontent.com/u/71107230?v=4" />
+    </a>
+  )
 }
 
 PageTitle.css = `
@@ -43,8 +43,10 @@ PageTitle.css = `
   margin: 0;
   width: 1.6rem;
   height: 1.6rem;
+  align-self: center;
 
   @media (min-width: 1025px) {
+    max-width: 200px;
     width: auto;
     height: auto;
   }
