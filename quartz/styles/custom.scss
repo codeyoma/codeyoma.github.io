@@ -32,6 +32,16 @@ footer {
   margin: 0.3em;
   list-style-type: disc;
 
+  img,
+  video,
+  audio,
+  iframe,
+  pre,
+  code,
+  svg {
+    vertical-align: top;
+  }
+
   @media (#{$desktop}) {
     margin: 0.6em 0;
   }
@@ -299,7 +309,8 @@ em {
     img,
     video,
     audio,
-    iframe {
+    iframe,
+    svg {
       vertical-align: top;
     }
 

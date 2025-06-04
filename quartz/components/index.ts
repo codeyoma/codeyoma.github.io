@@ -24,8 +24,8 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import ScrollProgress from "./ScrollProgress"
-import Mindmap from './Mindmap'
 import Slide from './Slide'
+import Mindmap from './Mindmap'
 
 export {
   ArticleTitle,
@@ -54,6 +54,6 @@ export {
   Flex,
   ConditionalRender,
   ScrollProgress,
-  Mindmap,
-  Slide
+  Slide,
+  Mindmap
 }

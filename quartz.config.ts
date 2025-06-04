@@ -82,8 +82,7 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.Mindmap({
         markdownLinkResolution: "shortest",
-        openLinksInNewTab: true
-      }),
+      })
     ],
     filters: [
       Plugin.RemoveDrafts(),

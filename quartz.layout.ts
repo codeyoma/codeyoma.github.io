@@ -8,12 +8,10 @@ export const sharedPageComponents: SharedLayout = {
   ],
   afterBody: [
     Component.Backlinks({ hideWhenEmpty: false }),
-    Component.Mindmap({
-      localOptions: {},
-    }),
+    Component.Mindmap(),
     Component.Mindmap({
       mode: "global",
-      globalOptions: {},
+      globalOptions: {}
     }),
   ],
   beforeFooter: [
@@ -63,7 +61,7 @@ export const defaultContentPageLayout: PageLayout = {
           desktopOnly: true,
         },
         { Component: Component.Darkmode() },
-        { Component: Component.Mindmap({ mode: "button" }) },
+        { Component: Component.Mindmap({ mode: "button", localOptions: {} }) },
         { Component: Component.Slide() }
       ],
     },
@@ -122,7 +120,7 @@ export const defaultListPageLayout: PageLayout = {
           desktopOnly: true,
         },
         { Component: Component.Darkmode() },
-        { Component: Component.Mindmap({ mode: "button" }) },
+        { Component: Component.Mindmap({ mode: "button", localOptions: {} }) },
         { Component: Component.Slide() }
       ],
     }),
