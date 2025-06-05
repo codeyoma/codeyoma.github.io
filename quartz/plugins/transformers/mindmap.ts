@@ -4,10 +4,15 @@ import {
   FullSlug,
   transformLink,
 } from "../../util/path"
+import { JSResource, CSSResource } from "../../util/resources"
+import { canonicalizeCallout } from "./ofm"
 import { defaultOptions, Options } from './links'
+// @ts-ignore
+import mermaidScript from "../../components/scripts/mermaid.inline"
+import mermaidStyle from "../../components/styles/mermaid.inline.scss"
+
 import { IPureNode } from 'markmap-common'
 import { Transformer, builtInPlugins } from "markmap-lib"
-import { canonicalizeCallout } from "./ofm"
 import hePkg from "he";
 
 const { decode } = hePkg;
@@ -230,5 +235,23 @@ export const Mindmap: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => 
         }
       }]
     },
+    externalResources() {
+      const js: JSResource[] = []
+      const css: CSSResource[] = []
+
+      // js.push({
+      //   script: mermaidScript,
+      //   loadTime: "afterDOMReady",
+      //   contentType: "inline",
+      //   moduleType: "module",
+      // })
+
+      // css.push({
+      //   content: mermaidStyle,
+      //   inline: true,
+      // })
+
+      return { js, css }
+    }
   }
 }

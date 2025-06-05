@@ -1,0 +1,1648 @@
+{
+  "content": "- Guideline",
+  "children": [
+    {
+      "content": "Workflow",
+      "children": [
+        {
+          "content": "<a href=\"../Note-Taking/Workflow-of-My-Note-Taking\" class=\"internal\">Workflow of My Note Taking</a>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "20,21"
+          }
+        },
+        {
+          "content": "<a href=\"../Note-Taking/Workflow-of-GTD\" class=\"internal\">Workflow of GTD</a>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "21,22"
+          }
+        },
+        {
+          "content": "<a href=\"../Workflow-of-PARA\" class=\"internal\">Workflow of PARA</a>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "22,23"
+          }
+        },
+        {
+          "content": "<a href=\"../Note-Taking/Workflow-of-Zettelkasten\" class=\"internal\">Workflow of Zettelkasten</a>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "23,25"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "19,20"
+      }
+    },
+    {
+      "content": "Frontmatter",
+      "children": [
+        {
+          "content": "",
+          "children": [
+            {
+              "content": "\n<p data-lines=\"26,27\">status : &#xc9c4;&#xd589; &#xc0c1;&#xd669;</p>",
+              "children": [
+                {
+                  "content": "&#x2728; - backlog",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "27,28"
+                  }
+                },
+                {
+                  "content": "&#x1f6a7; - wip",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "28,29"
+                  }
+                },
+                {
+                  "content": "&#x260e;&#xfe0f; - call",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "29,30"
+                  }
+                },
+                {
+                  "content": "&#x2709;&#xfe0f; - mail<a href></a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "30,31"
+                  }
+                },
+                {
+                  "content": "&#x1f50d; - search",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "31,32"
+                  }
+                },
+                {
+                  "content": "&#x23f3; - wait",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "32,33"
+                  }
+                },
+                {
+                  "content": "&#x1f6ab; - cancelled",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "33,34"
+                  }
+                },
+                {
+                  "content": "&#x23f8;&#xfe0f; - pause",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "34,35"
+                  }
+                },
+                {
+                  "content": "&#x2705; - done",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "35,36"
+                  }
+                },
+                {
+                  "content": "&#x1f5fa;&#xfe0f; - MOC",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "36,38"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "26,38"
+              }
+            },
+            {
+              "content": "\n<p data-lines=\"38,39\">note-type : &#xb178;&#xd2b8; &#xc885;&#xb958;</p>",
+              "children": [
+                {
+                  "content": "template",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "39,40"
+                  }
+                },
+                {
+                  "content": "daily note",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "40,41"
+                  }
+                },
+                {
+                  "content": "weekly note",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "41,42"
+                  }
+                },
+                {
+                  "content": "monthly note",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "42,43"
+                  }
+                },
+                {
+                  "content": "yearly note",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "43,44"
+                  }
+                },
+                {
+                  "content": "...",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "44,46"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "38,46"
+              }
+            },
+            {
+              "content": "\n<p data-lines=\"46,47\"><s>note-level</s> : &#xb178;&#xd2b8; &#xc694;&#xc57d; &#xc815;&#xb3c4; -&gt; (Z) ZettelKasten &#xd3f4;&#xb354; &#xd558;&#xc704;&#xb85c; &#xc774;&#xb3d9;</p>",
+              "children": [
+                {
+                  "content": "raw - (0) Zettel &#x1f4ce;/",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "47,48"
+                  }
+                },
+                {
+                  "content": "<strong>bold</strong> - (1) Fleeting &#x1f58b;&#xfe0f;/",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "48,49"
+                  }
+                },
+                {
+                  "content": "<mark>highlight</mark> - (2) Literature &#x1f58d;&#xfe0f;/",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "49,50"
+                  }
+                },
+                {
+                  "content": "summary - (3) Permanent &#x1f4cc;/",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "50,52"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "46,52"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "ul",
+            "lines": "26,52"
+          }
+        },
+        {
+          "content": "note-stages : &#xb178;&#xd2b8; &#xb2e8;&#xacc4; &#xc815;&#xb3c4; -&gt; <a href=\"/tags/stage\" class=\"internal\">#stage</a> &#xd558;&#xc704;&#xb85c; &#xd1b5;&#xd569;",
+          "children": [
+            {
+              "content": "facts / evidence notes #stage/facts",
+              "children": [
+                {
+                  "content": "&#xc815;&#xbcf4; &#xb178;&#xd2b8;",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "54,55"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "53,55"
+              }
+            },
+            {
+              "content": "opinions / analysis notes #stage/opinions",
+              "children": [
+                {
+                  "content": "&#xc815;&#xbcf4;&#xb97c; &#xcde8;&#xd569;&#xd55c; &#xc758;&#xacac;, &#xc0dd;&#xac01; &#xc815;&#xb9ac; &#xb178;&#xd2b8;",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "56,57"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "55,57"
+              }
+            },
+            {
+              "content": "Arguments / Conclusion notes #stage/arguments",
+              "children": [
+                {
+                  "content": "&#xc758;&#xacac;&#xc744; &#xc870;&#xd569;&#xd558;&#xc5ec;, &#xc8fc;&#xc7a5;&#xc774;&#xb098; &#xb17c;&#xb9ac;&#xb97c; &#xc804;&#xac1c;&#xd55c; &#xb178;&#xd2b8;",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "58,59"
+                  }
+                },
+                {
+                  "content": "5W1H &#xb85c; &#xc791;&#xc131;",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "59,60"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "57,60"
+              }
+            },
+            {
+              "content": "MOC notes <code>#moc</code>",
+              "children": [
+                {
+                  "content": "&#xc885;&#xd569;&#xb41c; &#xb178;&#xd2b8;",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "61,62"
+                  }
+                },
+                {
+                  "content": "&#xc778;&#xb371;&#xc2a4; &#xc815;&#xb9ac;",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "62,64"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "60,64"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "52,64"
+          }
+        },
+        {
+          "content": "",
+          "children": [
+            {
+              "content": "\n<p data-lines=\"64,65\"><s>contents-from</s> : &#xb0b4;&#xc6a9; &#xcd9c;&#xcc98; -&gt; tags: <a href=\"/tags/format\" class=\"internal\">#format</a> &#xd558;&#xc704;&#xb85c; &#xd1b5;&#xd569;</p>",
+              "children": [
+                {
+                  "content": "&#x1f9fe; - manual #format/manual",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "65,66"
+                  }
+                },
+                {
+                  "content": "&#x1f4da; - book #format/book #format/pdf #format/ebook",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "66,67"
+                  }
+                },
+                {
+                  "content": "&#x1f4dc; - thesis #format/pdf #format/paper",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "67,68"
+                  }
+                },
+                {
+                  "content": "&#x1f4f0; - article #format/article",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "68,69"
+                  }
+                },
+                {
+                  "content": "&#x1f3a5; - video #format/video",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "69,70"
+                  }
+                },
+                {
+                  "content": "&#x1f4a1; - idea,  question #format/idea #format/question",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "70,72"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "64,72"
+              }
+            },
+            {
+              "content": "\n<p data-lines=\"72,73\"><s>field</s> : &#xb0b4;&#xc6a9; &#xbd84;&#xc57c; -&gt; tags : <a href=\"/tags/field\" class=\"internal\">#field</a> &#xd558;&#xc704;&#xb85c; &#xd1b5;&#xd569;</p>",
+              "children": [
+                {
+                  "content": "language #field/language",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "73,74"
+                  }
+                },
+                {
+                  "content": "philosophy #field/philosophy",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "74,75"
+                  }
+                },
+                {
+                  "content": "math #field/math",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "75,76"
+                  }
+                },
+                {
+                  "content": "science #field/science",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "76,77"
+                  }
+                },
+                {
+                  "content": "computer #field/computer",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "77,78"
+                  }
+                },
+                {
+                  "content": "...",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "78,80"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "72,80"
+              }
+            },
+            {
+              "content": "\n<p data-lines=\"80,81\">category : &#xd30c;&#xc77c; &#xbd84;&#xc57c;</p>",
+              "children": [
+                {
+                  "content": "people",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "81,82"
+                  }
+                },
+                {
+                  "content": "...",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "82,84"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "80,84"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "ul",
+            "lines": "64,84"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "25,26"
+      }
+    },
+    {
+      "content": "Quartz Frontmatter",
+      "children": [
+        {
+          "content": "<pre data-lines=\"85,98\"><code data-lines=\"85,98\">title: Title of the page\ndescription: Description of the page used for link previews.\ndate: 2025<span class=\"hljs-string\">-05</span><span class=\"hljs-string\">-01</span>\npermalink: &quot;note.md&quot;\naliases: [&quot;nnnn&quot;]\n<span class=\"hljs-keyword\">tags:</span> [&quot;tag1&quot;, &quot;tag2&quot;]\n<span class=\"hljs-keyword\">tags:</span>\n    -tag1\n    -tag2\ncomments: false\ndraft: true\n</code></pre>",
+          "children": [],
+          "payload": {
+            "tag": "pre",
+            "lines": "85,98"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "84,85"
+      }
+    },
+    {
+      "content": "This is a heading 1",
+      "children": [
+        {
+          "content": "This is a heading 2",
+          "children": [
+            {
+              "content": "This is a heading 3",
+              "children": [
+                {
+                  "content": "This is a heading 4",
+                  "children": [
+                    {
+                      "content": "This is a heading 5",
+                      "children": [
+                        {
+                          "content": "This is a heading 6",
+                          "children": [],
+                          "payload": {
+                            "tag": "h6",
+                            "lines": "105,106"
+                          }
+                        }
+                      ],
+                      "payload": {
+                        "tag": "h5",
+                        "lines": "104,105"
+                      }
+                    }
+                  ],
+                  "payload": {
+                    "tag": "h4",
+                    "lines": "103,104"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "h3",
+                "lines": "102,103"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "101,102"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "100,101"
+      }
+    },
+    {
+      "content": "Supported Markdown extensions",
+      "children": [
+        {
+          "content": "Syntax",
+          "children": [
+            {
+              "content": "<table data-lines=\"110,127\">\n<thead data-lines=\"110,111\">\n<tr data-lines=\"110,111\">\n<th>Syntax</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody data-lines=\"112,127\">\n<tr data-lines=\"112,113\">\n<td><code>[[Link]]</code></td>\n<td><a href=\"https://help.obsidian.md/Linking+notes+and+files/Internal+links\">Internal links</a></td>\n</tr>\n<tr data-lines=\"113,114\">\n<td><code>![[Link]]</code></td>\n<td><a href=\"https://help.obsidian.md/Linking+notes+and+files/Embedding+files\">Embedding files</a></td>\n</tr>\n<tr data-lines=\"114,115\">\n<td><code>![[Link\\#^id]]</code></td>\n<td><a href=\"https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link%20to%20a%20block%20in%20a%20note\">Block references</a></td>\n</tr>\n<tr data-lines=\"115,116\">\n<td><code>^id</code></td>\n<td><a href=\"https://help.obsidian.md/Linking+notes+and+files/Internal+links#Link%20to%20a%20block%20in%20a%20note\">Defining a block</a></td>\n</tr>\n<tr data-lines=\"116,117\">\n<td><code>%%</code></td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments\">Comments</a></td>\n</tr>\n<tr data-lines=\"117,118\">\n<td><code>&lt;!-- \\n --&gt;</code></td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Comments\">Comments</a></td>\n</tr>\n<tr data-lines=\"118,119\">\n<td><code>~~</code></td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Styling%20text\">Strikethroughs</a></td>\n</tr>\n<tr data-lines=\"119,120\">\n<td>==</td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Styling%20text\">Highlights</a></td>\n</tr>\n<tr data-lines=\"120,121\">\n<td><code>**</code></td>\n<td>Bold</td>\n</tr>\n<tr data-lines=\"121,122\">\n<td><code>*</code></td>\n<td>Italic</td>\n</tr>\n<tr data-lines=\"122,123\">\n<td><code>```</code></td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code%20blocks\">Code blocks</a></td>\n</tr>\n<tr data-lines=\"123,124\">\n<td><code>- [ ]</code></td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task%20lists\">Incomplete task</a></td>\n</tr>\n<tr data-lines=\"124,125\">\n<td><code>- [x]</code></td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Task%20lists\">Completed task</a></td>\n</tr>\n<tr data-lines=\"125,126\">\n<td><code>&gt; [!note]</code></td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Callouts\">Callouts</a></td>\n</tr>\n<tr data-lines=\"126,127\">\n<td>(see link)</td>\n<td><a href=\"https://help.obsidian.md/Editing+and+formatting/Advanced+formatting+syntax#Tables\">Tables</a></td>\n</tr>\n</tbody>\n</table>",
+              "children": [],
+              "payload": {
+                "tag": "table",
+                "lines": "110,127"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "109,110"
+          }
+        },
+        {
+          "content": "Bold, italics, highlights",
+          "children": [
+            {
+              "content": "<table data-lines=\"130,138\">\n<thead data-lines=\"130,131\">\n<tr data-lines=\"130,131\">\n<th>Style</th>\n<th>Syntax</th>\n<th>Example</th>\n<th>Output</th>\n</tr>\n</thead>\n<tbody data-lines=\"132,138\">\n<tr data-lines=\"132,133\">\n<td>Bold</td>\n<td><code>** **</code>&#xa0;or&#xa0;<code>__ __</code></td>\n<td><code>**Bold text**</code></td>\n<td><strong>Bold text</strong></td>\n</tr>\n<tr data-lines=\"133,134\">\n<td>Italic</td>\n<td><code>* *</code>&#xa0;or&#xa0;<code>_ _</code></td>\n<td><code>*Italic text*</code></td>\n<td><em>Italic text</em></td>\n</tr>\n<tr data-lines=\"134,135\">\n<td>Strikethrough</td>\n<td><code>~~ ~~</code></td>\n<td><code>~~Striked out text~~</code></td>\n<td><s>Striked out text</s></td>\n</tr>\n<tr data-lines=\"135,136\">\n<td>Highlight</td>\n<td><em>== ==</em></td>\n<td><em>== Highlighted text ==</em></td>\n<td><mark>Highlighted text</mark></td>\n</tr>\n<tr data-lines=\"136,137\">\n<td>Bold and nested italic</td>\n<td><code>** **</code>&#xa0;and&#xa0;<code>_ _</code></td>\n<td><code>**Bold text and _nested italic_ text**</code></td>\n<td><strong>Bold text and&#xa0;<em>nested italic</em>&#xa0;text</strong></td>\n</tr>\n<tr data-lines=\"137,138\">\n<td>Bold and italic</td>\n<td><code>*** ***</code>&#xa0;or&#xa0;<code>___ ___</code></td>\n<td><code>***Bold and italic text***</code></td>\n<td><strong><em>Bold and italic text</em></strong></td>\n</tr>\n</tbody>\n</table>",
+              "children": [],
+              "payload": {
+                "tag": "table",
+                "lines": "130,138"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "128,129"
+          }
+        },
+        {
+          "content": "Links",
+          "children": [
+            {
+              "content": "Wikilink:&#xa0;<code>[[file]]</code>",
+              "children": [
+                {
+                  "content": "<a href=\"../--Guideline\" class=\"internal\">- Guideline</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "142,143"
+                  }
+                },
+                {
+                  "content": "<a href=\"../--Guideline#iframe\" class=\"internal\">iframe</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "143,144"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "141,144"
+              }
+            },
+            {
+              "content": "Markdown:&#xa0;<code>[name](file)</code>",
+              "children": [],
+              "payload": {
+                "tag": "li",
+                "lines": "144,146"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "140,141"
+          }
+        },
+        {
+          "content": "Quotes",
+          "children": [
+            {
+              "content": "\n<blockquote data-lines=\"147,148\">\n<p data-lines=\"147,148\">Quotes arsoietn arstein arsotien arsotien arsoietn arsotienarst arsn arosietnars toaiersnt arsotien arsotienrast arsoitne arsotien arsotienarsotien arsotienarstoien arst arsoientaroiensratoien arsotienarstoien asrotienarsotien arstoienarstoien</p>\n</blockquote>",
+              "children": [],
+              "payload": {
+                "tag": "li",
+                "lines": "147,148"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "146,147"
+          }
+        },
+        {
+          "content": "Lists",
+          "children": [
+            {
+              "content": "1. First list item",
+              "children": [
+                {
+                  "content": "1. Ordered nested list item",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "152,153",
+                    "listIndex": 1
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "151,153",
+                "listIndex": 1
+              }
+            },
+            {
+              "content": "2. Second list item",
+              "children": [
+                {
+                  "content": "Unordered nested list item",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "154,156"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "153,156",
+                "listIndex": 2
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "150,151"
+          }
+        },
+        {
+          "content": "Task lists",
+          "children": [
+            {
+              "content": "<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Task item 1",
+              "children": [
+                {
+                  "content": "<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Subtask 1",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "158,159"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "157,159"
+              }
+            },
+            {
+              "content": "<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Task item 2",
+              "children": [
+                {
+                  "content": "<svg width=\"16\" height=\"16\" viewBox=\"0 -3 24 24\"><path fill-rule=\"evenodd\" d=\"M6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zM3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-5z\" clip-rule=\"evenodd\"/></svg> Subtask 1",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "160,162"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "159,162"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "156,157"
+          }
+        },
+        {
+          "content": "Horizontal rule",
+          "children": [
+            {
+              "content": "<pre data-lines=\"163,174\"><code data-lines=\"163,174\"><span class=\"hljs-string\">***</span>\n<span class=\"hljs-string\">****</span>\n<span class=\"hljs-string\">*</span> <span class=\"hljs-string\">*</span> <span class=\"hljs-string\">*</span>\n<span class=\"hljs-meta\">--- </span>\n<span class=\"hljs-string\">----</span> \n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-bullet\">-</span> <span class=\"hljs-bullet\">-</span> \n<span class=\"hljs-string\">___</span> \n<span class=\"hljs-string\">____</span> \n<span class=\"hljs-string\">_</span> <span class=\"hljs-string\">_</span> <span class=\"hljs-string\">_</span>\n</code></pre>",
+              "children": [],
+              "payload": {
+                "tag": "pre",
+                "lines": "163,174"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "162,163"
+          }
+        },
+        {
+          "content": "Code",
+          "children": [
+            {
+              "content": "Inline code",
+              "children": [
+                {
+                  "content": "<code>inline code</code>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "177,179"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "h3",
+                "lines": "176,177"
+              }
+            },
+            {
+              "content": "block code",
+              "children": [
+                {
+                  "content": "<pre data-lines=\"180,199\"><code class=\"language-cpp\"><span class=\"hljs-comment\">/* codeblock */</span>\n[[file]]\n![[file]]\n---\n***\n&lt;a href=<span class=\"hljs-string\">&quot;./&quot;</span> /&gt;\n\n- ![[image-sample-webp.webp]]\n- &gt; [!note]\n\t&gt; note\n\n<span class=\"hljs-meta\">#<span class=\"hljs-keyword\">include</span> <span class=\"hljs-string\">&lt;iostream&gt;</span></span>\n\n<span class=\"hljs-type\">int</span> <span class=\"hljs-built_in\">main</span>() {\n    std::cout &lt;&lt; <span class=\"hljs-string\">&quot;Hello World!&quot;</span>;\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n}\n</code></pre>",
+                  "children": [],
+                  "payload": {
+                    "tag": "pre",
+                    "lines": "180,199"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "h3",
+                "lines": "179,180"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "175,176"
+          }
+        },
+        {
+          "content": "Footnotes",
+          "children": [
+            {
+              "content": "\n<p data-lines=\"201,204\">This is a simple footnote[<sup>1].[</sup>1][^1]<br>\n[^2]<br>\n[^note]</p>",
+              "children": [],
+              "payload": {
+                "tag": "li",
+                "lines": "201,204"
+              }
+            },
+            {
+              "content": "\n<pre data-lines=\"205,215\"><code data-lines=\"205,215\"><span class=\"hljs-selector-tag\">This</span> <span class=\"hljs-selector-tag\">is</span> <span class=\"hljs-selector-tag\">a</span> <span class=\"hljs-selector-tag\">simple</span> <span class=\"hljs-selector-tag\">footnote</span><span class=\"hljs-selector-attr\">[^1]</span>.<span class=\"hljs-selector-attr\">[^1]</span><span class=\"hljs-selector-attr\">[^1]</span>\n<span class=\"hljs-selector-attr\">[^2]</span>\n<span class=\"hljs-selector-attr\">[^note]</span>\n\n<span class=\"hljs-selector-attr\">[^1]</span>: <span class=\"hljs-selector-tag\">This</span> <span class=\"hljs-selector-tag\">is</span> <span class=\"hljs-selector-tag\">the</span> <span class=\"hljs-selector-tag\">referenced</span> <span class=\"hljs-selector-tag\">text</span>. \n<span class=\"hljs-selector-attr\">[^2]</span>: <span class=\"hljs-selector-tag\">Add</span> <span class=\"hljs-number\">2</span> <span class=\"hljs-selector-tag\">spaces</span> <span class=\"hljs-selector-tag\">at</span> <span class=\"hljs-selector-tag\">the</span> <span class=\"hljs-selector-tag\">start</span> <span class=\"hljs-selector-tag\">of</span> <span class=\"hljs-selector-tag\">each</span> <span class=\"hljs-selector-tag\">new</span> <span class=\"hljs-selector-tag\">line</span>. \n  <span class=\"hljs-selector-tag\">This</span> <span class=\"hljs-selector-tag\">lets</span> <span class=\"hljs-selector-tag\">you</span> <span class=\"hljs-selector-tag\">write</span> <span class=\"hljs-selector-tag\">footnotes</span> <span class=\"hljs-selector-tag\">that</span> <span class=\"hljs-selector-tag\">span</span> <span class=\"hljs-selector-tag\">multiple</span> <span class=\"hljs-selector-tag\">lines</span>.\n<span class=\"hljs-selector-attr\">[^note]</span>: <span class=\"hljs-selector-tag\">Named</span> <span class=\"hljs-selector-tag\">footnotes</span> <span class=\"hljs-selector-tag\">still</span> <span class=\"hljs-selector-tag\">appear</span> <span class=\"hljs-selector-tag\">as</span> <span class=\"hljs-selector-tag\">numbers</span>, <span class=\"hljs-selector-tag\">but</span> <span class=\"hljs-selector-tag\">can</span> <span class=\"hljs-selector-tag\">make</span> <span class=\"hljs-selector-tag\">it</span> <span class=\"hljs-selector-tag\">easier</span> <span class=\"hljs-selector-tag\">to</span> <span class=\"hljs-selector-tag\">identify</span> <span class=\"hljs-selector-tag\">and</span> <span class=\"hljs-selector-tag\">link</span> <span class=\"hljs-selector-tag\">references</span>.\n</code></pre>",
+              "children": [],
+              "payload": {
+                "tag": "li",
+                "lines": "204,216"
+              }
+            },
+            {
+              "content": "\n<p data-lines=\"216,217\">You can also use inline footnotes. ^[This is an inline footnote.]</p>",
+              "children": [],
+              "payload": {
+                "tag": "li",
+                "lines": "216,217"
+              }
+            },
+            {
+              "content": "\n<pre data-lines=\"218,221\"><code data-lines=\"218,221\">You can <span class=\"hljs-keyword\">also</span> use <span class=\"hljs-keyword\">inline</span> footnotes. ^[This <span class=\"hljs-keyword\">is</span> an <span class=\"hljs-keyword\">inline</span> footnote.]\n</code></pre>",
+              "children": [],
+              "payload": {
+                "tag": "li",
+                "lines": "217,222"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "200,201"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "107,108"
+      }
+    },
+    {
+      "content": "Callout",
+      "children": [
+        {
+          "content": "\n\n            <blockquote class=\"callout note\" data-callout=\"note\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>note</p></div>\n              </div>\n              \n                <div class=\"callout-content\">\n                  <div class=\"callout-content-inner\">\n                    <p>\nnote</p>\n                  </div>\n                </div>\n                \n            </blockquote>\n            \n</blockquote>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "230,232"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout info\" data-callout=\"info\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>info</p></div>\n              </div>\n              \n                <div class=\"callout-content\">\n                  <div class=\"callout-content-inner\">\n                    <p>\ninfo line 1\ninfo line 2</p>\n                  </div>\n                </div>\n                \n            </blockquote>\n            \n</blockquote>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "232,235"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout todo\" data-callout=\"todo\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>todo</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "235,236"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout abstract\" data-callout=\"abstract\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>abstract</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout abstract\" data-callout=\"abstract\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>summary</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [
+                {
+                  "content": "\n\n            <blockquote class=\"callout abstract\" data-callout=\"abstract\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>tldr</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "238,239"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "237,239"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "236,239"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout tip\" data-callout=\"tip\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>tip</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout tip\" data-callout=\"tip\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>hint</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [
+                {
+                  "content": "\n\n            <blockquote class=\"callout tip\" data-callout=\"tip\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>important</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "241,242"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "240,242"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "239,242"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout success\" data-callout=\"success\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>success</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout success\" data-callout=\"success\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>check</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [
+                {
+                  "content": "\n\n            <blockquote class=\"callout success\" data-callout=\"success\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>done</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "244,245"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "243,245"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "242,245"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout question\" data-callout=\"question\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>question</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout question\" data-callout=\"question\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>help</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [
+                {
+                  "content": "\n\n            <blockquote class=\"callout question\" data-callout=\"question\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>faq</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "247,248"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "246,248"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "245,248"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout warning\" data-callout=\"warning\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>warning</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout warning\" data-callout=\"warning\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>caution</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [
+                {
+                  "content": "\n\n            <blockquote class=\"callout warning\" data-callout=\"warning\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>attention</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "250,251"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "249,251"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "248,251"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout failure\" data-callout=\"failure\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>failure</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout failure\" data-callout=\"failure\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>fail</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [
+                {
+                  "content": "\n\n            <blockquote class=\"callout failure\" data-callout=\"failure\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>missing</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "253,254"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "252,254"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "251,254"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout danger\" data-callout=\"danger\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>danger</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout danger\" data-callout=\"danger\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>error</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [
+                {
+                  "content": "\n\n            <blockquote class=\"callout bug\" data-callout=\"bug\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>bug</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "256,257"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "255,257"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "254,257"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout example\" data-callout=\"example\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>example</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "257,258"
+          }
+        },
+        {
+          "content": "\n\n            <blockquote class=\"callout quote\" data-callout=\"quote\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>quote</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+          "children": [
+            {
+              "content": "\n\n            <blockquote class=\"callout quote\" data-callout=\"quote\">\n              <div class=\"callout-title\">\n                <div class=\"callout-icon\"></div>\n                <div class=\"callout-title-inner\"><p>cite</p></div>\n              </div>\n              \n            </blockquote>\n            \n</blockquote>",
+              "children": [],
+              "payload": {
+                "tag": "li",
+                "lines": "259,261"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "li",
+            "lines": "258,261"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "229,230"
+      }
+    },
+    {
+      "content": "MathJax",
+      "children": [
+        {
+          "content": "<a href=\"https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference\">MathJax basic tutorial</a>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "262,263"
+          }
+        },
+        {
+          "content": "<a href=\"https://docs.mathjax.org/en/latest/input/tex/extensions/index.html\">mathJax support extensions list</a>",
+          "children": [],
+          "payload": {
+            "tag": "li",
+            "lines": "263,265"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "261,262"
+      }
+    },
+    {
+      "content": "Files",
+      "children": [
+        {
+          "content": "image",
+          "children": [
+            {
+              "content": "png",
+              "children": [
+                {
+                  "content": "<img src=\"../Attachments/image-sample-png.png\" alt=\"100\" style=\"height:auto; width:100px;\" />",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "268,269"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/image-sample-png.png\" class=\"internal\">100</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "269,270"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "267,270"
+              }
+            },
+            {
+              "content": "jpg",
+              "children": [
+                {
+                  "content": "<img src=\"../Attachments/image-sample-jpg.jpg\" alt=\"100x100\" style=\"height:100px; width:100px;\" />",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "271,272"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/image-sample-jpg.jpg\" class=\"internal\">100x100</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "272,273"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "270,273"
+              }
+            },
+            {
+              "content": "jpeg",
+              "children": [
+                {
+                  "content": "<img src=\"../Attachments/image-sample-jpeg.jpeg\" alt=\"test\" style=\"height:auto; width:auto;\" />",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "274,275"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/image-sample-jpeg.jpeg#test\" class=\"internal\">test</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "275,276"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "273,276"
+              }
+            },
+            {
+              "content": "gif",
+              "children": [
+                {
+                  "content": "<img src=\"../Attachments/image-sample-gif.gif\" alt=\"test\" style=\"height:auto; width:auto;\" />",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "277,278"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/image-sample-gif.gif\" class=\"internal\">test</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "278,279"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "276,279"
+              }
+            },
+            {
+              "content": "bmp",
+              "children": [
+                {
+                  "content": "<img src=\"../Attachments/image-sample-bmp.bmp\" alt=\"test\" style=\"height:auto; width:100px;\" />",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "280,281"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/image-sample-bmp.bmp#test\" class=\"internal\">100</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "281,282"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "279,282"
+              }
+            },
+            {
+              "content": "svg",
+              "children": [
+                {
+                  "content": "<img src=\"../Attachments/image-sample-svg.svg\" alt=\"\" style=\"height:auto; width:auto;\" />",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "283,284"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/image-sample-svg.svg\" class=\"internal\">image-sample-svg.svg</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "284,285"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "282,285"
+              }
+            },
+            {
+              "content": "webp",
+              "children": [
+                {
+                  "content": "<img src=\"../Attachments/image-sample-webp.webp\" alt=\"\" style=\"height:auto; width:auto;\" />",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "286,287"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/image-sample-webp.webp\" class=\"internal\">image-sample-webp.webp</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "287,289"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "285,289"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "266,267"
+          }
+        },
+        {
+          "content": "video",
+          "children": [
+            {
+              "content": "mp4",
+              "children": [
+                {
+                  "content": "\n            <video src=\"../Attachments/video-sample-mp4.mp4\" data-type=\"video\" controls width=\"640px\" height=\"360px\"/>\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "291,292"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/video-sample-mp4.mp4\" class=\"internal\">video-sample-mp4.mp4</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "292,293"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "290,293"
+              }
+            },
+            {
+              "content": "webm",
+              "children": [
+                {
+                  "content": "\n            <video src=\"../Attachments/video-sample-webm.webm\" data-type=\"video\" controls width=\"640px\" height=\"360px\"/>\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "294,295"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/video-sample-webm.webm\" class=\"internal\">video-sample-webm.webm</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "295,296"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "293,296"
+              }
+            },
+            {
+              "content": "ogv",
+              "children": [
+                {
+                  "content": "\n            <video src=\"../Attachments/video-sample-ogv.ogv\" data-type=\"video\" controls width=\"640px\" height=\"360px\"/>\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "297,298"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/video-sample-ogv.ogv\" class=\"internal\">video-sample-ogv.ogv</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "298,299"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "296,299"
+              }
+            },
+            {
+              "content": "mov",
+              "children": [
+                {
+                  "content": "\n            <video src=\"../Attachments/video-sample-mov.mov\" data-type=\"video\" controls width=\"640px\" height=\"360px\"/>\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "300,301"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/video-sample-mov.mov\" class=\"internal\">video-sample-mov.mov</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "301,302"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "299,302"
+              }
+            },
+            {
+              "content": "mkv",
+              "children": [
+                {
+                  "content": "\n            <video src=\"../Attachments/video-sample-mkv.mkv\" data-type=\"video\" controls width=\"640px\" height=\"360px\"/>\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "303,304"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/video-sample-mkv.mkv\" class=\"internal\">video-sample-mkv.mkv</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "304,306"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "302,306"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "289,290"
+          }
+        },
+        {
+          "content": "audio",
+          "children": [
+            {
+              "content": "mp3",
+              "children": [
+                {
+                  "content": "\n            <audio src=\"../Attachments/audio-sample-mp3.mp3\" data-type=\"audio\" controls />\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "308,309"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/audio-sample-mp3.mp3\" class=\"internal\">audio-sample-mp3.mp3</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "309,310"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "307,310"
+              }
+            },
+            {
+              "content": "m4a",
+              "children": [
+                {
+                  "content": "\n            <audio src=\"../Attachments/audio-sample-m4a.m4a\" data-type=\"audio\" controls />\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "311,312"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/audio-sample-m4a.m4a\" class=\"internal\">audio-sample-m4a.m4a</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "312,313"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "310,313"
+              }
+            },
+            {
+              "content": "ogg",
+              "children": [
+                {
+                  "content": "\n            <audio src=\"../Attachments/audio-sample-ogg.ogg\" data-type=\"audio\" controls />\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "314,315"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/audio-sample-ogg.ogg\" class=\"internal\">audio-sample-ogg.ogg</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "315,316"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "313,316"
+              }
+            },
+            {
+              "content": "3gp",
+              "children": [
+                {
+                  "content": "\n            <audio src=\"../Attachments/audio-sample-3gp.3gp\" data-type=\"audio\" controls />\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "317,318"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/audio-sample-3gp.3gp\" class=\"internal\">audio-sample-3gp.3gp</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "318,319"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "316,319"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "306,307"
+          }
+        },
+        {
+          "content": "iframe",
+          "children": [
+            {
+              "content": "pdf",
+              "children": [
+                {
+                  "content": "\n            <iframe src=\"../Attachments/iframe-sample-pdf.pdf\" class=\"pdf\" data-type=\"pdf\" />\n        ",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "330,331"
+                  }
+                },
+                {
+                  "content": "<a href=\"../Attachments/iframe-sample-pdf.pdf\" class=\"internal\">iframe-sample-pdf.pdf</a>",
+                  "children": [],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "331,332"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "329,332"
+              }
+            },
+            {
+              "content": "youtube",
+              "children": [
+                {
+                  "content": "video",
+                  "children": [
+                    {
+                      "content": "\n          <iframe\n            data-type=\"youtube\"\n            data-place=\"external\"\n            data-src=\"https://www.youtube.com/watch?v=MsRmLnJjsy8\"\n            class=\"external-embed youtube\"\n            allow=\"fullscreen\"\n            frameborder=\"0\"\n            src=\"https://www.youtube.com/embed/MsRmLnJjsy8\">\n          </iframe>\n        ",
+                      "children": [],
+                      "payload": {
+                        "tag": "li",
+                        "lines": "334,335"
+                      }
+                    },
+                    {
+                      "content": "<a href=\"https://www.youtube.com/watch?v=MsRmLnJjsy8\">&#x304a;&#x306f;&#x309a;&#x3093;&#x3061;&#x3085;&#x3046;&#x3055;&#x304e;&#x30bd;&#x30f3;&#x30b0; - YouTube</a>",
+                      "children": [],
+                      "payload": {
+                        "tag": "li",
+                        "lines": "335,336"
+                      }
+                    }
+                  ],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "333,336"
+                  }
+                },
+                {
+                  "content": "playlists",
+                  "children": [
+                    {
+                      "content": "\n          <iframe\n            data-type=\"youtube\"\n            data-place=\"external\"\n            data-src=\"https://youtube.com/playlist?list=PLXxoTrp1nCgOPKeso4cWGsKjLtUMgC1I6&amp;si=cJcCTxty0r0enzJE\"\n            class=\"external-embed youtube\"\n            allow=\"fullscreen\"\n            frameborder=\"0\"\n            src=\"https://www.youtube.com/embed/videoseries?list=PLXxoTrp1nCgOPKeso4cWGsKjLtUMgC1I6\">\n          </iframe>\n        ",
+                      "children": [],
+                      "payload": {
+                        "tag": "li",
+                        "lines": "337,338"
+                      }
+                    },
+                    {
+                      "content": "<a href=\"https://youtube.com/playlist?list=PLXxoTrp1nCgOPKeso4cWGsKjLtUMgC1I6&amp;si=cJcCTxty0r0enzJE\">Muzik - YouTube</a>",
+                      "children": [],
+                      "payload": {
+                        "tag": "li",
+                        "lines": "338,339"
+                      }
+                    }
+                  ],
+                  "payload": {
+                    "tag": "li",
+                    "lines": "336,339"
+                  }
+                }
+              ],
+              "payload": {
+                "tag": "li",
+                "lines": "332,339"
+              }
+            }
+          ],
+          "payload": {
+            "tag": "h2",
+            "lines": "328,329"
+          }
+        }
+      ],
+      "payload": {
+        "tag": "h1",
+        "lines": "265,266"
+      }
+    }
+  ]
+}

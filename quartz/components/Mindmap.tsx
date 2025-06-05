@@ -5,6 +5,9 @@ import style from "./styles/mindmap.scss"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 
+// import fs from "fs"
+// import path from "path"
+
 export interface LocalMindmapConfig {
   colorFreezeLevel: number
   duration: number
@@ -74,10 +77,23 @@ const defaultOptions: MindmapOptions = {
 }
 
 export default ((opts?: Partial<MindmapOptions>) => {
-  const Mindmap: QuartzComponent = ({ displayClass, cfg, fileData }: QuartzComponentProps) => {
+  const Mindmap: QuartzComponent = ({ displayClass, cfg, fileData, tree }: QuartzComponentProps) => {
     const mode = opts?.mode ?? defaultOptions.mode
     const localOption = { ...defaultOptions.localOptions, ...opts?.localOptions }
     const globalOption = { ...defaultOptions.globalOptions, ...opts?.globalOptions }
+
+    // if (fileData.slug?.endsWith("Guideline")) {
+    // const outputPath = path.resolve("./", "logs", 'mindmap.json')
+    // const outputPath2 = path.resolve("./", "logs", "tree.json")
+    // fs.mkdirSync(path.dirname(outputPath), { recursive: true })
+    // fs.mkdirSync(path.dirname(outputPath2), { recursive: true })
+
+    // fs.writeFileSync(outputPath, JSON.stringify(fileData.mindmap, null, 2), "utf-8")
+    // fs.writeFileSync(outputPath2, JSON.stringify(tree, null, 2), "utf-8")
+
+    // console.log(JSON.stringify(tree, null, 2))
+    // console.log(JSON.stringify(fileData.mindmap, null, 2))
+    // }
 
     const button = (
       <svg
