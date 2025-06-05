@@ -27,12 +27,6 @@ jobs:
           submodules: recursive
           token: ${{ secrets.GH_PAT }}
 
-      - name: Debug submodule contents
-        run: |
-          echo "::info:: 🔍 Showing resume folder contents..."
-          ls -al resume || echo "resume folder not found"
-          ls -al
-
       - name: Copy submodule content into ./content
         run: |
           cp -r resume/* content/
