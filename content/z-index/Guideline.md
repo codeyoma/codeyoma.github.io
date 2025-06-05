@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-12-01
-modified: 2025-06-04
+modified: 2025-06-05
 status:
   - 🗺️
 tags:
@@ -83,7 +83,7 @@ markmap:
 	* ...
 
 # Quartz Frontmatter
-```
+```text
 title: Title of the page
 description: Description of the page used for link previews.
 date: 2025-05-01
@@ -161,7 +161,7 @@ draft: true
 	- [ ] Subtask 1
 
 ## Horizontal rule
-```
+```text
 ***
 ****
 * * *
@@ -203,7 +203,7 @@ int main() {
 [^2]
 [^note]
 - 
-	```
+	```text
 	This is a simple footnote[^1].[^1][^1]
 	[^2]
 	[^note]
@@ -216,7 +216,7 @@ int main() {
 
 - You can also use inline footnotes. ^[This is an inline footnote.]
 - 
-	```
+	```text
 	You can also use inline footnotes. ^[This is an inline footnote.]
 	```
 

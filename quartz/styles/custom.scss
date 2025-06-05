@@ -30,7 +30,6 @@ footer {
 
 .center li {
   margin: 0.3em;
-  list-style-type: disc;
 
   img,
   video,
@@ -50,11 +49,18 @@ footer {
 
 .center .tags li {
   margin: 0.1em 0;
-  list-style-type: disc;
 
   @media (#{$desktop}) {
     margin: 0.1em 0;
   }
+}
+
+ol li {
+  list-style-type: decimal-leading-zero;
+}
+
+ul li {
+  list-style-type: disc;
 }
 
 .tag-link {}
@@ -273,6 +279,9 @@ em {
 
 }
 
+
+// slide plugin
+
 .remark-slide-scaler {
   // -webkit-font-smoothing: antialiased;
   backface-visibility: hidden;
@@ -309,7 +318,6 @@ em {
 
   li {
     line-height: 1.8;
-    list-style-type: disc;
     list-style-position: outside;
 
     img,
@@ -334,10 +342,10 @@ em {
 
   pre {
     padding: 0;
-  }
 
-  .remark-code {
-    padding: 7px;
+    code {
+      padding: .5rem;
+    }
   }
 
   img {
@@ -350,7 +358,15 @@ em {
     margin: 10px 0;
   }
 
-  .callout-title .callout-icon {
-    margin: auto 0;
+  .callout {
+    padding-bottom: 0.8rem;
+
+    .callout-title {
+      padding-bottom: 0.2rem;
+
+      .callout-icon {
+        margin: auto 0;
+      }
+    }
   }
 }
