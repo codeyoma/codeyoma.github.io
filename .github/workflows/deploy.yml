@@ -27,6 +27,10 @@ jobs:
           submodules: recursive
           token: ${{ secrets.GH_PAT }}
 
+      - name: Pull latest submodule commits
+        run: |
+          git submodule update --remote --merge
+
       - name: Copy submodule content into ./content
         run: |
           cp -r resume/* content/

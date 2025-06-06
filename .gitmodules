@@ -1,3 +1,4 @@
 [submodule "resume"]
-	path = resume
-	url = https://github.com/codeyoma/resume.git
+path = resume
+url = https://github.com/codeyoma/resume.git
+branch = main
