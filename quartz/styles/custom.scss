@@ -169,13 +169,28 @@ footer {
 }
 
 .page>#quartz-body .left {
-
   padding-left: 1rem;
   padding-right: 1rem;
 
   @media (min-width: #{$pageWidth}) {
     padding-left: 0.5rem;
     padding-right: 1.5rem;
+  }
+}
+
+.page>#quartz-body {
+  @media (max-width: #{$pageWidth}) {
+    .sidebar.left:has(.explorer) {
+      background-color: transparent;
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      padding: 0.5rem 0;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .flex-container {
+      padding-right: 1rem;
+    }
   }
 }
 
