@@ -349,9 +349,7 @@ hr {
     background-color: color-mix(in srgb, var(--light) 80%, transparent);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 
   h1 {
