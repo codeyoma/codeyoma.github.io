@@ -11,14 +11,6 @@ body {
   font-synthesis: style;
 }
 
-.center article,
-p {
-  @media (#{$desktop}) {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-}
-
 footer {
   margin-top: 3em;
 
@@ -342,7 +334,7 @@ hr {
   will-change: transform;
 }
 
-.remark-slide-container .remark-slide-content {
+.remark-slide-content {
   background-color: var(--light);
 
   h1,
@@ -358,8 +350,8 @@ hr {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 2.0rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
   }
 
   h1 {
@@ -389,7 +381,7 @@ hr {
   }
 
   p {
-    margin: 0;
+    line-height: 1.8;
   }
 
   .remark-slide-number {}
@@ -399,6 +391,7 @@ hr {
 
     code {
       padding: .5rem;
+      font-size: large;
     }
   }
 
