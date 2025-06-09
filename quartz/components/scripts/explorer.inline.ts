@@ -49,9 +49,9 @@ function toggleFolder(evt: MouseEvent) {
   const folderContainer = (
     isSvg
       ? // svg -> div.folder-container
-        target.parentElement
+      target.parentElement
       : // button.folder-button -> div -> div.folder-container
-        target.parentElement?.parentElement
+      target.parentElement?.parentElement
   ) as MaybeHTMLElement
   if (!folderContainer) return
   const childFolderContainer = folderContainer.nextElementSibling as MaybeHTMLElement
@@ -222,9 +222,26 @@ async function setupExplorer(currentSlug: FullSlug) {
       explorerUl.scrollTop = parseInt(scrollTop)
     } else {
       // try to scroll to the active element if it exists
+      // const activeElement = explorerUl.querySelector(".active")
+      // if (activeElement) {
+      //   activeElement.scrollIntoView({
+      //     behavior: "smooth",
+      //     block: 'nearest'
+      //   })
+      // }
       const activeElement = explorerUl.querySelector(".active")
-      if (activeElement) {
-        activeElement.scrollIntoView({ behavior: "smooth" })
+      const scrollContainer = explorer.querySelector(".explorer-content ul")
+
+      if (activeElement && scrollContainer) {
+        const offset =
+          activeElement.getBoundingClientRect().top -
+          scrollContainer.getBoundingClientRect().top +
+          scrollContainer.scrollTop
+
+        scrollContainer.scrollTo({
+          top: offset,
+          behavior: "smooth"
+        })
       }
     }
 
