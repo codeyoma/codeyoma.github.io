@@ -83,16 +83,13 @@ export default ((opts?: Partial<MindmapOptions>) => {
     const globalOption = { ...defaultOptions.globalOptions, ...opts?.globalOptions }
 
     // if (fileData.slug?.endsWith("Guideline")) {
-    // const outputPath = path.resolve("./", "logs", 'mindmap.json')
-    // const outputPath2 = path.resolve("./", "logs", "tree.json")
-    // fs.mkdirSync(path.dirname(outputPath), { recursive: true })
-    // fs.mkdirSync(path.dirname(outputPath2), { recursive: true })
+    //   const outputPath = path.resolve("./", "logs", 'mindmap.json')
+    //   const outputPath2 = path.resolve("./", "logs", "tree.json")
+    //   fs.mkdirSync(path.dirname(outputPath), { recursive: true })
+    //   fs.mkdirSync(path.dirname(outputPath2), { recursive: true })
 
-    // fs.writeFileSync(outputPath, JSON.stringify(fileData.mindmap, null, 2), "utf-8")
-    // fs.writeFileSync(outputPath2, JSON.stringify(tree, null, 2), "utf-8")
-
-    // console.log(JSON.stringify(tree, null, 2))
-    // console.log(JSON.stringify(fileData.mindmap, null, 2))
+    //   fs.writeFileSync(outputPath, JSON.stringify(fileData.mindmap, null, 2), "utf-8")
+    //   fs.writeFileSync(outputPath2, JSON.stringify(tree, null, 2), "utf-8") // === filedata.htmlast
     // }
 
     const button = (

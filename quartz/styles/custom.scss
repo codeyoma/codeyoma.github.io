@@ -409,7 +409,8 @@ hr {
   }
 
   .article-title {
-    justify-self: center;
+    display: grid;
+    justify-content: center;
 
     &:before {
       content: ""

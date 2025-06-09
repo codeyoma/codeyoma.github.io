@@ -55,16 +55,16 @@ function replaceMatchesExcept(
   exceptRegex: RegExp,
   exceptPlaceholder: string
 ): string {
-  const codeBlocks: string[] = []
+  const reserve: string[] = []
   let protectedStr = str.replace(exceptRegex, (codeBlock) => {
-    codeBlocks.push(codeBlock)
-    return `___${exceptPlaceholder}_${codeBlocks.length - 1}___`
+    reserve.push(codeBlock)
+    return `___${exceptPlaceholder}_${reserve.length - 1}___`
   })
 
   protectedStr = replaceMatches(protectedStr, regex, replacer)
   const restoreRegex = new RegExp(`___${exceptPlaceholder}_(\\d+)___`, 'g')
 
-  return protectedStr.replace(restoreRegex, (_, i) => codeBlocks[+i])
+  return protectedStr.replace(restoreRegex, (_, i) => reserve[+i])
 }
 
 function toYouTubeEmbedURL(link: string) {

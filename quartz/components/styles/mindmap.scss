@@ -49,6 +49,38 @@
         }
       }
 
+      // table {
+      //   margin: 1rem;
+      //   border-collapse: collapse;
+
+      //   th,
+      //   td {
+      //     min-width: 75px;
+      //   }
+
+      //   &>* {
+      //     line-height: 2rem;
+      //   }
+
+      //   th {
+      //     text-align: left;
+      //     border-bottom: 2px solid var(--gray);
+      //     padding: .4rem .7rem
+      //   }
+
+      //   td {
+      //     padding: .2rem .7rem
+      //   }
+
+      //   tr {
+      //     border-bottom: 1px solid var(--lightgray)
+      //   }
+
+      //   tr:last-child {
+      //     border-bottom: none
+      //   }
+      // }
+
       audio {
         width: 500px;
       }

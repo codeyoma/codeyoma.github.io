@@ -492,7 +492,7 @@
       "content": "Quartz Frontmatter",
       "children": [
         {
-          "content": "<pre data-lines=\"85,98\"><code data-lines=\"85,98\">title: Title of the page\ndescription: Description of the page used for link previews.\ndate: 2025<span class=\"hljs-string\">-05</span><span class=\"hljs-string\">-01</span>\npermalink: &quot;note.md&quot;\naliases: [&quot;nnnn&quot;]\n<span class=\"hljs-keyword\">tags:</span> [&quot;tag1&quot;, &quot;tag2&quot;]\n<span class=\"hljs-keyword\">tags:</span>\n    -tag1\n    -tag2\ncomments: false\ndraft: true\n</code></pre>",
+          "content": "<pre data-lines=\"85,98\"><code class=\"language-text\">title: Title of the page\ndescription: Description of the page used for link previews.\ndate: 2025-05-01\npermalink: &quot;note.md&quot;\naliases: [&quot;nnnn&quot;]\ntags: [&quot;tag1&quot;, &quot;tag2&quot;]\ntags:\n    -tag1\n    -tag2\ncomments: false\ndraft: true\n</code></pre>",
           "children": [],
           "payload": {
             "tag": "pre",
@@ -747,7 +747,7 @@
           "content": "Horizontal rule",
           "children": [
             {
-              "content": "<pre data-lines=\"163,174\"><code data-lines=\"163,174\"><span class=\"hljs-string\">***</span>\n<span class=\"hljs-string\">****</span>\n<span class=\"hljs-string\">*</span> <span class=\"hljs-string\">*</span> <span class=\"hljs-string\">*</span>\n<span class=\"hljs-meta\">--- </span>\n<span class=\"hljs-string\">----</span> \n<span class=\"hljs-bullet\">-</span> <span class=\"hljs-bullet\">-</span> <span class=\"hljs-bullet\">-</span> \n<span class=\"hljs-string\">___</span> \n<span class=\"hljs-string\">____</span> \n<span class=\"hljs-string\">_</span> <span class=\"hljs-string\">_</span> <span class=\"hljs-string\">_</span>\n</code></pre>",
+              "content": "<pre data-lines=\"163,174\"><code class=\"language-text\">***\n****\n* * *\n--- \n---- \n- - - \n___ \n____ \n_ _ _\n</code></pre>",
               "children": [],
               "payload": {
                 "tag": "pre",
@@ -815,7 +815,7 @@
               }
             },
             {
-              "content": "\n<pre data-lines=\"205,215\"><code data-lines=\"205,215\"><span class=\"hljs-selector-tag\">This</span> <span class=\"hljs-selector-tag\">is</span> <span class=\"hljs-selector-tag\">a</span> <span class=\"hljs-selector-tag\">simple</span> <span class=\"hljs-selector-tag\">footnote</span><span class=\"hljs-selector-attr\">[^1]</span>.<span class=\"hljs-selector-attr\">[^1]</span><span class=\"hljs-selector-attr\">[^1]</span>\n<span class=\"hljs-selector-attr\">[^2]</span>\n<span class=\"hljs-selector-attr\">[^note]</span>\n\n<span class=\"hljs-selector-attr\">[^1]</span>: <span class=\"hljs-selector-tag\">This</span> <span class=\"hljs-selector-tag\">is</span> <span class=\"hljs-selector-tag\">the</span> <span class=\"hljs-selector-tag\">referenced</span> <span class=\"hljs-selector-tag\">text</span>. \n<span class=\"hljs-selector-attr\">[^2]</span>: <span class=\"hljs-selector-tag\">Add</span> <span class=\"hljs-number\">2</span> <span class=\"hljs-selector-tag\">spaces</span> <span class=\"hljs-selector-tag\">at</span> <span class=\"hljs-selector-tag\">the</span> <span class=\"hljs-selector-tag\">start</span> <span class=\"hljs-selector-tag\">of</span> <span class=\"hljs-selector-tag\">each</span> <span class=\"hljs-selector-tag\">new</span> <span class=\"hljs-selector-tag\">line</span>. \n  <span class=\"hljs-selector-tag\">This</span> <span class=\"hljs-selector-tag\">lets</span> <span class=\"hljs-selector-tag\">you</span> <span class=\"hljs-selector-tag\">write</span> <span class=\"hljs-selector-tag\">footnotes</span> <span class=\"hljs-selector-tag\">that</span> <span class=\"hljs-selector-tag\">span</span> <span class=\"hljs-selector-tag\">multiple</span> <span class=\"hljs-selector-tag\">lines</span>.\n<span class=\"hljs-selector-attr\">[^note]</span>: <span class=\"hljs-selector-tag\">Named</span> <span class=\"hljs-selector-tag\">footnotes</span> <span class=\"hljs-selector-tag\">still</span> <span class=\"hljs-selector-tag\">appear</span> <span class=\"hljs-selector-tag\">as</span> <span class=\"hljs-selector-tag\">numbers</span>, <span class=\"hljs-selector-tag\">but</span> <span class=\"hljs-selector-tag\">can</span> <span class=\"hljs-selector-tag\">make</span> <span class=\"hljs-selector-tag\">it</span> <span class=\"hljs-selector-tag\">easier</span> <span class=\"hljs-selector-tag\">to</span> <span class=\"hljs-selector-tag\">identify</span> <span class=\"hljs-selector-tag\">and</span> <span class=\"hljs-selector-tag\">link</span> <span class=\"hljs-selector-tag\">references</span>.\n</code></pre>",
+              "content": "\n<pre data-lines=\"205,215\"><code class=\"language-text\">This is a simple footnote[^1].[^1][^1]\n[^2]\n[^note]\n\n[^1]: This is the referenced text. \n[^2]: Add 2 spaces at the start of each new line. \n  This lets you write footnotes that span multiple lines.\n[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references.\n</code></pre>",
               "children": [],
               "payload": {
                 "tag": "li",
@@ -831,7 +831,7 @@
               }
             },
             {
-              "content": "\n<pre data-lines=\"218,221\"><code data-lines=\"218,221\">You can <span class=\"hljs-keyword\">also</span> use <span class=\"hljs-keyword\">inline</span> footnotes. ^[This <span class=\"hljs-keyword\">is</span> an <span class=\"hljs-keyword\">inline</span> footnote.]\n</code></pre>",
+              "content": "\n<pre data-lines=\"218,221\"><code class=\"language-text\">You can also use inline footnotes. ^[This is an inline footnote.]\n</code></pre>",
               "children": [],
               "payload": {
                 "tag": "li",
