@@ -22,7 +22,6 @@ export const sharedPageComponents: SharedLayout = {
         repoId: 'R_kgDOOraRoA',
         category: 'General',
         categoryId: 'DIC_kwDOOraRoM4CqR8o',
-        // loading: 'lazy',
       }
     }),
     Component.ScrollProgress()
