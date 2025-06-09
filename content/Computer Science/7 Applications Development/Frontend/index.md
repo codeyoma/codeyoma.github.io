@@ -9,7 +9,7 @@ title: "- Frontend"
 aliases:
   - "- Frontend"
 ---
-- [[Closure]]
+- [[Closures]]
 - [[Composition]]
 - [[css selectors]]
 - [[ErrorBoundary]]

@@ -1,6 +1,7 @@
 ---
-created: 2025/4/08 16:50:09
-modified: 2025/4/08 17:48:46
+description:
+created: 2025-05-18
+modified: 2025-06-09
 tags:
   - css
 aliases:
@@ -15,7 +16,8 @@ aliases:
 	- 중첩
 	- 선택자 사이에
 		- `,` 중첩
-		- ` ` 자식
+		- `>` 직속 자식
+		- ` ` 모든 하위
 		- `~` 형제
 - 가상 선택자
 	- 동적 가상 클래스
@@ -30,3 +32,5 @@ aliases:
 		- nth-of-type
 		- only-of-type
 		- ...
+- guide site
+	- [CSS Selectors: A Visual Guide & Reference \| fffuel](https://www.fffuel.co/css-selectors/)

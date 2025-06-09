@@ -11,7 +11,7 @@ modified: 2025/4/13 16:08:04
 	- rejected
 		- throw error -> fallback 무시, ErorrBoundary로 전달
 - 프라미스 던지기로 suspense 실행
-- [[Closure|클로저]]로 내부 변수 캡슐화, 참조
+- [[Closures|클로저]]로 내부 변수 캡슐화, 참조
 
 ```js
 import React, {Suspense} from "react";
