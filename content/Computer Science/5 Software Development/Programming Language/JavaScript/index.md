@@ -6,6 +6,7 @@ created: 2025-05-18
 modified: 2025-06-09
 status:
   - 🗺️
+title: "- JavaScript"
 ---
 
 - [모던 JavaScript 튜토리얼](https://ko.javascript.info/)
