@@ -1,0 +1,21 @@
+- Primitive
+    - types
+        - number
+        - string
+        - boolean
+        - null
+        - undefined
+        - symbol
+        - Bigint
+    - 불변성
+    - stack area
+- Reference
+    - types
+        - object
+        - array
+        - function
+        - RegExp,
+        - Set
+        - Map
+    - 가변성
+    - heap area

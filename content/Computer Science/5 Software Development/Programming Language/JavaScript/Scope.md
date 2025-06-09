@@ -1,0 +1,5 @@
+- block scope ^365b67
+    - let
+    - const
+- function scope ^27f6eb
+    - var

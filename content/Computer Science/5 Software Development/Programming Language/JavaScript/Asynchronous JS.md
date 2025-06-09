@@ -1,0 +1,2 @@
+- async/await
+	- try/catch로 감싸기
