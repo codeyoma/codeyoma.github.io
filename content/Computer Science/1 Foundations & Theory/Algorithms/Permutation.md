@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-02
+modified: 2025-06-09
 ---
 
 - 순열 $\frac{n!}{(n-r)!}$
@@ -14,9 +14,7 @@ modified: 2025-06-02
 		- 재귀 함수 `depth`
 			- 재귀 호출시 `depth + 1`
 - next_permutation with **sort**
-	- code
-	- 
-		```cpp
+	- ```cpp
 		    vector<char> set = {'A', 'B', 'C', 'D'};
 		    
 		    do {
@@ -25,7 +23,6 @@ modified: 2025-06-02
 		        }
 		        cout << endl;
 		    } while (next_permutation(set.begin(), set.end())); 
-		```
 - recursive
 	- logic
 		- 소스 배열
@@ -34,8 +31,7 @@ modified: 2025-06-02
 		- 타겟 순열 크기
 		- 종료 조건
 			- 현재 배열 타겟 길이 체크
-	- 
-		```cpp
+	- ```cpp
 		#include <iostream>
 		#include <vector>
 		
@@ -69,4 +65,3 @@ modified: 2025-06-02
 		
 		    return 0;
 		}
-		```

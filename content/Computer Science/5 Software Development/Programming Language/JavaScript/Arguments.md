@@ -11,8 +11,7 @@ modified: 2025-06-09
     - 유사 배열 객체
         - map(), forEach() 같은 메서드는 없음
     - 화살표 함수에서는 없다
-    - 
-		```js
+    - ```js
 		function func1(a, b, c) {
 		  console.log(arguments[0]); // 1
 		  console.log(arguments[1]); // 2
@@ -20,7 +19,6 @@ modified: 2025-06-09
 		}
 		
 		func1(1, 2, 3);
-		```
 - ...args
     - 함수 호출 시 넘겨진 모든 인자를 배열로 모아줌
     - 나머지 매개변수(rest parameter)

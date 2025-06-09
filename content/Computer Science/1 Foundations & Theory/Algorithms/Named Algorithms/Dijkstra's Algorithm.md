@@ -24,8 +24,7 @@ aliases:
 					- 거리[후보 노드] 거리 업데이트
 					- `queue`에 (후보 노드, 거리[후보 노드]) push
 				- 아니라면 패스
-	- 
-		```python
+	- ```python
 		import sys
 		from queue import PriorityQueue
 		
@@ -66,12 +65,10 @@ aliases:
 					dist[v] = dist[u] + w
 					# 큐 갱신 어렵기 때문에 새로 추가
 					pq.put((dist[v], v))
-		```
 - 역방향 그래프
 	- 일반 방향 그래프는 **특정 정점에서 모든 정점으로 가는 비용 계산**
 	- 역방향 그래프는 **모든 정점에서 특정 정점으로 오는 비용 계산**
-	- 
-		```cpp
+	- ```cpp
 		struct Node {
 		  int node;
 		  int value;
@@ -169,4 +166,3 @@ aliases:
 		
 		  cout << ans;
 		}
-		```

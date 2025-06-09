@@ -1,3 +1,10 @@
+---
+description:
+aliases:
+created: 2025-06-09
+modified: 2025-06-09
+---
+
 	
 - Deep copy
 	- 객체의 모든 레벨(depth)에 대해 복사
@@ -7,8 +14,7 @@
 	- 재귀함수
 	- `immer.js`, `lodash` library
 		- `json.parse()`의 문제 해결
-		- 
-			```js
+		-  ```js
 			import { produce } form 'immer';
 			
 			let a = {
@@ -24,4 +30,3 @@
 			console.log(a === b)      // false
 			console.log(a.more.gender)// male
 			console.log(b.more.gender)// female
-			```

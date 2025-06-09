@@ -43,9 +43,7 @@ modified: 2025-06-02
 	- modulus
 	- partial_sum(first, last, d_first, (op)) ^f67ff6
 	- adjacent_difference
-		- code
-		- 
-			```cpp
+		- ```cpp
 			std::array<int, 10> a {1};
 			
 			std::adjacent_difference(std::begin(a), std::prev(std::end(a)),
@@ -53,7 +51,6 @@ modified: 2025-06-02
 			
 			println("Fibonacci, a = ", a);
 			// Fibonacci, a = 1 1 2 3 5 8 13 21 34 55
-			```
 - data control, manipulation
 	- reverse
 	- rotate
@@ -87,13 +84,12 @@ modified: 2025-06-02
 - hash
 	- unordered_map
 	- unordered_set
-	```cpp
-	unordered_map<string, int> myMap = {{"apple", 10}, {"banana", 20}};
-	auto it = myMap.find("apple");
-	if (it != myMap.end()) {
-		it->second = 50;
-	}
-	```
+	- ```cpp
+		unordered_map<string, int> myMap = {{"apple", 10}, {"banana", 20}};
+		auto it = myMap.find("apple");
+		if (it != myMap.end()) {
+			it->second = 50;
+		}
 - map, set
 - pair
 	- `make_pair({a, b})`

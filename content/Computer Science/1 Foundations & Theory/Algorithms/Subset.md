@@ -10,9 +10,7 @@ modified: 2025-06-02
 - 부분 집합속 순열
 	- [[DFS]]
 - recursive
-	- code
-	- 
-		```cpp
+	- ```cpp
 		#include <iostream>
 		#include <vector>
 		using namespace std;
@@ -39,4 +37,3 @@ modified: 2025-06-02
 		    subset(arr, current, 0);
 		    return 0;
 		}
-		```

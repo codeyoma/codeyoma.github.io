@@ -19,8 +19,7 @@ tags: []
 		- 무향 그래프
 			- union-find
 				- 간선 추가시 이미 같은 그룹이라면 사이클
-				- 
-					```cpp
+				- ```cpp
 					bool unionSet(int a, int b) {
 					    int rootA = find(a);
 					    int rootB = find(b);
@@ -30,7 +29,6 @@ tags: []
 					    parent[rootB] = rootA; // 두 집합을 합침
 					    return false;
 					}
-					```
 			- dfs
 				- 방문한 노드가 다시 나왔는데, 부모가 아니라면 사이클
 		- 방향 그래프

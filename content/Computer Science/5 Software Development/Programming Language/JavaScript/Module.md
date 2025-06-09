@@ -1,6 +1,12 @@
+---
+description:
+aliases:
+created: 2025-06-09
+modified: 2025-06-09
+---
+
 - 모든 버전의 노드에서 지원하는 일반적인 모듈 패턴
-	- 
-		```js
+	- ```js
 		const print() => log();
 		const log() => console.log();
 		
@@ -9,5 +15,4 @@
 		//---
 		
 		const {log, print} = require('./source-location')
-		```
 - `import`

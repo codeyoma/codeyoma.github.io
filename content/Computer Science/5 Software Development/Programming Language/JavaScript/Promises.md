@@ -1,6 +1,12 @@
+---
+description:
+aliases:
+created: 2025-06-09
+modified: 2025-06-09
+---
+
 - 프라미스 만들기
-	- 
-		```js 
+	- ```js 
 		const getFakeMembers = count => new Promise((resolves, rejects) => {
 		    const api = `https://api.randomuser.me/?nat=US&results=${count}`
 			const request = new XMLHttpRequest()
@@ -24,4 +30,3 @@
 		.catch(err => console.error(
 				new Error("cannot load members from randomuser.me"));
 		)
-		```

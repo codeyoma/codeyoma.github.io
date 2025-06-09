@@ -28,8 +28,7 @@ reference:
 - SCSS (Sassy CSS) is a preprocessor scripting language that extends [[CSS]] with features like variables, nesting, and mixins.
 - It makes stylesheets more maintainable and efficient to write.
 - A useful feature of SCSS compared to plain CSS is its ability to manage nested classes
-	- 
-		```scss
+	- ```scss
 		.navbar {
 			background: black;
 			.menu {
@@ -40,4 +39,3 @@ reference:
 				}
 			}
 		}
-		```

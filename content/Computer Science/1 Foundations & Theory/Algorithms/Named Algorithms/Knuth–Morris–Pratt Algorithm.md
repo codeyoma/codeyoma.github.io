@@ -5,21 +5,20 @@ aliases:
   - kmp
   - kmp algorithm
 ---
-```cpp
-int M = //string size;
-vector<int> pi(M, 0);
-
-for (int i = 1; i < M; ++i) {
+- ```cpp
+	int M = //string size;
+	vector<int> pi(M, 0);
 	
-	int j = pi[i - 1];
+	for (int i = 1; i < M; ++i) {
 		
-	while (j > 0 && comb[i] != comb[j])
-		j = pi[ j - 1];
+		int j = pi[i - 1];
+			
+		while (j > 0 && comb[i] != comb[j])
+			j = pi[ j - 1];
+			
+		if (comb[i] == comb[j]) ++j;
 		
-	if (comb[i] == comb[j]) ++j;
+		pi[i] = j;
+	}
 	
-	pi[i] = j;
-}
-
-return pi[M-1]; 
-```
+	return pi[M-1]; 

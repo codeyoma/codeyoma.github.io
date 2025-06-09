@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-02
+modified: 2025-06-09
 tags:
   - review
 ---
@@ -16,9 +16,7 @@ tags:
 			-  (for문은 항상 `depth`부터)
 			- 재귀 호출시 `depth + 1`
 - prev_permutation
-	- code
-	- 
-		```cpp
+	- ```cpp
 		    int n = 4; // 전체 개수
 		    int r = 2; // 조합 개수
 		    
@@ -35,7 +33,6 @@ tags:
 		        }
 		        cout << endl;
 		    } while (prev_permutation(v.begin(), v.end()));
-		```
 - recursive
 	- logic
 		- 소스 배열
@@ -45,8 +42,7 @@ tags:
 		- 종료 조건
 			- 타겟 조합 크기에 도달
 			- 깊이가 source_arr의 길이보다 큰 경우 (마지막)
-	- 
-		```cpp
+	- ```cpp
 		#include <iostream>
 		#include <vector>
 		using namespace std;
@@ -73,4 +69,3 @@ tags:
 			combine(arr, current, 0, k);
 			return 0;
 		}
-		```

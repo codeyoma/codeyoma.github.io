@@ -13,8 +13,7 @@ aliases:
 	- 함수가 실행될 때, 렉시컬 스코프 안의 변수들에 접근할 수 있다
 		- 값이 아닌 접근할 수 있는 연결(참조)를 유지
 	- 함수 내부에 있는 함수가 외부 변수에 접근할 수 있는 건 클로저
-	- 
-		```js
+	- ```js
 		function outer() {
 		  let count = 0;
 		
@@ -29,7 +28,6 @@ aliases:
 		const fn = outer(); // outer는 실행되고 종료됨
 		fn(); // 1
 		fn(); // 2
-		```
 - 열린 변수를 닫힌 변수로
 	- lambda calculus
 		- free variables
@@ -59,8 +57,7 @@ aliases:
 			- 여러 인자를 받는 함수를 단일 인자를 받는 함수로 변환
 				- 함수의 부분 실행, 지연 실행 가능하게
 			- 함수의 재사용성, 모듈성 향상
-			- 
-				```js
+			- ```js
 				function createLogger (type) {
 					return function (message) {
 						console.log (`[${type}] ${message}`); // 파라미터도 외부 변수이니 묶인 변수됨
@@ -72,12 +69,10 @@ aliases:
 				errorLogger("something");
 				infoLogger("something");
 				warningLogger("something");
-				```
 		- deferred execution
 			- 지연 실행
 			- 모든 함수의 인자가 등록되어야 실행
-			- 
-				```js
+			- ```js
 				function add(a) {
 					return function (b) {
 						return function (c) {
@@ -87,7 +82,6 @@ aliases:
 				}
 				console. log (add (1) (2)); // not yet
 				console. log (add (1) (2) (3)); // 6
-				```
 			- 리덕스 미들웨어의 구조
 				- `const middleware = store => next => action => {}`
 		- react
@@ -96,8 +90,7 @@ aliases:
 				- 함수 컴포넌트는 상태가 변경될 때마다 새로운 인스턴스를 생성하기 때문에 초기화된 상태만을 가질 수 있었다
 				- `hook`을 통해 상태 보존
 			- `useState` 간단히 구현해보기
-				- 
-					```js
+				- ```js
 					function createUseState() {
 						let state;
 						
@@ -113,7 +106,6 @@ aliases:
 						
 						return useState;
 					}
-					```
 			- `useEffect`의 [[Closure Trap]]
 				- useEffect hook은 사이드 이펙트 처리용
 				- 의존성 배열의 값 변화에 따라 콜백함수 실행

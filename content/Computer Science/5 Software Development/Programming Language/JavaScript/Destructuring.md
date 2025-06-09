@@ -1,7 +1,13 @@
+---
+description:
+aliases:
+created: 2025-06-09
+modified: 2025-06-09
+---
+
 - `const {x, y} = test`
 - `import { ReactNode as RN } from 'react';`
-- 
-	```js
+- ```js
 	const regularPerson = {
 		firstname: "",
 		lastname: "",
@@ -17,4 +23,3 @@
 	}
 	
 	lordify(regularPerson);
-	```

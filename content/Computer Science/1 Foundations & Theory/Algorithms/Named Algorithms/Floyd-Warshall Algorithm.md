@@ -1,12 +1,13 @@
 ---
 description:
 created: 2025-05-18
-modified: 2025-05-18
+modified: 2025-06-09
 references: 
 aliases:
   - 플로이드 워셜
   - 플로이드 와샬
 ---
+
 <!--
 [[내 노트 정리 방법#^bb9ac3|my workflow]]
 - main
@@ -40,8 +41,7 @@ $$
 - predecessor matrix
 	- 2 차원 방문점 배열
 	- $\prod_{ij}^{(k)}$
-- 
-	```cpp
+- ```cpp
 	void floydWarshall(vector<vector<int>> &dist) {
 	    int V = dist.size();
 	    
@@ -72,4 +72,3 @@ $$
 		    }
 		}
 	}
-	```

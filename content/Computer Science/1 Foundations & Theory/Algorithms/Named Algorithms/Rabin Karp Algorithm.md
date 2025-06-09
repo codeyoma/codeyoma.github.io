@@ -21,16 +21,15 @@ aliases:
 		- $S_i = \sum_{j=1}^{i} a_j * 31^{arr.size - j} \quad \text{for} \quad i = 1, 2, \dots, n$
 		- 첫 글자 부터, 끝 글자까지 누적 해시 값
 	- 타겟 해시값 
-```cpp
-int mod = 1e8 + 7;
-int hash = 0;
-
-for(int i = 0; i < arr.size(); i++){
-	hash *= 31;
-	hash += arr[i] - 'a' + 1;
-	hash %= mod;	
-}
-```
+	- ```cpp
+		int mod = 1e8 + 7;
+		int hash = 0;
+		
+		for(int i = 0; i < arr.size(); i++){
+			hash *= 31;
+			hash += arr[i] - 'a' + 1;
+			hash %= mod;	
+		}
 - 문자열 패턴 검색
 - 문자열 최장 부분 문자
 	- 2번 이상 등장하는 최장 길이 부분문자열 찾기

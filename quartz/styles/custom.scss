@@ -29,7 +29,8 @@ footer {
 }
 
 .center li {
-  margin: 0.3em;
+  margin-left: 0.3em;
+  margin-top: 0.3em;
 
   img,
   video,
@@ -86,6 +87,20 @@ footer {
   }
 }
 
+.footnotes {
+  background-color: transparent;
+  border-top: none;
+
+  &:before {
+    content: "* * *";
+    display: flex;
+    font-size: 1.5rem;
+    color: var(--gray);
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+}
+
 .footnotes ol {
   padding-left: 1.2em;
 
@@ -94,19 +109,48 @@ footer {
   }
 }
 
-.center h1 {
-  // background-color: var(--tertiary);
-  // background-image: linear-gradient(30deg, var(--tertiary) 10%, var(--primary) 20%);
-  // -webkit-background-clip: text;
-  // -moz-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  // -moz-text-fill-color: transparent;
-  color: var(--primary);
-  margin-top: 2.5em;
+.center .page-header {
+  margin-bottom: 1em;
 }
 
-.center h2 {
-  margin-top: 1.7em;
+.center h1.article-title {
+  color: var(--primary);
+  font-size: 2.5em;
+
+  &:after,
+  &:before {
+    content: ""
+  }
+
+}
+
+h1 {
+  color: var(--tertiary);
+  margin-top: 0.5em;
+}
+
+.center h1:before {
+  content: "* * *";
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--gray);
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+@for $i from 1 through 6 {
+  .center h#{$i}[id]::after {
+    content: "H#{$i}";
+    font-size: 0.5em;
+    vertical-align: super;
+    margin-left: 0.25em;
+    color: var(--gray);
+  }
+
+  .center h#{$i}[id]>a[href^=\#] {
+    position: absolute;
+    margin: 0 1.5rem;
+  }
 }
 
 .page>#quartz-body>.sidebar.right>.toc {
@@ -250,11 +294,13 @@ footer {
   }
 }
 
-.page-footer {
-  padding-bottom: 1.5rem;
+.page>#quartz-body .page-footer {
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
 
   @media (#{$desktop}) {
-    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
   }
 }
 
@@ -352,8 +398,22 @@ hr {
     padding-top: 1.5rem;
   }
 
-  h1 {
-    color: var(--primary);
+  @for $i from 1 through 6 {
+    h#{$i}:before {
+      content: "H#{$i}";
+      font-size: 0.5em;
+      vertical-align: super;
+      margin-right: 1em;
+      color: var(--gray);
+    }
+  }
+
+  .article-title {
+    justify-self: center;
+
+    &:before {
+      content: ""
+    }
   }
 
   .tags {
@@ -404,10 +464,8 @@ hr {
   }
 
   .callout {
-    padding-bottom: 0.8rem;
 
     .callout-title {
-      padding-bottom: 0.2rem;
 
       .callout-icon {
         margin: auto 0;

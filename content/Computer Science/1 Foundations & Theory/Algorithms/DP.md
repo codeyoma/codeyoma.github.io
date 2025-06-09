@@ -270,13 +270,11 @@ references:
 	- $i$번째 물건을 선택했을 때 최대가격
 		- `value[i - 1] + maxValue[i - 1][j - weight[i - 1]]` 
 		- $j$ 선택한 물건의 무게를 뺀 위치 즉, 남은 용량
-		- 
-			```cpp
+		- ```cpp
 			dp[i][w] = max(
 				dp[i-1][w],                         // i번째 물건을 선택하지 않음
 				dp[i-1][w - weight[i]] + value[i]   // i번째 물건을 선택함
 			)
-			```
 	- ![[image-DP-15.png]]
 - [[다이내믹 프로그래밍 완전 정복]] p.182
 
@@ -289,8 +287,7 @@ references:
 - $B_{n} = S[n] + S[n - 1] + MAX(A_{n - 3},\;B_{n - 3})$
 
 ## LIS (최장 증가 부분 수열 길이 구하기)
- - 
-	```cpp
+ - ```cpp
 	int n;
 	cin >> n;
 	vector<int> a(n), dp(n, 1);
@@ -305,7 +302,6 @@ references:
 	}
 	
 	cout << *max_element(dp.begin(), dp.end());
-	```
 - `dp[i]`는 `a[i]`를 마지막 원소로 갖는 LIS의 길이
 - 현재 글자의, 이전 글자들 대소 비교로, dp 업데이트
 	- 이미 왼쪽부터 dp가 정복하니 최적해 보장

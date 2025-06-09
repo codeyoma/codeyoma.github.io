@@ -8,8 +8,7 @@ modified: 2025/5/01 17:06:40
 - Find
 	- 그룹 찾기
 - union by rank, size...
-- 
-	```cpp
+- ```cpp
 	// 🔹 Find 함수 (path compression)
 	int find(int x) {
 	    if (parent[x] == x) return x;
@@ -45,4 +44,3 @@ modified: 2025/5/01 17:06:40
 		// true니 해당 간선 MST에 추가
 	    return true;
 	}
-	```

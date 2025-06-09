@@ -19,19 +19,16 @@ tags: []
 # pre-order DFS
 - 방문 자체가 목적일 때
 	- 백트래킹 (경로 탐색, 조합, 순열)
-	- 
-		```cpp
+	- ```cpp
 		void dfs(Node* node) {
 			if (!node) return;
 			visit(node);
 			dfs(node->left);
 			dfs(node->right);
 		}
-		``` 
 - 간선 만 주어진 경우의 부모 찾기
 	- ![[Tree#^129bd4]]
-	- 
-		```python
+	- ```python
 		def dfs(u):
 			visit[u] = true
 			
@@ -39,19 +36,16 @@ tags: []
 				if not visit[v]:
 					parent[v] = u
 					dfs(v)
-		```
 # in-order DFS
 - BST나 중위 수식 등, 정렬 성질 사용
 	- BST 순회 (오름차순 정렬된 값 추출)
-	- 
-		```cpp
+	- ```cpp
 		void dfs(Node* node) {
 			if (!node) return;
 			dfs(node->left);
 			visit(node);
 			dfs(node->right);
 		}
-		```
 
 # post-order DFS
 - 결과를 누적하거나 처리할 때
@@ -60,12 +54,10 @@ tags: []
 		- 용량 계산 (하위 폴더 다 처리 후, 부모 처리)
 	- 트리 DP
 	- [[Hierholzer's algorithm]] ([[Eulerian Path|오일러 경로]])
-	- 
-		```cpp
+	- ```cpp
 		void dfs(Node* node) {
 			if (!node) return;
 			dfs(node->left);
 			dfs(node->right);
 			visit(node);
 		}
-		```

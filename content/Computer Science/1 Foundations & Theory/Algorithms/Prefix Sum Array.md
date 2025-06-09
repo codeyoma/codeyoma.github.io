@@ -7,8 +7,7 @@ aliases:
 ---
 
 - p_sum
-- 
-	```cpp
+-  ```cpp
 	vector<int> findPrefixSum(vector<int> &arr) {
 	    int n = arr.size();
 	    vector<int> prefixSum(n);
@@ -19,6 +18,5 @@ aliases:
 	        
 	    return prefixSum;
 	}
-	```
 	- library ![[Terms#^f67ff6]]
 - [[Imos Algorithm|imos]]

@@ -12,33 +12,32 @@ modified: 2025/4/14 13:37:11
 		- `useTransition`
 		- `startTransition`
 		- `suspense`
-```js
-import { useState, useEffect } from "react";
-
-function useDebounce<T>(value: T, delay: number = 300): T {
-  const [debounced, setDebounced] = useState(value);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setDebounced(value), delay);
-
-    return () => clearTimeout(timer); // 값 바뀌면 이전 타이머 취소
-  }, [value, delay]);
-
-  return debounced;
-}
-
-function SearchBox() {
-  const [query, setQuery] = useState('');
-  const debouncedQuery = useDebounce(query, 500);
-
-  useEffect(() => {
-    if (!debouncedQuery) return;
-
-    fetch(`/api/search?q=${debouncedQuery}`)
-      .then((res) => res.json())
-      .then((data) => console.log(data));
-  }, [debouncedQuery]);
-
-  return <input value={query} onChange={(e) => setQuery(e.target.value)} />;
-}
-```
+- ```js
+	import { useState, useEffect } from "react";
+	
+	function useDebounce<T>(value: T, delay: number = 300): T {
+	  const [debounced, setDebounced] = useState(value);
+	
+	  useEffect(() => {
+	    const timer = setTimeout(() => setDebounced(value), delay);
+	
+	    return () => clearTimeout(timer); // 값 바뀌면 이전 타이머 취소
+	  }, [value, delay]);
+	
+	  return debounced;
+	}
+	
+	function SearchBox() {
+	  const [query, setQuery] = useState('');
+	  const debouncedQuery = useDebounce(query, 500);
+	
+	  useEffect(() => {
+	    if (!debouncedQuery) return;
+	
+	    fetch(`/api/search?q=${debouncedQuery}`)
+	      .then((res) => res.json())
+	      .then((data) => console.log(data));
+	  }, [debouncedQuery]);
+	
+	  return <input value={query} onChange={(e) => setQuery(e.target.value)} />;
+	}
