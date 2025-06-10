@@ -140,7 +140,8 @@ const calloutLineRegex = new RegExp(/^> *\[\!\w+\|?.*?\][+-]?.*$/gm)
 const tagRegex = new RegExp(
   /(?<=^| )#((?:[-_\p{L}\p{Emoji}\p{M}\d])+(?:\/[-_\p{L}\p{Emoji}\p{M}\d]+)*)/gu,
 )
-const blockReferenceRegex = new RegExp(/\^([-_A-Za-z0-9]+)$/g)
+// const blockReferenceRegex = new RegExp(/\^([-_A-Za-z0-9]+)?$/g)
+const blockReferenceRegex = new RegExp(/\^([-_A-Za-z0-9]+)\s*?$/g)
 const ytLinkRegex = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
 const ytPlaylistLinkRegex = /[?&]list=([^#?&]*)/
 const videoExtensionRegex = new RegExp(/\.(mp4|webm|ogg|avi|mov|flv|wmv|mkv|mpg|mpeg|3gp|m4v)$/)
@@ -557,7 +558,6 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
           const blockTagTypes = new Set(["blockquote"])
           return (tree: HtmlRoot, file) => {
             file.data.blocks = {}
-
             visit(tree, "element", (node, index, parent) => {
               if (blockTagTypes.has(node.tagName)) {
                 const nextChild = parent?.children.at(index! + 2) as Element
@@ -619,6 +619,47 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                     }
                   }
                 }
+
+                const first = node.children.at(0) as Literal
+                if (first && first.value && typeof first.value === "string") { // yoma
+                  const matches = first.value.match(blockReferenceRegex)
+                  if (matches && matches.length >= 1) {
+                    first.value = first.value.slice(0, -matches[0].length)
+                    const block = matches[0].slice(1).trim()
+
+                    if (first.value === "") {
+                      // this is an inline block ref but the actual block
+                      // is the previous element above it
+                      let idx = (index ?? 1) - 1
+                      while (idx >= 0) {
+                        const element = parent?.children.at(idx)
+                        if (!element) break
+                        if (element.type !== "element") {
+                          idx -= 1
+                        } else {
+                          if (!Object.keys(file.data.blocks!).includes(block)) {
+                            element.properties = {
+                              ...element.properties,
+                              id: block,
+                            }
+                            file.data.blocks![block] = element
+                          }
+                          return
+                        }
+                      }
+                    } else {
+                      // normal paragraph transclude
+                      if (!Object.keys(file.data.blocks!).includes(block)) {
+                        node.properties = {
+                          ...node.properties,
+                          id: block,
+                        }
+                        file.data.blocks![block] = node
+                      }
+                    }
+                  }
+                }
+
               }
             })
 

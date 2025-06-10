@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-06-09
-modified: 2025-06-09
+modified: 2025-06-10
 ---
 
 - 호이스팅은 “선언”만 끌어올려짐, “초기화”는 아니다
