@@ -61,7 +61,11 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.Mindmap({ mode: "button", localOptions: {} }) },
-        { Component: Component.Slide() }
+        {
+          Component: Component.Slide({
+            tags: false
+          })
+        }
       ],
     },
     ),
@@ -120,7 +124,11 @@ export const defaultListPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.Mindmap({ mode: "button", localOptions: {} }) },
-        { Component: Component.Slide() }
+        {
+          Component: Component.Slide({
+            tags: false
+          })
+        }
       ],
     }),
     Component.Explorer({
