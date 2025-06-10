@@ -181,13 +181,13 @@ function handleFootnote(data: string, separator: string) {
     }
   )
 
-  return slides.join(separator)
+  return slides.join("\n---\n")
 }
 
 function handleIndex(data: string, separator: string, option: SlideOptions, index: string) {
   const slides = data.split(separator)
 
-  if (!option.index) return slides.join("\n---\n");
+  if (!option.index || !index) return slides.join(separator);
   slides.splice(1, 0, index)
 
   const indexMap = new Map<string, number>()
@@ -223,13 +223,15 @@ function handleIndex(data: string, separator: string, option: SlideOptions, inde
     )
   }
 
-  return slides.join("\n---\n")
+  return slides.join(separator)
 }
 
 function makeIndex() {
 
   const headers = document.querySelectorAll('article.popover-hint h1[id]');
   const index = Array.from(headers).map(head => `<li><a data-href="${head.textContent}" class="">${head.textContent}</a></li>`).join('')
+
+  if (!index) return ""
 
   return `
     <h1 class="slide-index-title">Index</h1>
@@ -257,13 +259,15 @@ function appendRemark(option: SlideOptions) {
     anchorBlank(
       unwrapSlideNote(
         unwrapFootnotesSection(
-          handleIndex(
-            handleFootnote(
+          handleFootnote(
+            handleIndex(
               injectSeparators(header + (option.tags ? tags : "") + body, separator),
-              separator
+              separator,
+              option,
+              makeIndex()
             ),
-            separator, option, makeIndex()
-          )
+            separator
+          ),
         )
       )
     )
