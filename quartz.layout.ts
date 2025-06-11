@@ -63,7 +63,8 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Mindmap({ mode: "button", localOptions: {} }) },
         {
           Component: Component.Slide({
-            tags: false
+            tags: false,
+            align: "center"
           })
         }
       ],
@@ -126,7 +127,8 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Mindmap({ mode: "button", localOptions: {} }) },
         {
           Component: Component.Slide({
-            tags: false
+            tags: false,
+            align: "center"
           })
         }
       ],
