@@ -3,7 +3,7 @@ aliases:
 description: This blog is an excerpt from my Obsidian notes
 title: Hello Again!
 created: 2025-05-18
-modified: 2025-06-04
+modified: 2025-06-12
 comments: "true"
 ---
 
@@ -12,7 +12,11 @@ comments: "true"
 -->
 ![[Lqp2z3I.gif]]
 
-# MOC 
+Hi, I’m Yoma. This blog is my digital garden - mi casa es su casa.
+
+Not much to see here — but you’re welcome to look around! : notes on computer science, philosophical reflections, thoughts on note-taking methods, and just bits and pieces of whatever hobbies I’m into.
+
+###### MOC 
 - [[About|About]]
 - [[- Computer Science|🗺️ - Computer Science]]
 	- [[- Algorithms|🗺️ - Algorithms]]
@@ -22,24 +26,26 @@ comments: "true"
 - [[- Philosophy|🗺️ - Philosophy]]
 - #moc 
 
-# Basic Guide
+###### Basic Guide
 - prefix of `🗺️` 
 	- Index file
 - Explorer
 	- Clicking the `>`
 		- *toggles the folder open or closed*
-    - Clicking the `name`
+	- Clicking the `name`
 	    - *opens the index file*
 - Full-text search
-	- `cmd / ctrl` + `k`
+	- press `cmd / ctrl` + `k`
 	- tag search
 		- start with `#` 
-		- `cmd / ctrl` + `shift` + `k`
+		- or press `cmd / ctrl` + `shift` + `k`
 - Graph view
-	- `cmd / ctrl` + `g`
-- [Mindmap view](https://github.com/codeyoma/quartz-mindmap)
-	- `cmd / ctrl` + `m`
-- [Slide show](https://github.com/codeyoma/quartz-slide)
-	- `cmd / ctrl` + `s`
+	- press `cmd / ctrl` + `g`
+- Mind map view
+	- press `cmd / ctrl` + `m`
+	- [I made this!](https://github.com/codeyoma/quartz-mindmap)
+- Slide show
+	- press `cmd / ctrl` + `s`
+	- [I made this!](https://github.com/codeyoma/quartz-slide)
 -  Markdown Guide
 	- [[- Guideline|🗺️ - Guideline]]
