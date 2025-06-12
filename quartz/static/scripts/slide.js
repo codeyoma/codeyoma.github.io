@@ -27625,6 +27625,29 @@ function Navigation (events) {
     return currentSlideIndex;
   }
 
+  function pauseAllMedia() {
+  // Pause all <video> and <audio>
+  document.querySelectorAll('video, audio').forEach((el) => {
+    if (!el.paused) el.pause();
+  });
+
+  // Attempt to pause YouTube iframes
+  document.querySelectorAll('iframe').forEach((iframe) => {
+    try {
+      iframe.contentWindow?.postMessage(
+        JSON.stringify({
+          event: 'command',
+          func: 'pauseVideo',
+          args: [],
+        }),
+        '*'
+      );
+    } catch (e) {
+      console.warn('Could not pause iframe:', e);
+    }
+  });
+}
+
   function gotoSlideByIndex(slideIndex, noMessage) {
     var alreadyOnSlide = slideIndex === currentSlideIndex
       , slideOutOfRange = slideIndex < 0 || slideIndex > self.getSlideCount()-1
@@ -27635,6 +27658,8 @@ function Navigation (events) {
     if (alreadyOnSlide || slideOutOfRange) {
       return;
     }
+
+    pauseAllMedia()
 
     if (currentSlideIndex !== -1) {
       events.emit('hideSlide', currentSlideIndex, false);
