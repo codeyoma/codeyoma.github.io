@@ -22,6 +22,7 @@ Not much to see here — but you’re welcome to look around! : notes on compute
 	- [[- Algorithms|🗺️ - Algorithms]]
 		- [[- PS|🗺️ - PS]]
 	- [[- Frontend|🗺️ - Frontend]]
+		- [[- JavaScript]]
 - [[- Note Taking|🗺️ - Note Taking]]
 - [[- Philosophy|🗺️ - Philosophy]]
 - #moc 

@@ -7,3 +7,4 @@ modified: 2024/9/13 19:46:18
 	- [daisyUI — Tailwind CSS Components ( version 4 update is here )](https://daisyui.com/)
 	- [Preline UI - Tailwind CSS components library](https://preline.co/index.html)
 	- [Free Open Source Tailwind CSS Components | HyperUI](https://www.hyperui.dev/)
+	- [Animate UI](https://animate-ui.com/)

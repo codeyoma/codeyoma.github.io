@@ -3,8 +3,11 @@
         - number
         - string
         - boolean
-        - null
         - undefined
+	        - 값이 정의되지 않음(초기화시)
+        - null
+	        - 값이 없음(명시적 선언)
+	        - type of null -> object
         - symbol
         - Bigint
     - 불변성

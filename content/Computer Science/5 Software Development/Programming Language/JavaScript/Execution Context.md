@@ -9,22 +9,41 @@ modified: 2025-06-09
 - Execution Context
 	- 코드가 실행되는 환경을 말함
 	- 어떤 변수, 함수에 접근 가능한지를 결정
--  구성 요소
+- elements
+	- code evaluation state
+	- Realm
+		- Intrinsics
+		- Global Object
+		- Global Environment Record
+	- LexicalEnvironment
+		- Global Environment Record
+	- VariableEnvironment
+		- Global Environment Record
+	- PrivateEnvironment
+	- ScriptOrModule
+	- Function
+	- Generator
+- phase
+	- creation
+	- execution
+-  주요 구성 요소
 	- `Variable Environment`
-		- `var`, 함수 선언 등
+		- 변수, 함수 선언 등
+			- [[Variable Lifecycle]]
+			- [[Hoisting]]
 		- lexical environment과 겹쳐보이지만, 초기화용
+	- `Lexical Environment`
+		- Scope Chain 관리
+		- Activation Object
+			- 특정 스코프의 변수와 함수 선언을 저장하는 객체
+			- 구성 요소
+				- `Environment record`
+					- 내부 지역 변수, 참조
+				- `Outer Lexical Environment Reference`
+					- 전역 환경, 부모 스코프의 lexical environment 를 참조
+					- [[Closures]]의 원리 
 	- `This Binding`
 		- `this`가 참조하는 값
-	- `Scope Chain`
-		- `Lexical Environment`
-			- Activation Object
-				- 특정 스코프의 변수와 함수 선언을 저장하는 객체
-				- 구성 요소
-					- `Environment record`
-						- 내부 지역 변수, 참조
-					- `Outer Lexical Environment Reference`
-						- 전역 환경, 부모 스코프의 lexical environment 를 참조
-						- [[Closures]]의 원리 
 - 종류
 	- Global Context
 		- 전체 코드 실행 시 생성

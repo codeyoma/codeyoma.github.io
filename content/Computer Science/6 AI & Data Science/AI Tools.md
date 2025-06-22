@@ -21,3 +21,8 @@ modified: 2025-06-02
 	- cursor
 	- windsuf
 	- zed
+- other
+    - v0
+    - Boltz
+    - Canvas
+    - onlook

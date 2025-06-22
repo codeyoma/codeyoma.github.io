@@ -1,15 +1,24 @@
 ---
 description:
 created: 2025-05-18
-modified: 2025-06-09
+modified: 2025-06-22
 aliases:
   - 클로저
 ---
 
+# summary
+closures
+???
+- 외부 변수 영역의 값을 참조한 상태
+- 고로 gc에 의해 사라지지 않음
+- 캡슐화에 사용
+
+# Closures
 - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures)
 	- is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
 	- gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time.
 	- 함수가 선언될 때의 렉시컬 스코프 안의 참조를 기억
+		- outer lexical environment
 	- 함수가 실행될 때, 렉시컬 스코프 안의 변수들에 접근할 수 있다
 		- 값이 아닌 접근할 수 있는 연결(참조)를 유지
 	- 함수 내부에 있는 함수가 외부 변수에 접근할 수 있는 건 클로저
@@ -54,9 +63,25 @@ aliases:
 		- state persistence
 	- examples
 		- currying
-			- 여러 인자를 받는 함수를 단일 인자를 받는 함수로 변환
+			- 여러 인자를 받는 함수를 단일 인자를 받는 함수들의 연쇄(chain)로 변환
 				- 함수의 부분 실행, 지연 실행 가능하게
 			- 함수의 재사용성, 모듈성 향상
+			- deferred execution
+				- 지연 실행
+				- 모든 함수의 인자가 등록되어야 실행
+				- ```js
+					function add(a) {
+						return function (b) {
+							return function (c) {
+								return a + b + c;
+							}
+						}
+					}
+					console. log (add (1) (2)); // not yet
+					console. log (add (1) (2) (3)); // 6
+				- 리덕스 미들웨어의 구조
+					- `const middleware = store => next => action => {}`
+		- 부분 적용 함수
 			- ```js
 				function createLogger (type) {
 					return function (message) {
@@ -69,21 +94,6 @@ aliases:
 				errorLogger("something");
 				infoLogger("something");
 				warningLogger("something");
-		- deferred execution
-			- 지연 실행
-			- 모든 함수의 인자가 등록되어야 실행
-			- ```js
-				function add(a) {
-					return function (b) {
-						return function (c) {
-							return a + b + c;
-						}
-					}
-				}
-				console. log (add (1) (2)); // not yet
-				console. log (add (1) (2) (3)); // 6
-			- 리덕스 미들웨어의 구조
-				- `const middleware = store => next => action => {}`
 		- react
 			- 함수형 컴포넌트는 자체적으로 상태 저장안되는데 어떻게?
 				- (*현재는 클로저 아님*)
