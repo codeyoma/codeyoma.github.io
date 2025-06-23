@@ -15,4 +15,6 @@ modified: 2025-06-09
 		//---
 		
 		const {log, print} = require('./source-location')
+	- 동적 임포트
+	- 트리 쉐이킹에 어려움
 - `import`

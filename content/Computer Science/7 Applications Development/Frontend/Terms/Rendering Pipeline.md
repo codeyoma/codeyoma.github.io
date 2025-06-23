@@ -1,6 +1,8 @@
 ---
-created: 2025/4/10 10:06:33
-modified: 2025/4/14 17:56:10
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-06-23
 ---
 
 - React Rendering Pipeline
@@ -24,15 +26,40 @@ modified: 2025/4/14 17:56:10
 		- useLayoutEffect 실행
 		- 컴포넌트 마운트 / 언마운트 처리
 		- 브라우저에게 DOM 업데이트 위임
+			- 상태 업데이트로 인한 부분 변경이라면 변경된 DOM 요소부터 layout, painting, compositing 수행
+				- parsing, render tree construction은 건너뜀
 - Browser Rendering Pipeline
 	- Parsing
 		- HTML -> DOM
+			- script를 만나면?
+				- 실행
+					- 내부 스크립트
+						- DOM 파싱 중단
+					- 외부 스크립트
+						- 실행 후 파싱 재개
+				- 문제점
+					- script로 dom 조작이 가능하여 얘기치 못한 상황 가능
+				- 해결
+					- `<script async>`
+						- 즉시 실행, 순서 보장 x
+					- `<script defer>`
+						- DOM 완성후 실행, 순서 보장
 		- CSS -> CSSOM
-		- DOM + CSSOM -> Render Tree 구성
+	- Render Tree, Render Layout 구성
+		- DOM + CSSOM
+		- Graphic 요소는 Graphic Layout으로 따로 구성
+		- render tree, render layout은 1:1 대응이 아닐 수 있다
+			- `display: none` 등 최적화된 render layout
 	- Layout (Reflow)
-	- Painting (Repainting)
-		-  Layer 1 → Paint into bitmap
-		-  Layer 2 → Paint into bitmap
-		-  Layer 3 → Paint into bitmap
+		- cpu
+		- 일부 gpu 가속
+	- Painting (Redraw)
+		- cpu
+		- 일부 gpu 가속
+		- rasterization
+			-  Layer 1 → Paint into bitmap
+			-  Layer 2 → Paint into bitmap
+			-  Layer 3 → Paint into bitmap
 	- Compositing
+		- gpu 개입
 	- Screen Draw

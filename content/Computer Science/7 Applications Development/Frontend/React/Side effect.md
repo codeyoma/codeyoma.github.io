@@ -1,10 +1,16 @@
-- 
+---
+description:
+aliases:
+created: 2025-06-19
+modified: 2025-06-23
+---
+
 - 클래스 컴포넌트
 	- componentDidMount
 	- componentDidUpdate
 	- componentWillUpdate
 - 함수 컴포넌트
-	- 렌더링에 기반한 부수효과 한곳에서 처리
+	- 렌더링에 기반한 부수효과 한 곳에서 처리
 	- 컴포넌트를 외부 시스템과 연결
 	- useEffect
 		- 렌더링 후의 동작
@@ -23,6 +29,6 @@
 				- 의존성이 없으므로 최초에만 설정 콜백 적용
 			- 의존성 배열 전달 안하면
 				- 매 렌더링마다 설정 콜백 호출
-		- 리액트는 `Object.is`를 통해 이전 값과 비교하여 변경 사항 파악
+		- [[rendering trigger]]
 	- cleanup 콜백은 이전 상태를 기준으로 정리되고, 설정 콜백은 새로운 상태를 이용해 등록 - [[Closures]] 특징
 	- [[useEffect 개발모드에서 두번 실행되는 이유]]

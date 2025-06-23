@@ -1,6 +1,8 @@
 ---
-created: 2025/4/11 12:50:02
-modified: 2025/4/11 13:16:32
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-06-23
 ---
 
 - 리액트는 언마운트된 컴포넌트에 상태 업데이트(setState)를 하지 말라 경고
@@ -23,5 +25,5 @@ modified: 2025/4/11 13:16:32
 		
 		  return mountedRef;
 		}
-- fetch가 끝나고 클로저 함수도 실행되어 끝났어. 그럼 이제 이 클로저와 ref는 unreachable이 되고, GC가 메모리에서 수거하나요?
+- fetch가 끝나고 클로저 함수도 실행되어 끝났다. 그럼 이제 이 클로저와 ref는 unreachable이 되고, GC가 메모리에서 수거하나요?
 	- Yes, 클로저와 참조된 ref도 더 이상 참조되지 않으면 JS 가비지 컬렉터(GC)가 수거

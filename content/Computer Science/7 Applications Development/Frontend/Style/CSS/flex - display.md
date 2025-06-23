@@ -1,6 +1,8 @@
 ---
-created: 2025/4/08 16:37:33
-modified: 2025/4/08 16:40:10
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-06-23
 tags:
   - css
 ---
@@ -30,3 +32,10 @@ tags:
 	- row-reverse
 	- column
 	- column-reverse
+- flex vs grid
+	- flex
+		- 1행, 1열 위주
+		- 요소 크기에 맞춤
+	- grid
+		- n행, n열
+		- 그리드 사이즈에 맞춤

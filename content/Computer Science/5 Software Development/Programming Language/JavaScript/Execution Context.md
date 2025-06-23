@@ -3,7 +3,7 @@ description:
 aliases:
   - 실행 컨텍스트
 created: 2025-06-09
-modified: 2025-06-09
+modified: 2025-06-23
 ---
 
 - Execution Context
@@ -43,7 +43,7 @@ modified: 2025-06-09
 					- 전역 환경, 부모 스코프의 lexical environment 를 참조
 					- [[Closures]]의 원리 
 	- `This Binding`
-		- `this`가 참조하는 값
+		- 이때 [[this]]가 참조하는 값이 결정됨
 - 종류
 	- Global Context
 		- 전체 코드 실행 시 생성

@@ -3,7 +3,7 @@ created: 2025/4/11 15:01:14
 modified: 2025/4/13 16:08:04
 ---
 
-- `Suspense` 컴포넌트는 지연 적재가 발생할 때, `fallback` 렌더링
+- [[Suspense]] 컴포넌트는 지연 적재가 발생할 때, `fallback` 렌더링
 	- pending
 		- throw -> fallback ui
 	- resolved
@@ -12,7 +12,6 @@ modified: 2025/4/13 16:08:04
 		- throw error -> fallback 무시, ErorrBoundary로 전달
 - 프라미스 던지기로 suspense 실행
 - [[Closures|클로저]]로 내부 변수 캡슐화, 참조
-
 - ```js
 	import React, {Suspense} from "react";
 	
