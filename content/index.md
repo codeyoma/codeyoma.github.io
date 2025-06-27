@@ -3,7 +3,7 @@ aliases:
 description: This blog is an excerpt from my Obsidian notes
 title: Hello Again!
 created: 2025-05-18
-modified: 2025-06-12
+modified: 2025-06-23
 comments: "true"
 ---
 
@@ -22,7 +22,7 @@ Not much to see here — but you’re welcome to look around! : notes on compute
 	- [[- Algorithms|🗺️ - Algorithms]]
 		- [[- PS|🗺️ - PS]]
 	- [[- Frontend|🗺️ - Frontend]]
-		- [[- JavaScript]]
+		- [[- JavaScript|🗺️ - JavaScript]]
 - [[- Note Taking|🗺️ - Note Taking]]
 - [[- Philosophy|🗺️ - Philosophy]]
 - #moc 

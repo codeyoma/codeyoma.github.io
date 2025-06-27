@@ -1,0 +1,15 @@
+- 비선점형
+	- 종류
+		- FCFS (First come, First served)
+		- SJF (Shorted Job First)
+		- 우선순위
+- 선점형
+	- 현대 운영체제가 쓰는 방식
+	- 지금 사용하는 프로세스를 알고리즘에 의해 중단시키고, 강제로 다른 프로세스에 CPU 소유권을 할당하는 방식
+	- 종류
+		- 라운드로빈
+		- SRF (Shortest Remaining Time First)
+		- 다단계 큐
+			- 높은 우선순위(시스템 프로세스) - FCFS
+			- 중간 우선순위(상호 작용적인 프로세스) - SJF
+			- 낮은 우선순위(배치 프로세스) - RR
