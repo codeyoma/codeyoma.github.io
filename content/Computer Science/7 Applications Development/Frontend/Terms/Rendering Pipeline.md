@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-23
+modified: 2025-07-01
 ---
 
 - React Rendering Pipeline
@@ -20,14 +20,15 @@ modified: 2025-06-23
 			- Current Fiber Tree with WIP Fiber Tree
 	- Commit Phase
 		- DOM Mutation
-			- 실제 돔 변경
+			- reactDOM이 실제 DOM 수정
+			- 이후 브라우저가 렌더링 파이프 수행
+				- 브라우저는 변경된 부분에 대해서만 렌더 트리 갱신
+				- dom파싱은 reactDOM이 이미 직접 DOM API 호출하고 수행
+				- css파싱은 파일이 변경되지 않는한 파싱 재수행 X
 		- side effect
 		- ref 설정
 		- useLayoutEffect 실행
 		- 컴포넌트 마운트 / 언마운트 처리
-		- 브라우저에게 DOM 업데이트 위임
-			- 상태 업데이트로 인한 부분 변경이라면 변경된 DOM 요소부터 layout, painting, compositing 수행
-				- parsing, render tree construction은 건너뜀
 - Browser Rendering Pipeline
 	- Parsing
 		- HTML -> DOM

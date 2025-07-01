@@ -1,6 +1,8 @@
 ---
-created: 2025/4/13 09:58:35
-modified: 2025/4/13 10:50:44
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-07-01
 ---
 
 # Lint
@@ -22,6 +24,14 @@ modified: 2025/4/13 10:50:44
 	- testing-library/jest-dom
 	- snapshot
 		- react-test-renderer
+- react testing library
+- enzyme
+- vitest
+- cypress
 
 # Performance
 - [React Performance: Common Problems & Their Solutions \| Product Blog • Sentry](https://blog.sentry.io/react-js-performance-guide/?utm_source=reactstatus&utm_medium=paid-community&utm_campaign=general-fy26q2-traceblog&utm_content=newsletter-s-read)
+
+
+# 문서화
+- [Storybook](https://storybook.js.org/)

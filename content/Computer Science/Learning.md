@@ -19,12 +19,12 @@ draft: "true"
 - [ ] 시그니처 프론트엔드 : 웹 개발부터 웹앱까지 프론트엔드의 모든 것
 - [ ] 더 쉽고 편하게 만드는 3D 인터랙티브 웹 개발 : 구현부터 최적화까지 (feat. R3F & Three.js)
 - [ ] 컴퓨터 공학 전공 필수 올인원 패키지 Online.
-- [ ] 알고리즘 / 기술면접 완전 정복 올인원 패키지 Online.
+- [x] 알고리즘 / 기술면접 완전 정복 올인원 패키지 Online.
 - [ ] 네카라쿠배 취업 끝장내는 파이썬 코딩테스트 마스터
-- [ ] 상태 관리 라이브러리 종류 / 왜, 어떻게, 깊게 이해
-	- [ ] redux, recoil, react-query learn 
+- [x] 상태 관리 라이브러리 종류 / 왜, 어떻게, 깊게 이해
+	- [x] redux, recoil, react-query learn
 - [ ] retry fetch with suspense or with axios or with tanstack query
-- [ ] promise 완벽하게 배우기
+- [x] promise 완벽하게 배우기
 - [ ] [React](https://ko.react.dev/)  
 - [ ] [facebook/react \| DeepWiki](https://deepwiki.com/facebook/react)
 - [ ] [2022 30분 요약 강좌 시즌 1 : HTML, CSS, Linux, Bootstrap, Python, JS, jQuery&Ajax \| 학습 페이지](https://www.inflearn.com/courses/lecture?courseId=324216&unitId=89266&tab=curriculum)  
@@ -32,7 +32,7 @@ draft: "true"
 - [ ] 다양한 시각화 도구나 라이브러리(D3.js, chart.js 등) 경험
 
 # Systems
-- [ ] ​ [[지금 무료]운영체제 공룡책 강의 강의 | 주니온 - 인프런] 
+- [ ] ​ 지금 무료운영체제 공룡책 강의 강의 | 주니온 - 인프런
 - [ ] ai for beginner [link](https://microsoft.github.io/AI-For-Beginners/)  #someday-maybe 
 - [ ] 특이한 알고리즘 배우기 [링크](https://austinhenley.com/blog/challengingalgorithms.html)  #someday-maybe 
 - [ ] [3D 수학 공부](https://lee-seokhyun.gitbook.io/game-programming/client/easy-mathematics/3d/3d-5.)  #someday-maybe 
