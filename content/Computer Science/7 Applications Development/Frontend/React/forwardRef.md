@@ -1,2 +1,2 @@
-- ref를 단순하게 자식에게 전달하면 `{ current : null}`로 전달됨
+- [[useRef|ref]]를 단순하게 자식에게 전달하면 `{ current : null}`로 전달됨
 - 접근해야하는 실제 dom 요소를 받으려면 `forwardRef`로 자식 컴포넌트 래핑

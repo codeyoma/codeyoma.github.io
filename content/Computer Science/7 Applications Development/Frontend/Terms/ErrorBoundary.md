@@ -1,10 +1,12 @@
 ---
-created: 2025/4/11 15:07:05
-modified: 2025/4/13 16:03:26
+description:
+created: 2025-05-18
+modified: 2025-07-01
 aliases:
   - 오류경계
   - 오류 경계
 ---
+
 - ```js
 	import React, { Component } from "react";
 	
@@ -33,3 +35,8 @@ aliases:
 - 오류가 있으면 `fallback 컴포넌트` 렌더링
 	- 이 컴포넌트의 프로퍼티로 오류 전달
 - 다른 컴포넌트에 합성해서, 트리에서 발생하는 오류를 포획하고  `fallback 컴포넌트` 렌더링
+- with [Sentry.io](https://sentry.io/)
+	- ```js
+		if(process.env.NODE_ENV === 'production' ) {
+			Sentry.captureException(error, { extra: info });
+		}
