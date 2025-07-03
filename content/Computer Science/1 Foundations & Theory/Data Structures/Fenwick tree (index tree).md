@@ -22,7 +22,7 @@ modified: 2025-07-02
 	void update(int i, int dif){
 		// update값이 dif
 		// 기존 값과의 dif를 점진적 비트 크기로 이동하면서 업데이트
-		while (i <= sum_size){
+		while (i < sum_size){
 			tree[i] += dif;
 			i += (i & -i);
 		}
