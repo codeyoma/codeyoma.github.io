@@ -1,12 +1,16 @@
 ---
-description:
+description: 
 aliases:
+  - Binary Indexed Tree
+  - 펜윅 트리
+  - 인덱스 트리
 created: 2025-07-02
 modified: 2025-07-02
 ---
 
 - 마지막 비트 크기로 현재 인덱스의 '저장 개수' 계산
 	- `i & -i`
+	- ![[image-Fenwick tree (index tree).png|800]]
 - ```cpp
 	int tree[sum_size];
 	

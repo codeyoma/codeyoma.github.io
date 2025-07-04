@@ -7,7 +7,9 @@ aliases:
   - kmp algorithm
 ---
 
-- 접두사, 접미사로 문자열 일치 판별
+- 일반적인 bruteforce 패턴 판별
+	- $O(N * M)$
+- KMP는 접두사, 접미사로 문자열 일치 판별
 	- $O(N+M)$
 - [[Two Pointers]] 기법
 	- `j`
@@ -19,6 +21,11 @@ aliases:
 	- `i`
 		- 접미사 인덱스
 		- 한칸씩 이동하면서 일치 판별
+	- `table`
+		- 매칭 실패했을 때 어디까지 pattern index를 돌아갈지 정보가 담긴 배열
+			- 이전 일치지점에서 시작
+			- 0이라면 처음부터 다시 매칭
+			- 값이 있다는건 그 값까지 이미 일치함을 보장
 -	```cpp
 	vector<int> make_table(const string& pattern){
 		vector<int> table(pattern.size(), 0);
