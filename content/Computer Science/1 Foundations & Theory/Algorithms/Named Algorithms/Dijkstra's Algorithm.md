@@ -124,6 +124,7 @@ aliases:
 			// pq에서 값 업데이트가 안되니
 			// pq에 값을 그냥 넣는거로 업데이트 대신
 			// 고로 값이 다르다는 것은 이전 값
+			// visited[] 없이 하는 방법
 		      if (current.value != dist[current.node])
 		        continue;
 		

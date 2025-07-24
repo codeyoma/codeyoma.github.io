@@ -7,18 +7,29 @@ draft: "true"
 ---
 
 - [codecrafters-io/build-your-own-x: Master programming by recreating your favorite technologies from scratch.](https://github.com/codecrafters-io/build-your-own-x)
+
+# algorithm
+- [ ] 네카라쿠배 취업 끝장내는 파이썬 코딩테스트 마스터- fastcampus
+- [ ] 알고리즘 / 기술면접 완전 정복 올인원 패키지 Online- fastcampus
+- [ ] 컴퓨터 공학 전공 필수 올인원 패키지 Online- fastcampus
+- [ ] 퀴즈처럼 풀면서 배우는 파이썬 머신러닝 300제+ - fastcampus
+
 # c, cpp
 - [C and C++ in Visual Studio \| Microsoft Learn](https://learn.microsoft.com/en-us/cpp/overview/visual-cpp-in-visual-studio?view=msvc-170)
 - [홍정모의 따라하며 배우는 C++ \| minkj1992](https://minkj1992.github.io/hong_modern_cpp/#0-terminology)
+- [ ] C++ 실력 완성 올인원 패키지 Online - fastcampus
+
+# java
+- [ ] Java 웹 개발 마스터 올인원 패키지 Online- fastcampus
+- [ ] 한 번에 끝내는 Java/Spring 웹 개발 마스터 초격차 패키지 Online- fastcampus
 
 # Frontend
-- [ ] 내 생에 마지막 JavaScript : 기초 문법부터 실무 웹 개발까지 한 번에 끝내기 초격차 패키지 Online. #next-action 
-- [ ] 시그니처 프론트엔드 : 웹 개발부터 웹앱까지 프론트엔드의 모든 것 #next-action
-- [ ] 고성능 대규모 프론트엔드 10개 프로젝트 : 최적화부터 유지보수까지 한 번에 끝내는 초격차 패키지 Online. #next-action
-- [ ] 올인원 패키지 : 프론트엔드 최적화 완전 정복 (React & Next.js) #next-action
-- [ ] 더 쉽고 편하게 만드는 3D 인터랙티브 웹 개발 : 구현부터 최적화까지 (feat. R3F & Three.js) #next-action
-- [ ] 컴퓨터 공학 전공 필수 올인원 패키지 Online. #next-action
-- [ ] 네카라쿠배 취업 끝장내는 파이썬 코딩테스트 마스터 #next-action
+- [ ] 프론트엔드 개발 올인원 패키지 with React Online - fastcampus
+- [ ] 내 생에 마지막 JavaScript : 기초 문법부터 실무 웹 개발까지 한 번에 끝내기 초격차 패키지 Online- fastcampus
+- [ ] 시그니처 프론트엔드 : 웹 개발부터 웹앱까지 프론트엔드의 모든 것- fastcampus
+- [ ] 고성능 대규모 프론트엔드 10개 프로젝트 : 최적화부터 유지보수까지 한 번에 끝내는 초격차 패키지 Online- fastcampus
+- [ ] 올인원 패키지 : 프론트엔드 최적화 완전 정복 (React & Next.js)- fastcampus
+- [ ] 더 쉽고 편하게 만드는 3D 인터랙티브 웹 개발 : 구현부터 최적화까지 (feat. R3F & Three.js)- fastcampus
 - [ ] [React](https://ko.react.dev/)  
 - [ ] [facebook/react \| DeepWiki](https://deepwiki.com/facebook/react)
 - [ ] [2022 30분 요약 강좌 시즌 1 : HTML, CSS, Linux, Bootstrap, Python, JS, jQuery&Ajax \| 학습 페이지](https://www.inflearn.com/courses/lecture?courseId=324216&unitId=89266&tab=curriculum)  

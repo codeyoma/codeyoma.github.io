@@ -1,7 +1,11 @@
 ---
-created: 2025/3/21 23:14:36
-modified: 2025/5/16 13:56:35
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-07-04
 ---
+
+- 완전이진트리 특성 활용
 - ```cpp
 	#include <iostream>
 	#include <vector>
