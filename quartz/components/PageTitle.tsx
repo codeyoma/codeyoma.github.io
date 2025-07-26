@@ -46,6 +46,12 @@ PageTitle.css = `
   align-self: center;
 
   @media (min-width: 1025px) {
+    max-width: 100px;
+    width: auto;
+    height: auto;
+  }
+
+  @media (min-width: 2000px) {
     max-width: 200px;
     width: auto;
     height: auto;
