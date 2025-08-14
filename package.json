@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@clack/prompts": "^0.11.0",
-    "@floating-ui/dom": "^1.7.2",
+    "@floating-ui/dom": "^1.7.3",
     "@myriaddreamin/rehype-typst": "^0.6.0",
     "@napi-rs/simple-git": "0.1.21",
     "@tweenjs/tween.js": "^25.0.0",
@@ -120,6 +120,6 @@
     "esbuild": "^0.25.6",
     "prettier": "^3.6.2",
     "tsx": "^4.20.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   }
 }
