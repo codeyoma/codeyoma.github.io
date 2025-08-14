@@ -2,7 +2,7 @@
 aliases:
 description: 
 created: 2025-05-18
-modified: 2025-06-12
+modified: 2025-08-14
 title: About
 comments: "true"
 ---
@@ -15,7 +15,6 @@ comments: "true"
 
 ### Reach Me
 - [codeyoma@gmail.com](mailto:codeyoma@gmail.com)
-- [LinkedIn](https://www.linkedin.com/in/codeyoma)
 
 ### Log
 - [Blog](https://yoma.kr)

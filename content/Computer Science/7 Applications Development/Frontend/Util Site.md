@@ -25,6 +25,8 @@ modified: 2025/4/14 07:33:40
 ## Design
 - [Dead Simple Sites — Minimal Website Inspiration](https://deadsimplesites.com/)
 - [UI Design Daily](https://www.uidesigndaily.com/)
+- [Apple 디자인 리소스 - Apple Developer](https://developer.apple.com/kr/design/resources/)
+
 # Fetch
 - [TanStack Start Overview \| TanStack Start React Docs](https://tanstack.com/start/latest/docs/framework/react/overview)
 
