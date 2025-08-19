@@ -1,6 +1,8 @@
 ---
-created: 2025/4/10 09:54:55
-modified: 2025/4/14 07:33:40
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-08-15
 ---
 
 # CSS
@@ -26,6 +28,7 @@ modified: 2025/4/14 07:33:40
 - [Dead Simple Sites — Minimal Website Inspiration](https://deadsimplesites.com/)
 - [UI Design Daily](https://www.uidesigndaily.com/)
 - [Apple 디자인 리소스 - Apple Developer](https://developer.apple.com/kr/design/resources/)
+- [Pricing Pages — A Curated Gallery of Pricing Page Designs](https://pricingpages.design/)
 
 # Fetch
 - [TanStack Start Overview \| TanStack Start React Docs](https://tanstack.com/start/latest/docs/framework/react/overview)
