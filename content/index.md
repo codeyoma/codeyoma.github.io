@@ -19,7 +19,7 @@ Not much to see here — but you’re welcome to look around! : notes on compute
 ###### MOC 
 - [[About|About]]
 - [[- Computer Science|🗺️ - Computer Science]]
-	- [[- Algorithms|🗺️ - Algorithms]]
+	- [[- Algorithms|- Algorithms]]
 		- [[- PS|🗺️ - PS]]
 	- [[- Frontend|🗺️ - Frontend]]
 		- [[- JavaScript|🗺️ - JavaScript]]

@@ -1,12 +1,15 @@
 ---
-created: 2023/11/03 23:49:16
-modified: 2025/5/01 18:43:38
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-08-21
 tags:
   - field/computer
   - format/article
 references:
   - https://www.youtube.com/watch?v=PgBzjlCcFvc
 ---
+
 # Choice of Pivot
 - 처음, 마지막 요소 피벗
 - 랜덤 요소 피벗
@@ -64,7 +67,7 @@ references:
 		int pivot = arr[high];
 		int left_index = (low - 1);
 		
-		for (right_index = low; right_index <= high - 1; right_index++){
+		for (int right_index = low; right_index < high; right_index++){
 			if (arr[right_index] <= pivot){
 				left_index++;
 				swap(&arr[left_index], &arr[right_index]);	

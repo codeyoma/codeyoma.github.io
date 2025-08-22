@@ -198,6 +198,16 @@ int main() {
 }
 ```
 
+## Bases
+```base
+filters:
+  and:
+    - file.hasTag("example")
+views:
+  - type: table
+    name: Table
+```
+
 ## Footnotes
 - This is a simple footnote[^1].[^1][^1]
 [^2]
