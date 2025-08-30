@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-08-21
+modified: 2025-08-30
 tags:
   - field/computer
   - format/article
@@ -40,41 +40,44 @@ references:
 		return qsort(left) + [pivot] + qsort(right)
 
 ## Lomuto Partition
+- when `left_index < right_index`
 - 최초 조건
-	- left_index = -1 (pivot 보다 같거나 작은 값 )
-	- right_index = 0 (looping 용 index) 
-- left_index < right_index
-- 맨 오른쪽 요소를 pivot으로 삼는다
+	- `left_index = low -1` (pivot 보다 같거나 작은 값 )
+	- `right_index = low` (looping 용 index) 
+- 맨 오른쪽 요소를 `pivot`으로 삼는다
 - loop
-	- right_index 요소와 pivot 비교
-		- 같거나 작으면 `left_index++` + `swap(arr[left_index], arr[right_index])`
-		- 크면 pass
-	- `right_index++`
-- right_index가 pivot 위치 전까지 오면 `swap(arr[left_index + 1], arr[pivot])`
-	- pivot은 제자리에 가게됨
-- left_side, right_side 재귀로 quick_sort 호출 
+	- `if cmp(right_index, pivot)`
+		- true -> `left_index++` + `swap(arr[left_index], arr[right_index])`
+			- cmp가 `<` 라면
+			- 현재 left_index는 피벗 보다 큰 값
+			- 현재 right_index는 피벗 보다 작은 값, 고로 swap
+	- `right_index++` loop
+- `right_index`가 `pivot` 위치 전까지 오면(loop가 끝나면) `swap(arr[left_index + 1], arr[pivot])`
+	- `pivot`은 순서상 제자리에 가게됨
+- `left_side, right_side` 재귀로 `quick_sort` 호출 
 - ```cpp
-	void quickSort(int arr[], int low, int high){
-		if (low < high){
-			int pivot_index = partition(arr, low, high);
+	template<typename T, typename Compare>
+	int partition(vector<T>& arr, int low, int high, Compare cmp) {
+	    int pivot = high;
+	    int left  = low - 1;
 	
-			quickSort(arr, low, pivot_index - 1);
-			quickSort(arr, pivot_index + 1, high)
-		}
+	    for (int right = low; right < high; ++right) {
+	        if (cmp(arr[right], arr[pivot])) {
+	            left++;
+	            swap(arr[left], arr[right]);
+	        }
+	    }
+	    left++;
+	    swap(arr[left], arr[pivot]);
+	    return left;
 	}
 	
-	int partition(int arr[], int low, int high){
-		int pivot = arr[high];
-		int left_index = (low - 1);
-		
-		for (int right_index = low; right_index < high; right_index++){
-			if (arr[right_index] <= pivot){
-				left_index++;
-				swap(&arr[left_index], &arr[right_index]);	
-			}
-		}
-		swap(&arr[left_index + 1], &arr[high]);
-		return (left_index + 1);
-	}
+	template<typename T, typename Compare>
+	void q_sort(vector<T>& arr, int low, int high, Compare cmp) {
+	    if (low < high) {
+	        int pivot = partition(arr, low, high, cmp);
 	
-
+	        q_sort(arr, low, pivot - 1, cmp);
+	        q_sort(arr, pivot + 1, high, cmp);
+	    }
+	}
