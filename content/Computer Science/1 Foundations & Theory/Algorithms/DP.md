@@ -191,15 +191,14 @@ references:
 		- 자기 행에서 `[i][j - v] + [i - 1][j]`
 	- 무제한 사용, 순서 상관 없는 경우의 타겟($k$) 만드는 갯수
 		- ```cpp
-		dp[0] = 1;
-		for (int i = 0; i < n; ++i) { // n = 동전 개수
-			int coin = coins[i];
-			for (int j = coin; j <= k; j++) {
-				dp[j] += dp[j - coin];
+			dp[0] = 1;
+			for (int i = 0; i < n; ++i) { // n = 동전 개수
+				int coin = coins[i];
+				for (int j = coin; j <= k; j++) {
+					dp[j] += dp[j - coin];
+				}
 			}
-		}
-		cout << dp[k];
-		
+			cout << dp[k];
 - [[다이내믹 프로그래밍 완전 정복]] p.152
 
 ## 최장 공통 부분 수열 길이 구하기 (LCS)
