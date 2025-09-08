@@ -35,7 +35,7 @@ jobs:
         run: |
           cp -r resume/* content/
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
@@ -51,7 +51,7 @@ jobs:
 
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
 
