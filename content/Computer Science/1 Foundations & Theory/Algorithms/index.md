@@ -1,7 +1,7 @@
 ---
 description: 
 created: 2023-10-09
-modified: 2025-06-02
+modified: 2025-10-12
 tags:
   - cs
   - algorithm
@@ -40,6 +40,6 @@ aliases:
 	- [[Topological Sorting]]
 - [[Union-Find]]
 - [[Greedy]]
-- [[- DP]]
-	- [[- DP 유형]]
+- [[_ DP|DP]]
+	- [[_ DP 유형|DP 유형]]
 - [[Heap Sort, Heapify]]
