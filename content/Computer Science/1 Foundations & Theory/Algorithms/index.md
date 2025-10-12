@@ -40,6 +40,6 @@ aliases:
 	- [[Topological Sorting]]
 - [[Union-Find]]
 - [[Greedy]]
-- [[DP]]
-	- [[DP 유형]]
+- [[- DP]]
+	- [[- DP 유형]]
 - [[Heap Sort, Heapify]]

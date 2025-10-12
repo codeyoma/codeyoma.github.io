@@ -2,6 +2,9 @@
 description:
 created: 2025-05-18
 modified: 2025-05-18
+aliases:
+  - "- DP with Bitmask"
+  - DP with Bitmask
 ---
 - *어떤 것을 고를 때* 마다 *이전에 뭘 골랐나*가 중요하면, 이전에 고른 집합을 mask로 표현
 	- 외판원 순회[[Traveling Salesman Problem]]라면 “어느 도시들을 이미 방문했나”
