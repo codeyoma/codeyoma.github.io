@@ -3,13 +3,21 @@ aliases:
 description: This blog is an excerpt from my Obsidian notes
 title: Hello Again!
 created: 2025-05-18
-modified: 2025-09-01
+modified: 2025-10-12
 comments: "true"
 ---
 
 <!--
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira&weight=500&size=42&duration=2468&pause=4000&width=600&height=70&lines=Hello%2C+Again!)
 -->
+<!-- memo
+- 파일 맨 앞에 이름이 '-'로 시작은 index 파일용 이름임 (자동으로 quartz 인덱스 파일이 됨)
+	- 같은 폴더에 '-'로 시작하는 파일이 여러개라면 1개만 인덱스가 됨
+	- 인덱스용 파일은 '-'로 지정하기
+	- 그외의 파일은 우선순위를 위해서 다른 캐릭터 사용하기
+- '_'은 파일 우선순위를 위해 사용하는 나만의 컨벤션
+-->
+
 ![[Lqp2z3I.gif]]
 
 Hi, I’m Yoma. This blog is my digital garden - mi casa es su casa.
