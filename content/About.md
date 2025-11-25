@@ -2,7 +2,7 @@
 aliases:
 description: 
 created: 2025-05-18
-modified: 2025-08-14
+modified: 2025-11-25
 title: About
 comments: "true"
 ---
@@ -23,5 +23,7 @@ comments: "true"
 - [Sweep Keyboard](https://github.com/codeyoma/sweep-nice-nano)
 - [Yòmá's Library](https://lib.yoma.kr/)
 
+<!--
 ### Badge
 [![Yoma's Solved.ac profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=hiatus4322)](https://solved.ac/profile/hiatus4322)
+-->
