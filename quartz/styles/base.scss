@@ -60,6 +60,10 @@ ul,
     /* tr and td removed from list of selectors for overflow-wrap, allowing them to use default 'normal' property value */
 }
 
+path[class~="typst-shape"] {
+  stroke: var(--darkgray);
+}
+
 .math {
     &.math-display {
         text-align: center;
