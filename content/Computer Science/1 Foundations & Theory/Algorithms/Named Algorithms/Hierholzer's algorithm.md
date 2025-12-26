@@ -1,9 +1,11 @@
 ---
-created: 2025/5/06 09:19:23
-modified: 2025/5/07 14:54:57
+description:
+created: 2025-05-18
+modified: 2025-12-27
 aliases:
   - 하이얼홀처
 ---
+
 - [[Eulerian Path|오일러 경로]] 찾는 알고리즘
 - 시작 정점에서 dfs로 들어가며, 해당 간선 제거하고, 더이상 갈 곳 없으면(post-order) path 추가
 - ```pseudo
@@ -15,6 +17,7 @@ aliases:
 	    path.append(u)
 	
 	reverse(euler)
+	```
 - ```cpp
 	// C++ program to print Eulerian circuit in given
 	// directed graph using Hierholzer algorithm
@@ -75,3 +78,4 @@ aliases:
 	    cout << endl;
 	    return 0;
 	}
+	```

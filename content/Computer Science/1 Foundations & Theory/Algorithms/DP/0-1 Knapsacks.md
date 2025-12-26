@@ -53,6 +53,7 @@ modified: 2025-10-12
 		    vector<vector<int>> dp(n, vector<int>(W + 1, -1));
 		    cout << knapsack(0, W, wt, val, dp) << "\n";
 		}
+		```
 
 # 상향식
 - 2 차원 DP
@@ -76,5 +77,6 @@ modified: 2025-10-12
 		);
 	else
 		dp[i][j] = dp[i - 1][j];
+	```
 - ![[image-DP-15.png]]
 - [[다이내믹 프로그래밍 완전 정복]] p.182

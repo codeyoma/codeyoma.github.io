@@ -93,3 +93,4 @@ modified: 2025-07-04
 	        return base.empty();
 	    }
 	};
+	```

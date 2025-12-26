@@ -29,6 +29,7 @@ tags: []
 					    parent[rootB] = rootA; // 두 집합을 합침
 					    return false;
 					}
+					```
 			- dfs
 				- 방문한 노드가 다시 나왔는데, 부모가 아니라면 사이클
 		- 방향 그래프

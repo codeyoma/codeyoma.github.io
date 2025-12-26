@@ -199,6 +199,7 @@ references: '["https":"//github.com/crapas/dp",]'
 				}
 			}
 			cout << dp[k];
+			```
 - [[다이내믹 프로그래밍 완전 정복]] p.152
   
 ## 거스름돈 최적화 (Coin Change)
@@ -250,6 +251,7 @@ references: '["https":"//github.com/crapas/dp",]'
 	}
 	
 	cout << *max_element(dp.begin(), dp.end());
+	```
 - `dp[i]`는 `a[i]`를 마지막 원소로 갖는 LIS의 길이
 - 현재 글자의, 이전 글자들 대소 비교로, dp 업데이트
 	- 이미 왼쪽부터 dp가 정복하니 최적해 보장

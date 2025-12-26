@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-09
+modified: 2025-12-27
 ---
 
 - 순열 $\frac{n!}{(n-r)!}$
@@ -22,7 +22,8 @@ modified: 2025-06-09
 		                cout << c << " ";
 		        }
 		        cout << endl;
-		    } while (next_permutation(set.begin(), set.end())); 
+		    } while (next_permutation(set.begin(), set.end()));
+		 ```
 - recursive
 	- logic
 		- 소스 배열
@@ -65,3 +66,43 @@ modified: 2025-06-09
 		
 		    return 0;
 		}
+		```
+- inductively
+	- 1 ~ n
+		- ```cpp
+			#include <bits/stdc++.h>
+			using namespace std;
+			
+			vector<vector<int>> permutation(int n) {
+			    // base case: f(1) = { {1} }
+			    if (n == 1) {
+			        return { {1} };
+			    }
+			
+			    // f(n-1)
+			    vector<vector<int>> prev = permutation(n - 1);
+			
+			    vector<vector<int>> result;
+			
+			    // insert n into every possible position
+			    for (const auto& A : prev) {
+			        for (int i = 0; i <= (int)A.size(); i++) {
+			            vector<int> cur;
+			
+			            // A[:i]
+			            cur.insert(cur.end(), A.begin(), A.begin() + i);
+			
+			            // + [n]
+			            cur.push_back(n);
+			
+			            // + A[i:]
+			            cur.insert(cur.end(), A.begin() + i, A.end());
+			
+			            result.push_back(cur);
+			        }
+			    }
+			
+			    return result;
+			}
+			```
+	- 개별 요소로

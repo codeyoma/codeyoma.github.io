@@ -2,7 +2,7 @@
 
 # /Users/yoma/Library/Mobile Documents/com~apple~CloudDocs/Documents/Yoma
 
-basic_path="/Users/yoma/Library/Mobile Documents/com~apple~CloudDocs/Documents/Yoma"
+basic_path="/Users/yoma/Library/Mobile Documents/iCloud~md~obsidian/Documents/Yoma"
 allow_path=(
   "/∞ Akashic Records/attachments/"
   "/∞ Akashic Records/- Guideline.md"

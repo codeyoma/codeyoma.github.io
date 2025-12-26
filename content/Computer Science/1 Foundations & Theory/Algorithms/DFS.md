@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-02
+modified: 2025-12-27
 tags: []
 ---
 
@@ -26,6 +26,7 @@ tags: []
 			dfs(node->left);
 			dfs(node->right);
 		}
+		```
 - 간선 만 주어진 경우의 부모 찾기
 	- ![[Tree#^129bd4]]
 	- ```python
@@ -36,6 +37,8 @@ tags: []
 				if not visit[v]:
 					parent[v] = u
 					dfs(v)
+		```
+		
 # in-order DFS
 - BST나 중위 수식 등, 정렬 성질 사용
 	- BST 순회 (오름차순 정렬된 값 추출)
@@ -46,7 +49,8 @@ tags: []
 			visit(node);
 			dfs(node->right);
 		}
-
+		```
+		
 # post-order DFS
 - 결과를 누적하거나 처리할 때
 	- 디렉터리 처리
@@ -61,3 +65,4 @@ tags: []
 			dfs(node->right);
 			visit(node);
 		}
+		```

@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-02
+modified: 2025-12-27
 ---
 
 # Algorithm Library
@@ -51,6 +51,7 @@ modified: 2025-06-02
 			
 			println("Fibonacci, a = ", a);
 			// Fibonacci, a = 1 1 2 3 5 8 13 21 34 55
+			```
 - data control, manipulation
 	- reverse
 	- rotate
@@ -90,6 +91,7 @@ modified: 2025-06-02
 		if (it != myMap.end()) {
 			it->second = 50;
 		}
+		```
 - map, set
 - pair
 	- `make_pair({a, b})`

@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-08-30
+modified: 2025-12-27
 tags:
   - field/computer
   - format/article
@@ -38,6 +38,7 @@ references:
 		#right = [ item for item in data[1:] if pivot <= item]
 	
 		return qsort(left) + [pivot] + qsort(right)
+	```
 
 ## Lomuto Partition
 - when `left_index < right_index`
@@ -81,3 +82,4 @@ references:
 	        q_sort(arr, pivot + 1, high, cmp);
 	    }
 	}
+	```

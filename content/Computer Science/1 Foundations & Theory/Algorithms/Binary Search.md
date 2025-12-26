@@ -1,7 +1,10 @@
 ---
-created: 2025/5/01 11:03:02
-modified: 2025/5/01 11:16:57
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-12-27
 ---
+
 - [[Two Pointers]] 기법의 일종
 - 결정 문제에서 많이 쓰인다
 	- 어떤 값 x가 해가 될 수 있는지를 확인할 수는 있다면, 이분 탐색으로 가능한 값의 범위를 줄여가며 최적 해를 찾아낼 수 있다
@@ -25,7 +28,7 @@ modified: 2025/5/01 11:16:57
 			}
 			return -1;
 		}
-
+		```
 - 왼쪽 가장자리 값 찾기
 	- ```cpp
 		int left_bound(int[] nums, int target){
@@ -47,7 +50,7 @@ modified: 2025/5/01 11:16:57
 				return -1;
 			return left;
 		}
-
+		```
 - 오른쪽 가장자리 값 찾기
 	- ```cpp
 		int right_bound(int[] nums, int target){
@@ -69,3 +72,4 @@ modified: 2025/5/01 11:16:57
 				return -1;
 			return right;
 		}
+		```

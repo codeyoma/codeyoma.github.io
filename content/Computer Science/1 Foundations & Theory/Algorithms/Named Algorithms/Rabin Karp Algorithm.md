@@ -1,9 +1,11 @@
 ---
-created: 2025/5/15 11:10:55
-modified: 2025/5/15 11:11:27
+description:
+created: 2025-05-18
+modified: 2025-12-27
 aliases:
   - 라빈 카프
 ---
+
 - 폴리노미얼 해시 함수
 	- $\text{hash}(s) = (s_0 \cdot b^{m-1} + s_1 \cdot b^{m-2} + \dots + s_{m-1} \cdot b^0) \mod p$
 - 슬라이드 윈도우로 해시 갱신
@@ -30,6 +32,7 @@ aliases:
 			hash += arr[i] - 'a' + 1;
 			hash %= mod;	
 		}
+		```
 - 문자열 패턴 검색
 - 문자열 최장 부분 문자
 	- 2번 이상 등장하는 최장 길이 부분문자열 찾기

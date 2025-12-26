@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-01
-modified: 2025-07-04
+modified: 2025-12-27
 ---
 
 - 일종의 그래프
@@ -35,3 +35,4 @@ modified: 2025-07-04
 					dfs(v)
 					# 방문 안한 노드가 있다는 것은 부모라는 뜻
 					is_leaf = False
+		```

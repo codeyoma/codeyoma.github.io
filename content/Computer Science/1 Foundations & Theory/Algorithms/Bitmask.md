@@ -1,3 +1,10 @@
+---
+description:
+aliases:
+created: 2025-05-07
+modified: 2025-12-27
+---
+
 - 부분집합으로 많이 사용
 	- 비트마스크 `1 << i` (i -> $2^{n}$ 까지)
 	- 각 마스크(한 조합)별 순회 
@@ -9,6 +16,7 @@
 				}
 			}
 		}
+		```
 - 부분집합 순회 테크닉
 	- `mask`를 제외한 남은 집합 계산용으로 효율적
 	- ```cpp
@@ -18,3 +26,4 @@
 		for (int subset = rest; subset > 0; subset = (subset - 1) & rest){
 		    cout << static_cast<bitset<8>>(subset) << endl;
 		}
+		```

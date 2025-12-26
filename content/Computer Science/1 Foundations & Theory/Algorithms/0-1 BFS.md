@@ -1,7 +1,10 @@
 ---
-created: 2025/5/07 14:26:48
-modified: 2025/5/07 14:28:34
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-12-27
 ---
+
 - bfs임으로 먼저 방문한 것이 최단 거리
 - ```cpp
 	deque<int> dq;
@@ -18,5 +21,6 @@ modified: 2025/5/07 14:28:34
 	        }
 	    }
 	}
+	```
 - 거리 비교가 필요 없을 경우, 그냥 넘기기(이미 그 거리가 최적이므로)
 - `(dist[x][y] != -1) continue;`

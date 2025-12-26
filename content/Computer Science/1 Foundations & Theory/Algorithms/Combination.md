@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-09
+modified: 2025-12-22
 tags:
   - review
 ---
@@ -33,6 +33,7 @@ tags:
 		        }
 		        cout << endl;
 		    } while (prev_permutation(v.begin(), v.end()));
+		```
 - recursive
 	- logic
 		- 소스 배열
@@ -69,3 +70,42 @@ tags:
 			combine(arr, current, 0, k);
 			return 0;
 		}
+		```
+- inductively
+	- 1 ~ n 
+		- ```cpp
+			#include <bits/stdc++.h>
+			using namespace std;
+			
+			vector<vector<int>> combination(int n, int k) {
+			    // base case: f(n,0) = { {} }
+			    if (k == 0) {
+			        return { {} };
+			    }
+			
+			    // base case: f(k,k) = { {1,2,...,k} }
+			    if (n == k) {
+			        vector<int> v;
+			        for (int i = 1; i <= k; i++) v.push_back(i);
+			        return { v };
+			    }
+			
+			    // f(n-1, k): n not chosen
+			    vector<vector<int>> without_n = combination(n - 1, k);
+			
+			    // f(n-1, k-1): n chosen
+			    vector<vector<int>> with_n;
+			    for (const auto& A : combination(n - 1, k - 1)) {
+			        vector<int> cur = A;
+			        cur.push_back(n);
+			        with_n.push_back(cur);
+			    }
+			
+			    // union
+			    vector<vector<int>> result = without_n;
+			    result.insert(result.end(), with_n.begin(), with_n.end());
+			
+			    return result;
+			}
+			```
+	- 개별 요소로

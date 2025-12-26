@@ -47,6 +47,7 @@ modified: 2025-10-12
 		vector<vector<int>> dp(a.size(), vector<int>(b.size(), -1));
 		cout << LCS(a, b, 0, 0, dp) << "\n";
 	}
+	```
 
 # 상향식
 - 상향식으로 캐시 테이블 

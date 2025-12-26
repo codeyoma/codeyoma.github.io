@@ -1,7 +1,7 @@
 ---
 description:
 created: 2025-05-18
-modified: 2025-06-02
+modified: 2025-12-27
 aliases:
   - imos
 ---
@@ -28,3 +28,4 @@ aliases:
 	for (int i = 1; i <= n; i++) {
 	    imos[i] += imos[i - 1];
 	}
+	```

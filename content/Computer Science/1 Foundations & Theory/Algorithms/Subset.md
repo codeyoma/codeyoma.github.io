@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-06-02
+modified: 2025-12-22
 ---
 
 - 부분집합 $2^{n}$
@@ -37,3 +37,33 @@ modified: 2025-06-02
 		    subset(arr, current, 0);
 		    return 0;
 		}
+		```
+		
+- inductively
+	- 1 ~ n
+		- ```cpp
+			#include <bits/stdc++.h>
+			using namespace std;
+			
+			vector<vector<int>> powerset(int n) {
+			    // base case: f(0) = { {} }
+			    if (n == 0) {
+			        return { {} };
+			    }
+			
+			    // f(n-1)
+			    vector<vector<int>> prev = powerset(n - 1);
+			
+			    vector<vector<int>> result = prev;  // f(n-1)
+			
+			    // { A ∪ {n} | A ∈ f(n-1) }
+			    for (const auto& A : prev) {
+			        vector<int> with_n = A;
+			        with_n.push_back(n);
+			        result.push_back(with_n);
+			    }
+			
+			    return result;
+			}
+			```
+	- 개별 요소로

@@ -26,7 +26,7 @@ aliases:
 			- 이전 일치지점에서 시작
 			- 0이라면 처음부터 다시 매칭
 			- 값이 있다는건 그 값까지 이미 일치함을 보장
--	```cpp
+- ```cpp
 	vector<int> make_table(const string& pattern){
 		vector<int> table(pattern.size(), 0);
 		int j = 0;
@@ -64,3 +64,4 @@ aliases:
 			}
 		}
 	}
+	```

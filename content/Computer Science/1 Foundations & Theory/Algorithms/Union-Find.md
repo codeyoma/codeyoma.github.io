@@ -1,7 +1,10 @@
 ---
-created: 2025/3/19 17:18:37
-modified: 2025/5/01 17:06:40
+description:
+aliases:
+created: 2025-05-18
+modified: 2025-12-27
 ---
+
 - 같은 집합으로 분류되는지 확인용
 - Union
 	- 그룹 합치기
@@ -9,7 +12,7 @@ modified: 2025/5/01 17:06:40
 	- 그룹 찾기
 - union by rank, size...
 - ```cpp
-	// 🔹 Find 함수 (path compression)
+	// Find 함수 (path compression)
 	int find(int x) {
 	    if (parent[x] == x) return x;
 	    return parent[x] = find(parent[x]); // 부모 갱신
@@ -20,7 +23,7 @@ modified: 2025/5/01 17:06:40
 	    */
 	}
 	
-	// 🔹 Union 함수 (두 집합 합치기)
+	// Union 함수 (두 집합 합치기)
 	bool unionSet(int a, int b) {
 	    int rootA = find(a);
 	    int rootB = find(b);
@@ -44,3 +47,4 @@ modified: 2025/5/01 17:06:40
 		// true니 해당 간선 MST에 추가
 	    return true;
 	}
+	```

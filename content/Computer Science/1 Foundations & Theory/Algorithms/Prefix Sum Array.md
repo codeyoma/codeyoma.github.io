@@ -18,5 +18,6 @@ aliases:
 	        
 	    return prefixSum;
 	}
+	```
 	- library ![[Terms#^f67ff6]]
 - [[Imos Algorithm|imos]]

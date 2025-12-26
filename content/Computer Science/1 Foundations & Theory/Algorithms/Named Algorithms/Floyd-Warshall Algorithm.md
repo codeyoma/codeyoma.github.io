@@ -1,7 +1,7 @@
 ---
 description:
 created: 2025-05-18
-modified: 2025-06-09
+modified: 2025-12-27
 references: 
 aliases:
   - 플로이드 워셜
@@ -72,3 +72,4 @@ $$
 		    }
 		}
 	}
+	```

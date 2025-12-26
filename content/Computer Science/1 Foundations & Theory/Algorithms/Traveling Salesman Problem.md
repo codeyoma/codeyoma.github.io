@@ -43,6 +43,7 @@ modified: 2025-10-21
 			    dp[u][mask] = best
 			    parent[u][mask] = best_next   # 경로 복원을 원할 경우
 			    return best
+			```
 	- 전이 공식
 		- `mask`: 방문한 도시 집합
 		- `last`: 마지막 방문 도시
@@ -128,3 +129,4 @@ modified: 2025-10-21
 			    
 			    return 0;
 			}
+			```

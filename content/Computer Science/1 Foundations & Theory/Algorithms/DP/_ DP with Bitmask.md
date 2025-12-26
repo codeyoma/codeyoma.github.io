@@ -21,6 +21,7 @@ aliases:
 		         dp[mask][last][extra] + delta
 		     );
 		   }
+		```
 - Bitmask DP for Assignment
 	- ```cpp
 		for(int mask = 0; mask < FULL; ++mask){
@@ -34,3 +35,4 @@ aliases:
 				}
 			}
 		}
+		```
