@@ -1,17 +1,28 @@
 ---
-created: 2025/2/05 16:03:13
-modified: 2025/5/04 16:50:04
+description:
+created: 2025-05-18
+modified: 2026-01-02
 tags: 
 references: 
 aliases:
   - 다익스트라
 ---
+
 - shortest path from one node to all nodes
 - greedy algorithm
 - 단일 출발 최단 경로
 	- **하나의 정점**에서 **다른 모든 정점** 간의 각각 짧은 거리를 구하는 알고리즘
 - 음수 길이의 간선이 존재할 경우 작동 안됨
+	- 처음 relaxation되는 정점이 다음 최단 거리로 확정되기에
 - 첫 정점을 기준으로 연결되는 정점들을 추가해 가며, 최단 거리 갱신 기법
+- 시간 복잡도
+	- $O(E + V^{2})$
+		- 일반적 구현
+		- 정점 개수 만큼
+			- 방문 안한 정점 중 최단 거리 찾고
+			- 해당 정점에서 인접 간선 relax
+	- $O((E + V)log V )$
+		- 우선 순위큐를 사용하였을 때
 - 우선순위 큐 활용 방식 (Min heap으로 최소값 꺼내면서 업데이트)
 	- logic
 		- 간선 자료, 거리 배열, min queue
