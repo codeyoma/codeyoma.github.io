@@ -222,6 +222,18 @@ h1 {
   }
 }
 
+.page>#quartz-body>.sidebar.left:has(.explorer) {
+  @media (min-width: #{$pageWidth}) {
+    padding-bottom: 1rem;
+  }
+}
+
+.page>#quartz-body>.sidebar.right:has(.toc) {
+  @media (min-width: #{$pageWidth}) {
+    padding-bottom: 1rem;
+  }
+}
+
 .page>#quartz-body {
   @media (max-width: #{$pageWidth}) {
     .sidebar.left:has(.explorer) {
