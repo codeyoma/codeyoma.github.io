@@ -129,13 +129,21 @@ h1 {
   margin-top: 0.5em;
 }
 
+.center .page-header h1:before {
+  content: none;
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--gray);
+  justify-content: center;
+}
+
 .center h1:before {
   content: "* * *";
   display: flex;
   font-size: 1.5rem;
   color: var(--gray);
   justify-content: center;
-  margin: 9.0rem 0;
+  margin: 6.0rem 0;
 }
 
 @for $i from 1 through 6 {
