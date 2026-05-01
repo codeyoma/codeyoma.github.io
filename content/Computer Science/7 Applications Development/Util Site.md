@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-08-15
+modified: 2026-02-23
 ---
 
 # CSS
@@ -21,6 +21,12 @@ modified: 2025-08-15
 - [Chakra UI](https://chakra-ui.com/) 
 - [Overview](https://www.kibo-ui.com/overview)
 - [Stitch - Design with AI](https://stitch.withgoogle.com/)
+- magic ui
+- mobbin
+- framer
+- webflow
+- 21st.dev
+
 ## UI Elements
 - [Stack Sorted.](https://stacksorted.com/buttons)
 
@@ -36,3 +42,21 @@ modified: 2025-08-15
 
 # Debug (DevTools, Test)
 - [DevTools Tips](https://devtoolstips.org/)
+
+# Diagram
+- [FossFLOW](https://github.com/stan-smith/FossFLOW)
+
+# Game
+- [phaser](https://phaser.io/)
+- [itch.io](https://itch.io/)
+
+- PostHog
+- Sentry
+
+- 결제
+	- toss
+	- polar
+	- lemon squeezy
+	- paddle
+	- dodo payments
+	- 

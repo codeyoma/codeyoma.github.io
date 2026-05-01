@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-12-27
+modified: 2026-02-05
 ---
 
 - 순열 $\frac{n!}{(n-r)!}$
@@ -106,3 +106,18 @@ modified: 2025-12-27
 			}
 			```
 	- 개별 요소로
+- python
+	- ```python
+		def permutation(n):
+		    if n == 1:
+		        return [[1]]
+		
+		    prev = permutation(n - 1)
+		    result = []
+		
+		    for A in prev:
+		        for i in range(len(A) + 1):
+		            result.append(A[:i] + [n] + A[i:])
+		
+		    return result
+		```

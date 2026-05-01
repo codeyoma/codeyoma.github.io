@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-12-22
+modified: 2026-02-05
 ---
 
 - 부분집합 $2^{n}$
@@ -67,3 +67,17 @@ modified: 2025-12-22
 			}
 			```
 	- 개별 요소로
+- python
+	- ```python
+		def powerset(n):
+		    if n == 0:
+		        return [[]]
+		
+		    prev = powerset(n - 1)
+		
+		    with_n = []
+		    for A in prev:
+		        with_n.append(A + [n])
+		
+		    return prev + with_n
+		```

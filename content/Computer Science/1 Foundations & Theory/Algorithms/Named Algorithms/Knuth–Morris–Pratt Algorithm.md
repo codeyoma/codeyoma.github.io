@@ -1,7 +1,7 @@
 ---
 description:
 created: 2025-05-18
-modified: 2025-07-03
+modified: 2026-02-19
 aliases:
   - kmp
   - kmp algorithm
@@ -27,7 +27,7 @@ aliases:
 			- 0이라면 처음부터 다시 매칭
 			- 값이 있다는건 그 값까지 이미 일치함을 보장
 - ```cpp
-	vector<int> make_table(const string& pattern){
+	vector<int> make_table(const string& pattern){ // pi, prefix function, failure function
 		vector<int> table(pattern.size(), 0);
 		int j = 0;
 		
@@ -42,6 +42,17 @@ aliases:
 		
 		return table; 
 	}
+	/*
+	vector<int> KMP_GET(string grope){
+	    int Begin=0, Length = (int)grope.size();
+	    vector<int> pi(Length, 0);
+	    for(int i=1 ; i< Length ; i++){
+	        while(grope[i] != grope[Begin] && Begin > 0)Begin = pi[Begin-1];
+	        if(grope[i] == grope[Begin]) pi[i] = ++Begin;
+	    }
+	    return pi;
+	}
+	*/
 	
 	void KMP(const string& s, const string& needle){
 		vector<int> table = make_table(needle);
@@ -56,7 +67,7 @@ aliases:
 			if (s[i] == needle[j]){
 				if (j == needle_size - 1){
 					j = table[j];
-					// i - needle_size + 1 에서 매칭
+					// i - needle_size + 2 에서 매칭
 					// or i - j
 				}
 				else

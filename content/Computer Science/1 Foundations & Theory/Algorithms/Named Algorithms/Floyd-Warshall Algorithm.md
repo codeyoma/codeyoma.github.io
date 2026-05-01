@@ -1,7 +1,7 @@
 ---
 description:
 created: 2025-05-18
-modified: 2025-12-27
+modified: 2026-01-30
 references: 
 aliases:
   - 플로이드 워셜
@@ -54,10 +54,13 @@ $$
 	
 	            // Pick all vertices as destination
 	            // for the above picked source
+	            // if (dist[i][k] == INF) continue;
 	            for (int j = 0; j < V; j++) {
 	
 	                // shortest path from
 	                // i to j 
+		            // if (dist[k][j] == INF) continue;
+			        // dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
 	                if(dist[i][k] != 1e8 && dist[k][j]!= 1e8)
 		                dist[i][j] = min(
 							dist[i][j],

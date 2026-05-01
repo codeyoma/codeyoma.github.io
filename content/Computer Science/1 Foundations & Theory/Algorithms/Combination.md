@@ -2,7 +2,7 @@
 description:
 aliases:
 created: 2025-05-18
-modified: 2025-12-22
+modified: 2026-02-05
 tags:
   - review
 ---
@@ -109,3 +109,20 @@ tags:
 			}
 			```
 	- 개별 요소로
+- python
+	- ```python
+		def combination(n,k):
+			if k == 0:
+				return [[]]
+			
+			if n == k:
+				return [list(range(1, k + 1))]
+			
+			without_n = combination(n - 1, k)
+			with_n = []
+			
+			for A in combination(n - 1, k - 1):
+				with_n.append(A + [n])
+			
+			return without_n + with_n
+		```
