@@ -2,7 +2,7 @@
 aliases:
 description: 
 created: 2025-05-18
-modified: 2025-11-25
+modified: 2026-05-18
 title: About
 comments: "true"
 ---
@@ -22,6 +22,7 @@ comments: "true"
 - [PS](https://github.com/codeyoma/ps)
 - [Sweep Keyboard](https://github.com/codeyoma/sweep-nice-nano)
 - [Yòmá's Library](https://lib.yoma.kr/)
+- [Jamcoding - 용만쌤 블로그](https://ymkim-jamcoding.github.io/jamcoding/)
 
 <!--
 ### Badge
