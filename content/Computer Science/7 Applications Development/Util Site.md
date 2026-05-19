@@ -15,6 +15,7 @@ modified: 2026-02-23
 - [CSS Triggers List - What Kind of Changes You Can Make](https://csstriggers.com/)
 
 # UI
+- ![[ui kit]]
 - [Material UI: React components that implement Material Design](https://mui.com/material-ui/)
 - [Konsta UI - Mobile UI components built with Tailwind CSS](https://konstaui.com/)
 - [Blueprint – A React-based UI toolkit for the web](https://blueprintjs.com/) 
@@ -35,6 +36,10 @@ modified: 2026-02-23
 - [UI Design Daily](https://www.uidesigndaily.com/)
 - [Apple 디자인 리소스 - Apple Developer](https://developer.apple.com/kr/design/resources/)
 - [Pricing Pages — A Curated Gallery of Pricing Page Designs](https://pricingpages.design/)
+
+## Design - for Agents
+- [Refero — UI/UX Design Inspiration for Your Next Project](https://refero.design/)
+	- [Refero Styles](https://styles.refero.design/)
 
 # Fetch
 - [TanStack Start Overview \| TanStack Start React Docs](https://tanstack.com/start/latest/docs/framework/react/overview)
