@@ -55,6 +55,9 @@ modified: 2026-02-23
 - [phaser](https://phaser.io/)
 - [itch.io](https://itch.io/)
 
+- image to 3D
+	- [AI 3D Model Generator \| Free Image to 3D AI Converter \| AI3DGen](https://www.ai3dgen.com/)
+
 - PostHog
 - Sentry
 

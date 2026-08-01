@@ -5,6 +5,8 @@ modified: 2025-06-22
 aliases:
   - 클로저
 ---
+# ref
+- ![JavaScript Visualized - Closures - YouTube](https://www.youtube.com/watch?v=6Ixyltr8_R0&list=WL&index=32&t=554s)
 
 # summary
 closures
